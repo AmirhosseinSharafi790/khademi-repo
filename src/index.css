@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "vazir";
+}
+@font-face {
+    src: url("assets/fonts/Vazirmatn-Regular.ttf");
+    font-family: "vazir";
+}
+::selection{
+    background-color: #04bea23e;
+    color: #04a48c;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #dae5eb; 
+}
+::-webkit-scrollbar-thumb {
+    background: #04bea2; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ef476f; 
+}

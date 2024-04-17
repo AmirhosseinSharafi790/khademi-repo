@@ -1,0 +1,62 @@
+.btn-login{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #212529;
+    border: 2px solid #04a48cc6;
+}
+.btn-login:hover {
+    background-color: #04bea2;
+    color: #dae5eb;
+    transition: all 0.5s ease-in-out;
+}
+.bg-nav{
+  background-color: #dae5eb;
+}
+.nav-link.active{
+  border-bottom: 2px solid #04bea2;
+}
+.nav-link:hover {
+  color: #04bea2;
+}
+.border-logo{
+  border: 2px solid #000000;
+}
+#display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#menu-hide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#dsply , #dsply1 , #dsply2 ,
+#dsply3 , #dsply4 
+, #dsply5 , #dsply6{
+  display: none;
+} 
+@media screen and (max-width: 990px) {
+  #display {
+    display: flex;
+  }
+  #dsply , #dsply1 , #dsply2 ,
+  #dsply3 , #dsply4 
+  , #dsply5{
+    display: flex;
+  }
+  #menu-hide {
+    display: none;
+  }
+}
+@media screen and (max-width: 520px) {
+  #display {
+    margin: auto;
+  }
+}
+@media screen and (min-width: 991px) {
+  #display {
+    display: none;
+  }
+}
