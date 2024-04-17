@@ -11,10 +11,10 @@ function LoginReg(){
                 <Col sm={12}>
                     <div className="d-flex justify-content-around align-items-center text-center p-4 bg-color text-white rounded">
                             <Col sm={12} md={6} lg={6} xl={6}>
-                                <Link to={"login"} className="btn p-3 text-dark border rounded-5 border-white border-2 w-100">ورود</Link>
+                                <Link to={"login"} className="btn rounded-5 w-100" id="BtnLogin">ورود</Link>
                             </Col>
                             <Col sm={12} md={6}  lg={6} xl={6}>
-                            <Link to={"Register"} className="btn p-3 text-dark border rounded-5 border-white border-2 w-100">ثبت نام</Link>
+                            <Link to={"Register"} className="btn rounded-5 w-100" id="BtnRegister">ثبت نام</Link>
                             </Col>
                     </div>
                     <Outlet/>
