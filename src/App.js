@@ -2,7 +2,7 @@ import "./App.css"
 import React from "react"
 import { useRoutes} from "react-router-dom"
 import router from "./routes";
-import Section3 from "./components/divition/section3/Section3";
+// import Section3 from "./components/divition/section3/Section3";
 
 function App(){
     
@@ -12,7 +12,6 @@ function App(){
         {
             myroutes
         }
-        <Section3 />
         </>
     );
     

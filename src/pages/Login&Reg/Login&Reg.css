@@ -27,7 +27,6 @@ body{
   color: white;
 }
 .form {
-  background: #dae5eb;
   box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.479), inset 5px 5px 9px rgba(94, 104, 121, 0.205);
   background-color: #dae5eb;
   text-align: center;
@@ -57,14 +56,16 @@ body{
   font-size: 20px;
   transition: all 0.3 ease;
   cursor: pointer;
-  border-right: 5px solid #000000;
-  border-top: none;
+  border: 1px solid #000000;
+  /* border-top: none;
   border-bottom: none;
-  border-left: none;
-  box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.479), inset 5px 5px 9px rgba(94, 104, 121, 0.205);
+  border-left: none; */
+  color: #000000;
+  /* box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.479), inset 5px 5px 9px rgba(94, 104, 121, 0.205); */
 }
 .form .button:hover,.form .button:active,.form .button:focus {
-    color: #212;
+    color: #dae5eb;
+    background-color: #000000;
     transition: all .3s;
 }
 .form .message {

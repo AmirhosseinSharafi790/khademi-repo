@@ -1,7 +1,6 @@
-import {Container , Row , Col} from 'react-bootstrap'
+import {Container , Row} from 'react-bootstrap'
 import './Section1.css'
 import Section1Item from './Section1Item'
-import 'animate.css';
 function Section1(){
     const SectionItems = [
         {

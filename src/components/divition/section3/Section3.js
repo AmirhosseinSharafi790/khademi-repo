@@ -1,5 +1,5 @@
 import './Section3.css'
-import {Container , Row , Col} from 'react-bootstrap'
+import {Container , Row} from 'react-bootstrap'
 import Section3Items from './Section3items'
 import ImgSection3 from '../../../assets/images/section2-bac.jpg'
 function Section3(){
