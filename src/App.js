@@ -2,9 +2,19 @@ import "./App.css"
 import React from "react"
 import { useRoutes} from "react-router-dom"
 import router from "./routes";
+import Section3 from "./components/divition/section3/Section3";
+
 function App(){
     
     const myroutes = useRoutes(router)
-    return myroutes;
+    return (
+        <>
+        {
+            myroutes
+        }
+        <Section3 />
+        </>
+    );
+    
 }
 export default App

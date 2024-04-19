@@ -1,0 +1,65 @@
+.section-A {
+  color: #212529;
+}
+.mar-top {
+  margin-top: 15px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.text-center-A {
+  text-align-last: center;
+  padding: 30px;
+}
+.animation-sec1 {
+  color: #2125297e;
+  font-weight: bold;
+  margin-top: 30px;
+  text-shadow: 4px 3px 4px #2125294e;
+}
+.animation-sec1::after {
+  content: "";
+  border-right: 2px solid #ef476f;
+  margin-right: 3px;
+  animation: blink 0.5s infinite ease;
+  -webkit-animation: blink 0.5s infinite ease;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu-item {
+  height: 50px;
+  border-radius: 10px;
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+  transition: all 0.5s;
+  color: #dae5eb;
+  background-color: #04bea2;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.menu-item a {
+  text-decoration: none;
+  color: #dae5eb;
+  display: block;
+  height: 50px;
+  padding-top: 15px;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.menu-item a:hover {
+  color: #212529;
+}
+.menu-item:hover {
+  transform: scale(1.1);
+  background-color: #ef476f;
+}
+@media screen and (max-width: 412px) {
+  .mar-top {
+    font-size: 20px;
+  }
+}
