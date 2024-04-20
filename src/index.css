@@ -20,6 +20,8 @@
 }
 ::-webkit-scrollbar-thumb {
     background: #04bea2; 
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
 }
 ::-webkit-scrollbar-thumb:hover {
     background: #ef476f; 
