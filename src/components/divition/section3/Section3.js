@@ -25,7 +25,7 @@ function Section3(){
 
     return(
         <div>
-            <Container className='my-3 p-1 text-center align-items-center rounded mt-50'>
+            <Container className='my-5 p-1 text-center align-items-center rounded mt-50'>
                 <Row className='my-2 mt-5 d-flex align-items-center text-white text-end padding-G'>
                     <p><span className="text-dark">گالری تصاویر</span> <a class="bi bi-arrow-left fs-4 mx-2 opacity-75 text-dark" href="./sections/photoAlbum/album.html" id="arrow-hover"></a></p>
 
