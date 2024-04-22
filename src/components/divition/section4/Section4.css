@@ -9,6 +9,7 @@
     border: none;
     text-decoration: none;
     opacity: .8;
+    padding: 10px 20px;
 }
 #btn-green:hover{
     background-color: #ef476f;
@@ -21,14 +22,12 @@
     border: none;
     text-decoration: none;
     opacity: .8;
+    padding: 10px 20px;
 }
 #btn-green1:hover{
     background-color: #ef476f;
     opacity: 1;
     transition: all .5s;
-}
-.padding-btn-section-4{
-    padding: 10px 20px;
 }
 #card-section-4{
     height: 100%;
@@ -41,7 +40,6 @@
     transition: all .5s;
     transform: scale(1.05);
 }
-.hover-greend:hover{
-transition: all .3s;
-background-color: #04bea2;
+.mar-section4{
+    margin-top: 20px;
 }

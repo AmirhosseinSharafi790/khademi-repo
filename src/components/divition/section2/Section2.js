@@ -8,19 +8,19 @@ function Section2(){
     const CarouselData = [
         {
             id : 1,
-            img : {ImgSection2},
+            img : ImgSection2,
             title : "اخبار اردوی مهریز",
             text : "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم و با استفاده از طراحان گرافیک است."
         },
         {
             id : 2,
-            img : {ImgSection2},
+            img : ImgSection2,
             title : "اخبار اردوی مشهد",
             text : "لورم ایپسوم متن ساختگی از طراحان گرافیک است."
         },
         {
             id : 3,
-            img : {ImgSection2},
+            img : ImgSection2,
             title : "اطلاعیه درباره تعطیلات عید نوروز",
             text : "لورم ایپسوم متن ساختگی با صنعت چاپ و با استفاده از طراحان گرافیک است."
         }
@@ -32,7 +32,7 @@ function Section2(){
                     <Carousel>
                         {
                             CarouselData.map( Box => (
-                                <Section2Item {...Box}/>
+                                <Section2Item key={Box.id} {...Box}/>
                             ))
                         }
                     </Carousel>

@@ -6,7 +6,7 @@ function Section1Item({textValue}){
         <div className="menu-item animate__animated animate__slideInRight">
             <a href="sections/news/news.html">{textValue}</a>
         </div>
-    </Col>
+        </Col>
     )
 }
 

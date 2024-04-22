@@ -4,7 +4,7 @@ import Img from '../../../assets/images/manager.png'
 function Section6() {
 
   return (
-   <div class="section-6 my-5">
+   <div className="section-6 my-5">
     <Container>
         <Row className='align-items-center'>
             <Col md = {6}>

@@ -5,18 +5,22 @@ function Section5() {
 
   let CounterItems = [
     {
+      id : 1,
       textValue : 'سال سابقه' ,
       icon : 'fa-sharp fa-solid fa-clock-rotate-left icon-Size',
     },
     {
+      id : 2,
       textValue : 'دانش آموز' ,
       icon : 'fa-solid fa-users icon-Size',
     },
     {
+      id : 3,
       textValue : 'پرسنل' ,
       icon : 'fa-solid fa-graduation-cap icon-Size',
     },
     {
+      id : 4,
       textValue : 'متر مربع' ,
       icon : 'fa-regular fa-building icon-Size',
     },
@@ -27,7 +31,7 @@ function Section5() {
       <Container>
         <Row>
           {CounterItems.map(CounterItem => (
-            <Section5Counter {...CounterItem}/>
+            <Section5Counter key={CounterItem.id} {...CounterItem}/>
           ))}
         </Row>
       </Container>
