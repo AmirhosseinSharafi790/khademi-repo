@@ -1,0 +1,40 @@
+.card-manager {
+  max-width: 500px;
+  text-align: center;
+  background-color: #dae5eb;
+  color: #303241d4;
+  border-radius: 60px 5px 60px 5px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.style-img-manager {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+}
+.font-size-p-manager {
+  text-align: justify;
+  font-size: 18px;
+}
+.btn-green {
+  background-color: #04bea2;
+  color: #dae5eb;
+  border: none;
+  text-decoration: none;
+  opacity: 0.8;
+}
+.btn-green:hover {
+  opacity: 1;
+  transition: all 0.5s;
+}
+.btn-light{
+    color: #04bea2;
+    background-color: #dae5eb;
+    border: none;
+    text-decoration: none;
+    border: 1px solid #04bea2;
+  }
+  .btn-light:hover{
+    background-color: #04bea2;
+    color: #dae5eb;
+    transition: all .5s;
+  }

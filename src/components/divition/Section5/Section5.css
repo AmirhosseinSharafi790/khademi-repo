@@ -3,7 +3,6 @@
 }
 .section2 {
   background-image: url("../../../assets/images/section2-bac.jpg");
-
   background-position: center;
 }
 .counterBox {
@@ -34,3 +33,4 @@
 .text-justify {
   text-align: justify;
 }
+
