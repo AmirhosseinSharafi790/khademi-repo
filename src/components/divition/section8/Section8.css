@@ -1,0 +1,32 @@
+.flexible{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100wh;
+}
+.backgruond-color{
+    background: #04bea2;
+    background: linear-gradient(90deg, #04bea2 0%, #dae5eb 85%);
+}
+.line-height-section6{
+    line-height: 40px;
+}
+.shadow-section-6{
+    box-shadow: #3c40432f 0px 1px 5px 0px, rgba(60, 64, 67, 0.142) 0px 7px 6px 2px;
+    background-color: #04bea2a1;
+}
+.shadow-section-6:hover{
+    transition: all .5s;
+    transform: scale(1.05);
+}
+.text-justify{
+    text-align: justify;
+}
+.text-red{
+    color: #ef476f;
+}
+#box-height{
+    height: 300px;
+}
