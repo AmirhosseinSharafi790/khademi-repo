@@ -3,6 +3,7 @@ import Header from "../../components/header/Header";
 import { Container, Row } from "react-bootstrap";
 import ManagementItems from "./ManagementItems";
 import ImgCaders from "../../assets/images/section2-bac.jpg";
+import Footer from '../../components/footer/Footer'
 function Management() {
   let ManagementCadrs = [
     {
@@ -44,6 +45,7 @@ function Management() {
 
   return (
     <div>
+      <Header />
       <div className="section-management margin-management">
         <Container>
           <Row>
@@ -53,7 +55,9 @@ function Management() {
           </Row>
         </Container>
       </div>
+      <Footer />
     </div>
+    
   );
 }
 
