@@ -42,8 +42,8 @@ function Section1(){
         <div className="section-A">
         <Container>
             <div className='text-center'>
-            <p className="mar-top fw-bold animate__animated animate__rubberBand">هنرستان نمونه دولتی خادمی</p>
-            <h5 className="animation-sec1 my-5" id="type">بکوشم برای آبادی ایرانم</h5>
+            <p className="mar-top fw-bold animate__animated animate__rubberBand">هنرستان فنی نمونه دولتی خادمی</p>
+            <h6 className="animation-sec1 my-5 Leow" id="type">بکوشم برای آبادی ایرانم</h6>
             </div>
             <div className="section1-menu-A container-A">
                 <Row>

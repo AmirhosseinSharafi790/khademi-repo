@@ -8,6 +8,27 @@
     src: url("assets/fonts/Vazirmatn-Regular.ttf");
     font-family: "vazir";
 }
+@font-face {
+    src: url("assets/fonts/Loew\ Next\ Arabic\ Medium.otf");
+    font-family: "Loew";
+}
+@font-face {
+    src: url("assets/fonts/Cairo-Regular.ttf");
+    font-family: "Cairo";
+}
+@font-face {
+    src: url("assets/fonts/SF-Arabic.ttf");
+    font-family: "iphone";
+}
+.iphone{
+    font-family: "iphone";
+}
+.Cairo{
+    font-family: "Cairo";
+}
+.Leow{
+    font-family: "Loew";
+}
 ::selection{
     background-color: #ef476f;
     color: #dae5eb;

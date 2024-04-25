@@ -1,0 +1,4 @@
+.box-hover:hover{
+    transition: all .5s;
+    transform: scale(1.03);
+}

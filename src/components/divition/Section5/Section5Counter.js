@@ -1,7 +1,5 @@
-'./Section5.css'
-
+import './Section5.css'
 import { Col } from "react-bootstrap"
-
 function Section5Counter({textValue , icon}){
     return(
         <Col className="my-4" md = {6} xl = {3}>
