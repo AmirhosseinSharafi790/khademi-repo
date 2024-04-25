@@ -8,6 +8,7 @@ import Registration from "./pages/Registration/Registration";
 import Management from "./pages/Managment/Managment";
 import Contact from './pages/Contact/Contact'
 import AboutUs from "./pages/AboutUs/AboutUs";
+import Honors from "./pages/Honors/Honors";
 const router = [
     { path : "/" , element : <Home/>},
     { path : "/news" , element : <News/>},
@@ -16,6 +17,7 @@ const router = [
     { path : "/management" , element : <Management/>},
     { path : "/contact" , element : <Contact />},
     { path : "/aboutus" , element : <AboutUs />},
+    { path : "/honors" , element : <Honors />},
     { path : "/login&reg" , element : <LoginReg/> , children : [
         {path : "login" , element : <Login/>},
         {path : "Register" , element : <Register/>}
