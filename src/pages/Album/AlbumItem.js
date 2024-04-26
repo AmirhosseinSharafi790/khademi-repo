@@ -1,17 +1,16 @@
 import "./Album.css"
-import { Col, Row } from "react-bootstrap";
+import { Col} from "react-bootstrap";
+import Card from 'react-bootstrap/Card';
 function AlbumItem({image , title , desc}){
     return(
-        <Col sm={12} md={6} className="my-3 box-hover">
-            <Row className="d-flex bg justify-content-center align-items-center border border-danger shadow rounded g-1 p-3">
-                <Col>
-                    <img src={image} alt="" className="img-fluid rounded shadow border border-white" />
-                </Col>
-                <Col>
-                    <h5 className="p-2 text-justify opacity-75 text-danger">{title}</h5>
-                    <p className="p-2 text-justify opacity-50">{desc}</p>
-                </Col>
-            </Row>
+        <Col className="px-2">
+            <Card style={{backgroundColor : "#04bea2"}}>
+                <Card.Img variant="top" src={image} />
+                <Card.Body>
+                    <Card.Title className="text-center">{title}</Card.Title>
+                    <Card.Text className="text-center">{desc}</Card.Text>
+                </Card.Body>
+            </Card>
         </Col>
     )
 }

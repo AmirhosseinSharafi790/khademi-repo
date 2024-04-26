@@ -6,19 +6,19 @@ function Section1(){
         {
 
             id : 1,
-            textValue : 'اخبار و اطلاعیه'
+            textValue : 'ورود به پورتال'
         },
         {
             id : 2,
-            textValue : 'نمره دهی'
+            textValue : 'اخبار و اطلاعیه'
         },
         {
             id : 3,
-            textValue : 'سامانه حضور غیاب'
+            textValue : 'گالری تصاویر'
         },
         {
             id : 4,
-            textValue : 'گالری تصاویر'
+            textValue : 'پیش ثبت نام'
         },
         {
             id : 5,
@@ -42,7 +42,7 @@ function Section1(){
         <div className="section-A">
         <Container>
             <div className='text-center'>
-            <p className="mar-top fw-bold animate__animated animate__rubberBand">هنرستان فنی نمونه دولتی خادمی</p>
+            <p className="mar-top fw-bold mt-5 iphone animate__animated animate__rubberBand">هنرستان فنی نمونه دولتی خادمی</p>
             <h6 className="animation-sec1 my-5 Leow" id="type">بکوشم برای آبادی ایرانم</h6>
             </div>
             <div className="section1-menu-A container-A">

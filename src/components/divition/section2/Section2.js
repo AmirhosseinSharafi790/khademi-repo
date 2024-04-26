@@ -1,8 +1,10 @@
-// import "./Section2.css"
+import "./Section2.css"
 import ImgSection2 from "../../../assets/images/section2-bac.jpg"
-import Carousel from 'react-bootstrap/Carousel';
 import Section2Item from "./Section2Item";
+import {useRef} from "react";
+import Slider from "react-slick";
 import { Col, Container , Row } from "react-bootstrap";
+import { IoIosArrowDropleft , IoIosArrowDropright } from "react-icons/io";
 function Section2(){
 
     const CarouselData = [
@@ -25,20 +27,49 @@ function Section2(){
             text : "لورم ایپسوم متن ساختگی با صنعت چاپ و با استفاده از طراحان گرافیک است."
         }
     ]
-    return(
-        <Container className="mt-5 mt-90">
-            <Row>
-                <Col sm={12}>
-                    <Carousel>
-                        {
-                            CarouselData.map( Box => (
-                                <Section2Item key={Box.id} {...Box}/>
-                            ))
-                        }
-                    </Carousel>
-                </Col>
-            </Row>
-        </Container>
-    )
+
+    let sliderRef = useRef(null);
+  const next = () => {
+    sliderRef.slickNext();
+  };
+  const previous = () => {
+    sliderRef.slickPrev();
+  };
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+  return (
+    <Container className="mt-5 mt-90 p-5">
+        <Row>
+            <Col sm={12}>
+                <div className="slider-container">
+                    <Slider
+                        ref={slider => {
+                        sliderRef = slider;
+                        }}
+                        {...settings}
+                    >
+                        {CarouselData.map(Item => (
+                            <Section2Item key={Item.id} {...Item}/>
+                        ))}
+                    </Slider>
+                    <div  className="my-4 text-center btn-sm-none">
+                        <button className="button p-1" onClick={previous}>
+                            <IoIosArrowDropright color="#dae5eb" size="60px" />
+                        </button>
+                        <button className="button p-1" onClick={next}>
+                            <IoIosArrowDropleft color="#dae5eb" size="60px" />
+                        </button>
+                    </div>
+                </div>
+            </Col>
+        </Row>
+    </Container>
+    
+  );
 }
 export default Section2

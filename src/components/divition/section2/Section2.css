@@ -9,3 +9,8 @@
     background-color: #04a48c;
     box-shadow: rgb(196, 217, 235) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
+@media screen and (max-width : 600px) {
+    .btn-sm-none{
+        display: none;
+    }
+}

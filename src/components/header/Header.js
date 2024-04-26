@@ -18,16 +18,16 @@ function Header(){
     const expand = "lg";
     return (
         <>
-            <Navbar expand={expand} className="bg-nav py-3 mx-2 my-2">
-              <Container fluid className="m-0">
+            <Navbar expand={expand} className="py-3 bg-nav mb-5">
+              <Container  className="m-0 m-auto">
                 <Navbar.Toggle className="border-0 fs-4" aria-controls={`offcanvasNavbar-expand-${expand}`} />
                 <Navbar.Brand href="#">
-                    <img src={Logo} className="img-fluid border-logo mx-2" style={{width : '50px' , height : '50px' , borderRadius : '50%'}} alt="" />
+                    <img src={Logo} className="img-fluid border-logo" style={{width : '50px' , height : '50px' , borderRadius : '50%'}} alt="" />
                 </Navbar.Brand>
                 <div className="my-2" id="display">
                     <NavLink to={"/login&reg"} className="btn-login mx-1">ورود و ثبت نام</NavLink>
                         <Button onClick={handleShow} className="ms-4" style={{backgroundColor : "transparent" , border : "none"}}>
-                            <i className="bi bi-search text-dark fs-4 fw-bold"></i>
+                            <i className="bi bi-search text-dark fs-4 fw-bold bg-nav"></i>
                         </Button>
                         <Modal show={show} onHide={handleClose} className="bg-opacity-10 bg-danger">
                             <Modal.Header closeButton>
@@ -68,10 +68,10 @@ function Header(){
                       <NavLink to={"/news"} className="nav-link">اخبار و اطلاعیه</NavLink>
                       <NavLink to={"/album"} className="nav-link">گالری تصاویر</NavLink>
                       <NavLink to={"/registration"} className="nav-link">پیش ثبت نام</NavLink>
+                      <NavLink to={"/contact"} className="nav-link">ارتباط با هنرستان</NavLink>
                       <NavLink to={"/managment"} className="nav-link" id="dsply">کادر مدیریت</NavLink>
                       <NavLink to={"/honors"} className="nav-link" id="dsply1">افتخارات</NavLink>
                       <NavLink to={"/aboutus"} className="nav-link" id="dsply2">درباره هنرستان</NavLink>
-                      <NavLink to={"/contact"} className="nav-link" id="dsply3">ارتباط با هنرستان</NavLink>
                       {/* <NavLink to={"/grading"} className="nav-link" id="dsply4">نمره دهی</NavLink>
                       <NavLink to={"/rollcall"} className="nav-link" id="dsply5">سامانه حضور و غیاب</NavLink> */}
                     </Nav>

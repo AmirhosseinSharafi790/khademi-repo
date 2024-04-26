@@ -4,6 +4,8 @@
 .section2 {
   background-image: url("../../../assets/images/section2-bac.jpg");
   background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .counterBox {
   background-color: #04bea229;

@@ -2,17 +2,15 @@ import "./News.css"
 import { Col, Row } from "react-bootstrap";
 function NewsItem({image , title , desc}){
     return(
-        <Col sm={12} md={6} className="my-3 box-hover">
-            <Row className="d-flex justify-content-center align-items-center border border-danger shadow rounded g-1 p-3">
-                <Col>
-                    <img src={image} alt="" className="img-fluid rounded shadow border border-white" />
-                </Col>
-                <Col>
-                    <h5 className="p-2 text-justify opacity-75 text-danger">{title}</h5>
-                    <p className="p-2 text-justify opacity-50">{desc}</p>
-                </Col>
-            </Row>
-        </Col>
+        <Row className="flex-row-reverse bg p-3 align-items-center justify-content-center">
+            <Col sm={12} md={6}>
+                <img src={image} alt="" className="img-fluid rounded shadow"/>
+            </Col>
+            <Col sm={12} md={6} className="text-center">
+                <h4 className="py-3 text-white text-center">{title}</h4>
+                <p className="opacity-75 text-center">{desc}</p>
+            </Col>
+        </Row>
     )
 }
 export default NewsItem
