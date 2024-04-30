@@ -3,24 +3,24 @@
     border-radius: 10px;
     padding: 10px;
     color: #212529;
-    border: 2px solid #04a48cc6;
+    border: 2px solid #1fd860;
 }
 .btn-login:hover {
-    background-color: #04bea2;
-    color: #dae5eb;
+    background-color: #1fd860;
+    color: #212529;
     transition: all 0.5s ease-in-out;
 }
 .bg-nav{
   background-color: #dae5eb;
 }
 .nav-link.active{
-  border-bottom: 2px solid #04bea2;
+  border-bottom: 2px solid #1fd860;
 }
 .nav-link:hover {
-  color: #04bea2;
+  color: #1fd860;
 }
 .border-logo{
-  border: 2px solid #000000;
+  border: 2px solid #212529;
 }
 #display {
   display: flex;
@@ -60,3 +60,15 @@
     display: none;
   }
 }
+@media screen and (min-width: 520px) and (max-width: 992px) {
+    .fiexd-logo{
+      /* position: fixed !important;
+      bottom: 0 !important;
+      right: 0 !important;
+      margin-bottom: 5rem !important;
+      margin-right: 2rem !important; */
+      display: none;
+    }
+  }
+
+/*  position-fixed bottom-0 start-0 mb-5 ms-2 */

@@ -2,7 +2,7 @@ import { Col, Container, Row } from "react-bootstrap"
 import "./Section9.css"
 import Section9Item from "./Section9Item"
 import Accordion from 'react-bootstrap/Accordion';
-
+import images from "../../../assets/images/Question.png"
 function Section9(){
 
     const Serction9Data = [
@@ -20,12 +20,35 @@ function Section9(){
             id : 2 ,
             title : "اده از طراحان گرافیک است. چاپگرها و متون بلکه" , 
             desc : " از ابتدای کار، به آموزشی همه جانبه و فراتر از کتاب‌های درسی با رویکرد پژوهش محور پرداخته‌ایم و امکانات مدرسه، نقش مهمی را در برنامه‌های درسی ما ایفا کرده است."
+        },
+        {
+            id : 3,
+            title : "اده از طراحان گرافیک است. چاپگرها و متون بلکه" , 
+            desc : " از ابتدای کار، به آموزشی همه جانبه و فراتر از کتاب‌های درسی با رویکرد پژوهش محور پرداخته‌ایم و امکانات مدرسه، نقش مهمی را در برنامه‌های درسی ما ایفا کرده است."
+        },
+        {
+            id : 4 ,
+            title : "اده از طراحان گرافیک است. چاپگرها و متون بلکه" , 
+            desc : " از ابتدای کار، به آموزشی همه جانبه و فراتر از کتاب‌های درسی با رویکرد پژوهش محور پرداخته‌ایم و امکانات مدرسه، نقش مهمی را در برنامه‌های درسی ما ایفا کرده است."
+        },
+        {
+            id : 5 ,
+            title : "اده از طراحان گرافیک است. چاپگرها و متون بلکه" , 
+            desc : " از ابتدای کار، به آموزشی همه جانبه و فراتر از کتاب‌های درسی با رویکرد پژوهش محور پرداخته‌ایم و امکانات مدرسه، نقش مهمی را در برنامه‌های درسی ما ایفا کرده است."
+        },
+        {
+            id : 6 ,
+            title : "اده از طراحان گرافیک است. چاپگرها و متون بلکه" , 
+            desc : " از ابتدای کار، به آموزشی همه جانبه و فراتر از کتاب‌های درسی با رویکرد پژوهش محور پرداخته‌ایم و امکانات مدرسه، نقش مهمی را در برنامه‌های درسی ما ایفا کرده است."
         }
     ]
     return(
         <div className="section9 p-5 mt-5 m-inline">
             <Container>
-                <Row className="justify-content-center">
+                <Row className="justify-content-center align-items-center">
+                <Col sm={12} md={4}>
+                    <img src={images} alt="" className="img-fluid" />
+                </Col>
                     <Col sm={12} md={8}>
                         <Accordion defaultActiveKey="0">
                         {Serction9Data.map(Item => (

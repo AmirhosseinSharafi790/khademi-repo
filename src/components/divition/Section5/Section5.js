@@ -27,7 +27,7 @@ function Section5() {
   ]
 
   return (
-    <div className="section-A section2 py-5 my-5 m-inline">
+    <div className="section-A section2 py-5  m-inline">
       <Container>
         <Row>
           {CounterItems.map(CounterItem => (

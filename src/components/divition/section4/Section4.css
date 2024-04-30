@@ -1,10 +1,10 @@
 
 .text-green{
-    color: #04bea2;
+    color: #1fd860;
     font-weight: bold;
 }
 #btn-green{
-    background-color: #04bea2;
+    background-color: #1fd860;
     color: #dae5eb;
     border: none;
     text-decoration: none;
@@ -17,7 +17,7 @@
     transition: all .5s;
 }
 #btn-green1{
-    background-color: #04bea2;
+    background-color: #1fd860;
     color: #dae5eb;
     border: none;
     text-decoration: none;

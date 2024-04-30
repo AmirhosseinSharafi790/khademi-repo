@@ -16,25 +16,27 @@
   font-size: 18px;
 }
 .btn-green {
-  background-color: #04bea2;
-  color: #dae5eb;
+  background-color: #1fd860;
+  color: #212;
   border: none;
   text-decoration: none;
   opacity: 0.8;
 }
 .btn-green:hover {
   opacity: 1;
+  color: #dae5eb;
   transition: all 0.5s;
 }
 .btn-light{
-    color: #04bea2;
+    color: #212;
     background-color: #dae5eb;
     border: none;
     text-decoration: none;
-    border: 1px solid #04bea2;
+    border: 1px solid #1fd860;
   }
   .btn-light:hover{
-    background-color: #04bea2;
+    background-color: #1fd860;
     color: #dae5eb;
+    opacity: 0.8;
     transition: all .5s;
   }

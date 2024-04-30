@@ -1,9 +1,9 @@
-.section9 {
+/* .section9 {
     margin-top: -90px;
     background-image: url("../../../assets/images/section2-bac.jpg");
     background-attachment: fixed;
     background-position: center;
-}
+} */
 .m-inline{
     margin-inline: -8px;
 }
@@ -11,36 +11,36 @@
     text-align: justify;
 }
 .accordion-button h2::-moz-focus-inner{
-    border-color: #dae5eb00 !important;
+    border-color: #1fd860 !important;
     box-shadow: none !important;
     outline: 0 !important;
-    background-color: #dae5eb00 !important;
+    background-color: none !important;
 }
 .accordion-button:focus {
-    border-color: #dae5eb00 !important;
+    border-color: #1fd860 !important;
     box-shadow: none !important;
     outline: 0 !important;
-    background-color: #dae5eb00 !important;
+    background-color: none !important;
 }
 .accordion-button:not(.collapsed) {
     color: #dae5eb !important;
-    background-color: #dae5eb00 !important;
+    background-color: none !important;
     box-shadow: none !important;
     border-bottom: 1px solid #dae5eb !important;
 }
 .accordion-item {
-    background-color: #abb8c3e7 !important;
-    color: #dae5eb !important;
+    background-color: #c6e4dcb2 !important;
+    color: #212 !important;
     cursor: pointer;
     padding: 10px;
     text-align: right;
-    border: 1px solid #dae5eb;
+    border: 1px solid #1fd860 !important;
     outline: none;
     border-radius: 5px;
     margin-top: 8px;
 }
 .accordion-item:hover {
-    background-color: #dae5eb4b !important;
+    background-color: #1fd860 !important;
     color: #dae5eb;
     transition: all 0.4s;
 }
@@ -50,7 +50,7 @@
     transition: all 0.4s;
 }
 .accordion-button:hover{
-    background-color: #dae5eb00;
+    background-color: #1fd860;
     color: #dae5eb;
     transition: all 0.4s;
 }

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Section7(){
     return(
         <Container className="my-5">
-            <Row className="align-items-center bacgruond-color-eft p-4 rounded shadow">
+            <Row className="align-items-center bacgruond-color-eft p-4 rounded-4 shadow">
             <Col sm={12} md={6} className="text-center">
                 <img src={Cup} className="img-fluid display-none p-3" alt=""/>
             </Col>
