@@ -50,3 +50,9 @@
 .m-inline{
     margin-inline: -8px;
 }
+.colorgreen{
+    color: #1fd860;
+}
+.bg-green{
+    background-color: #1fd860;
+}

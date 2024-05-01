@@ -1,10 +1,13 @@
 import './Section1.css'
 import { Col } from 'react-bootstrap'
-function Section1Item({textValue}){
+import { Link } from 'react-router-dom'
+function Section1Item({textValue , icon}){
     return(
-        <Col sm = {6} lg = {3}>
+        <Col md = {6} xl = {3}>
+
         <div className="menu-item animate__animated animate__slideInRight">
-            <a href="sections/news/news.html">{textValue}</a>
+            <Link to = ''><span className='bg-icon'>{icon}</span></Link>
+            <Link to = ''><b>{textValue}</b></Link>
         </div>
         </Col>
     )
