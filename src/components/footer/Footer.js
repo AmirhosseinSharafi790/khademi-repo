@@ -73,16 +73,16 @@ function Footer() {
       </div>
       <div className="footer m-inline">
         <Container>
-          <Row className="align-items-start">
-            <Col lg={4} className="my-5 text-start">
+          <Row className="align-items-start justify-content-around">
+            <Col lg={4} className="mt-5 text-start">
               <div className="footer-body">
-                <h3 className="fw-bold mb-5">راه های ارتباط با هنرستان</h3>
+                <h3 className="fw-bold ">راه های ارتباط با هنرستان</h3>
                 {ItemsR.map((item) => (
                   <FooterItemsR key={item.id} {...item} />
                 ))}
               </div>
             </Col>
-            <Col lg={4} className="my-5 offset-lg-4 text-star">
+            <Col lg={4} className="mt-5 text-start">
               <div className="footer-body  mt-3 mt-lg-0">
                 <h3 className="fw-bold mb-3">دسترسی سریع</h3>
                 {ItemsL.map((itemL) => (

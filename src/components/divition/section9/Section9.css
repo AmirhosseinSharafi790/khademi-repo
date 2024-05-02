@@ -28,12 +28,15 @@
     box-shadow: none !important;
     border-bottom: 1px solid #dae5eb !important;
 }
+.accordion-button::after{
+    margin-left: 0 !important;
+}
 .accordion-item {
     background-color: #c6e4dcb2 !important;
     color: #212 !important;
     cursor: pointer;
     padding: 10px;
-    text-align: right;
+    text-align: center !important;
     border: 1px solid #1fd860 !important;
     outline: none;
     border-radius: 5px;

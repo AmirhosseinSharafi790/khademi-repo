@@ -5,7 +5,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import images from "../../../assets/images/Question.png"
 function Section9(){
 
-    const Serction9Data = [
+    const Section9Data = [
         {
             id : 0 ,
             title : "ی زیادی در شصت و سه درصد گذشته، حال و آیند" , 
@@ -51,7 +51,7 @@ function Section9(){
                 </Col>
                     <Col sm={12} md={8}>
                         <Accordion defaultActiveKey="0">
-                        {Serction9Data.map(Item => (
+                        {Section9Data.map(Item => (
                             <Section9Item key={Item.id} {...Item}/>
                         ))}
                         </Accordion>
