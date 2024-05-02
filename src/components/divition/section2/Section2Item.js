@@ -1,13 +1,12 @@
-import "./Section2.css"
-import { SwiperSlide } from "swiper/react"
-function Section2Item({title , text , className}){
-    return(
-            <SwiperSlide className={className}>
-                <div className="flexible">
-                    <h1 className="text-center">{title}</h1>
-                    <p className="text-center">{text}</p>
-                </div>
-            </SwiperSlide>
-    )
-}
-export default Section2Item
+// import "./Section2.css"
+// import { SwiperSlide } from "swiper/react"
+// import { Col } from "react-bootstrap"
+// function Section2Item({title , text , className , code}){
+//     return(
+//             <Col sm={12} className={className} style={{backgroundColor : "#dae3eb"}} {...code}>
+//             <h2 className="text-center">{title}</h2>
+//             <p>{text}text</p>
+//             </Col>
+//     )
+// }
+// export default Section2Item

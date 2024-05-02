@@ -116,3 +116,7 @@
     margin-bottom: 5px;
     }
 }
+:root {
+  --swiper-theme-color: #ef476f !important;
+  --swiper-navigation-size: 50px !important;
+}

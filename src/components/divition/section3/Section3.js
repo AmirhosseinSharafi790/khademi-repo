@@ -2,13 +2,13 @@ import './Section3.css'
 import {Container , Row} from 'react-bootstrap'
 // import Section3Items from './Section3items'
 import ImgSection3 from '../../../assets/images/section2-bac.jpg'
-import React, { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/navigation';
-import 'swiper/css/thumbs';
-import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+// import React, { useState } from 'react';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/css';
+// import 'swiper/css/free-mode';
+// import 'swiper/css/navigation';
+// import 'swiper/css/thumbs';
+// import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 function Section3(){
 
     let ItemsS3 = [
@@ -29,7 +29,7 @@ function Section3(){
             imgS3 : ImgSection3 
         }
     ]
-    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+    // const [thumbsSwiper, setThumbsSwiper] = useState(null);
     return(
         <div>
             <Container className='mb-5 p-1 text-center align-items-center rounded'>
@@ -42,7 +42,7 @@ function Section3(){
                             ))} */}
                 <div className='p-5'>
                     <div className="slider-container">
-                        <Swiper
+                        {/* <Swiper
                             style={{
                             '--swiper-navigation-color': '#fff',
                             '--swiper-pagination-color': '#fff',
@@ -95,7 +95,7 @@ function Section3(){
                             <SwiperSlide>
                             <img src={ImgSection3} alt='' className='img-fluid rounded' />
                             </SwiperSlide>
-                        </Swiper>
+                        </Swiper> */}
                     </div>
                 </div>
             </Container>

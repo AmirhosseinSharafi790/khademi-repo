@@ -1,7 +1,7 @@
-import "./Section5.css";
+import "./Section5Counter.css";
 import {Container , Row} from 'react-bootstrap'
 import Section5Counter from "./Section5Counter";
-function Section5() {
+function SectionCounterBox() {
 
   let CounterItems = [
     {
@@ -39,4 +39,4 @@ function Section5() {
   )
 }
 
-export default Section5;
+export default SectionCounterBox;

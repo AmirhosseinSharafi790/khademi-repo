@@ -1,4 +1,4 @@
-import './Section5.css'
+import './Section5Counter.css'
 import { Col } from "react-bootstrap"
 function Section5Counter({textValue , icon}){
     return(

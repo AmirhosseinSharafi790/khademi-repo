@@ -1,90 +1,89 @@
 :root {
-    --swiper-theme-color: #ef476f !important;
-    --swiper-navigation-size: 50px !important;
+  --swiper-theme-color: #ef476f !important;
+  --swiper-navigation-size: 50px !important;
 }
-#bg-nav , #bg-nav1 , #bg-nav2{
-    background-color: #04bea2;
+#bg-nav,
+#bg-nav1,
+#bg-nav2 {
+  background-color: #04bea2;
 }
-.border-r{
-    border-radius: 10px;
+.border-r {
+  border-radius: 10px;
 }
-.bg-card{
-    color: #dae5eb;
-    background-color: #04a48c;
-    box-shadow: rgb(196, 217, 235) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+.bg-card {
+  color: #dae5eb;
+  background-color: #04a48c;
+  box-shadow:
+    rgb(196, 217, 235) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
-@media screen and (max-width : 600px) {
-    .btn-sm-none{
-        display: none;
-    }
+@media screen and (max-width: 600px) {
+  .btn-sm-none {
+    display: none;
+  }
 }
-
 
 /* slider */
-.mySwiper{
-    height: 400px !important;
-    width: 100%;
+
+html,
+body {
+  position: relative;
+  height: 100%;
 }
-swiper-container {
-    width: 100%;
-    height: 100%;
+
+body {
+  background: #eee;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
 }
-swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #dae5eb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.swiper-container {
+  width: 100%;
+  height: 100%;
 }
-.autoplay-progress {
-    position: absolute;
-    right: 16px;
-    bottom: 16px;
-    z-index: 10;
-    width: 38px;
-    height: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: #ef476f;
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
-.autoplay-progress svg {
-    --progress: 0;
-    position: absolute;
-    left: 0;
-    top: 0px;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    stroke-width: 2px;
-    stroke: #dae5eb;
-    fill: none;
-    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
-    stroke-dasharray: 125;
-    transform: rotate(-90deg);
+.c1,
+.c2,
+.c3,
+.c4 {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 500px !important;
 }
-.c1 , .c2 , .c3 , .c4 {
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+.c1 {
+  background-image: url("../../../assets/images/section2-bac.jpg");
 }
-.c1{
-    background-image: url("../../../assets/images/Logo.jpg");
+.c2 {
+  background-image: url("../../../assets/images/Logo.jpg");
 }
-.c2{
-    background-image: url("../../../assets/images/support\ img.jpg");
+.c3 {
+  background-image: url("../../../assets/images/Question.png");
 }
-.c3{
-    background-image: url("../../../assets/images/banner-main.png");
-}
-.c4{
-    background-image: url("../../../assets/images/Logo.jpg");
-}
-.flexible{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.c4 {
+  background-image: url("../../../assets/images/support\ img.jpg");
 }
