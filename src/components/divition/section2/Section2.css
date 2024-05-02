@@ -87,3 +87,20 @@ body {
 .c4 {
   background-image: url("../../../assets/images/support\ img.jpg");
 }
+.sa{
+  height: 100px;
+}
+.padding-section2{
+  margin: 50px 0;
+  padding: 0 80px !important;
+}
+.bg-pic {
+  background-image: url("../../../assets/images/banner-main.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+  border-radius: 10px;
+  /* background-attachment: fixed; */
+}
