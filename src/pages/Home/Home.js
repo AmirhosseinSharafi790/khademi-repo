@@ -8,6 +8,7 @@ import Section7 from "../../components/divition/section7/Section7";
 import Footer from "../../components/footer/Footer";
 import Section8 from "../../components/divition/section8/Section8";
 import Section9 from "../../components/divition/section9/Section9";
+import Management from "../../components/divition/Managment/Managment";
 import "./Home.css"
 // import SectionCounterBox from "../../components/divition/Section5/SectionCounterBox";
 import ControlledCarousel from "../../components/divition/section2/Section2";
@@ -24,6 +25,7 @@ function Home(){
         <Section7 />
         <Section8/>
         <Section9/>
+        <Management />
         <Footer />
         </>
     )
