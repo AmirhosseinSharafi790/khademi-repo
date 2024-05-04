@@ -30,3 +30,9 @@
 #box-height{
     height: 300px;
 }
+.parallax{
+   background-image: url("../../../assets/images/success.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}

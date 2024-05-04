@@ -35,12 +35,11 @@ function Section3(){
             <Container className='mb-5 p-1 text-center align-items-center rounded'>
                 <Row className='mt-1 d-flex align-items-center text-white text-end padding-G'>
                     <p><span className="text-dark">گالری تصاویر</span> <a className="bi bi-arrow-left fs-4 mx-2 opacity-75 text-dark" href="./sections/photoAlbum/album.html" id="arrow-hover"></a></p>
-
                 </Row>
                             {/* {ItemsS3.map(Item => (
                                 <Section3Items key={Item.id} {...Item}/>
                             ))} */}
-                <div className='p-5'>
+                <div className='px-5'>
                     <div className="slider-container">
                         <Swiper
                             style={{
@@ -73,12 +72,12 @@ function Section3(){
                         <Swiper
                             onSwiper={setThumbsSwiper}
                             loop={true}
-                            spaceBetween={10}
-                            slidesPerView={4}
+                            spaceBetween={3}
+                            slidesPerView={3}
                             freeMode={true}
                             watchSlidesProgress={true}
                             modules={[FreeMode, Navigation, Thumbs]}
-                            className="mySwiper mt-3"    
+                            className="mySwiper mt-breakpoint"    
                         >
                             <SwiperSlide>
                             <img src={ImgSection3} alt='' className='img-fluid rounded' />
