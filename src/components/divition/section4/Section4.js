@@ -33,6 +33,7 @@ function Section4() {
     },
   ];
   return (
+    <div className="margin-S4">
     <Container>
       <Swiper
         effect={"cards"}
@@ -105,6 +106,7 @@ function Section4() {
         </SwiperSlide>
       </Swiper>
     </Container>
+    </div>
   );
 }
 export default Section4;
