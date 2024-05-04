@@ -92,7 +92,7 @@ body {
 }
 .padding-section2{
   margin: 50px 0;
-  padding: 0 80px !important;
+  /* padding: 0 80px !important; */
 }
 .bg-pic {
   background-image: url("../../../assets/images/banner-main.png");

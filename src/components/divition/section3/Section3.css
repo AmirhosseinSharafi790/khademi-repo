@@ -38,9 +38,6 @@
     padding-right: 5px;
     transition: all .5s;
   }
-  .padding-G{
-    padding: 0 50px;
-  }
   .align-items-center .col-md-6 .border-white{
     opacity: .75;
   }
@@ -57,6 +54,7 @@
   .swiper-slide {
     text-align: center;
     font-size: 18px;
+    /* background: none !important; */
     display: flex;
     justify-content: center;
     align-items: center;
