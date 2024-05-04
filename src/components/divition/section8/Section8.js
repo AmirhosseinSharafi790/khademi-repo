@@ -23,17 +23,17 @@ function Section8(){
     return(
         <Container className="backgruond-color rounded-4 p-4">
         <Row>
-          <Col sm={12} className="rounded">
+          <Col sm={12} className="rounded shadow border-2 rounded parallax p-5 text-white">
             <h3 className="text-center p-2 fw-bold my-3" >پلی به سوی موفقیت</h3>
-            <p className="text-justify p-3 border-2 rounded border-start border-success text-dark line-height-section6">
+            <p className="text-justify p-3 mb-5 bg-dark bg-opacity-25 border border-white rounded text-white line-height-section6">
             تلاش کنید همیشه به عنوان یک دانش‌آموز بمانید و از هر فرصتی برای یادگیری بهره ببرید. به عنوان یک معلم، به دیگران با احترام و صداقت ، آموزش دهید تا بهترین نتیجه را به دست آورید.
             هر دو فعالیت اموزش دادن و اموزش دیدن به شما ارتباط انسانی تازه‌ای با دیگران ارائه خواهد داد.
             اموزش دادن و اموزش دیدن دو فعالیت بسیار ارزشمند هستند که می‌توانند به شما کمک کنند تا در زندگی شخصی و حرفه‌ای خود پیشرفت کنید. به خوبی از این دو فرصت استفاده کنید و هر روز یک قدم بزرگ‌تر به سوی بهبود و پیشرفت بردارید.
           </p>
           </Col>
         </Row>
-        <hr />
-        <Row>
+        {/* <hr /> */}
+        <Row style={{marginTop : "-110px"}}>
             {Serction8Data.map(Item => (
                 <Section8Item key={Item.id} {...Item}/>
             ))}
