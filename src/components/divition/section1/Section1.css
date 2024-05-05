@@ -39,7 +39,13 @@
   text-align: center;
   transition: all 0.5s;
   color: #212529;
-  background-color: transparent;
+  /* background-color: #005eff83; */
+  /* background-color: #00007b87; */
+  /* background-color: #346ED1; */
+  /* background-color: #052f788c; */
+  /* background-color: #6494edc6; */
+  /* background-color: #00a69373; */
+  /* background-color: #00bfffd3; */
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   padding: 20px;
 }
