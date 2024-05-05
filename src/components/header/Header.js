@@ -22,7 +22,7 @@ function Header(){
               <Container  className="m-0 m-auto">
                 <Navbar.Toggle className="border-0 fs-4" aria-controls={`offcanvasNavbar-expand-${expand}`} />
                 <Navbar.Brand href="#">
-                    <img src={Logo} className="img-fluid border-logo fiexd-logo" style={{width : '50px' , height : '50px' , borderRadius : '50%'}} alt="" />
+                    <img src={Logo} className="img-fluid border-logo fiexd-logo shadow" style={{width : '50px' , height : '50px' , borderColor : "#346ed1" , borderRadius : '50%'}} alt="" />
                 </Navbar.Brand>
                 <div className="my-2" id="display">
                     <NavLink to={"/login&reg"} className="btn-login mx-1">ورود و ثبت نام</NavLink>
@@ -76,7 +76,7 @@ function Header(){
                       <NavLink to={"/rollcall"} className="nav-link" id="dsply5">سامانه حضور و غیاب</NavLink> */}
                     </Nav>
                     <div className="my-1" id="menu-hide">
-                    <NavLink to={"/login&reg"} className="btn-login mx-1 iphone">ورود و ثبت نام</NavLink>
+                    <NavLink to={"/login&reg"} className="btn-login mx-1">ورود و ثبت نام</NavLink>
                     <Button onClick={handleShow} className="ms-4" style={{backgroundColor : "transparent" , border : "none"}}>
                         <i className="bi bi-search text-dark fs-4 bg-nav"></i>
                     </Button>

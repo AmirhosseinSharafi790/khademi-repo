@@ -1,18 +1,18 @@
-:root {
-  --swiper-theme-color: #ef476f !important;
+.swiper-button-prev, .swiper-button-next , .swiper-pagination-bullet{
+  --swiper-theme-color: #212 !important;
   --swiper-navigation-size: 50px !important;
 }
 #bg-nav,
 #bg-nav1,
 #bg-nav2 {
-  background-color: #04bea2;
+  background-color: #346ed1;
 }
 .border-r {
   border-radius: 10px;
 }
 .bg-card {
   color: #dae5eb;
-  background-color: #04a48c;
+  background-color: #346ed1;
   box-shadow:
     rgb(196, 217, 235) 3px 3px 6px 0px inset,
     rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
@@ -33,11 +33,6 @@ body {
 
 body {
   background: #eee;
-  font-family:
-    Helvetica Neue,
-    Helvetica,
-    Arial,
-    sans-serif;
   font-size: 14px;
   color: #000;
   margin: 0;

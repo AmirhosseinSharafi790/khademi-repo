@@ -5,9 +5,10 @@
     flex-direction: column;
     height: 100vh;
     width: 100wh;
+    border: 1px solid #346ed148;
 }
 .backgruond-color{
-    background: #1fd860;
+    background: #dae5eb;
     background: linear-gradient(90deg, #dae5eb 0%, #1fd86023 85%);
 }
 .line-height-section6{
@@ -15,7 +16,7 @@
 }
 .shadow-section-6{
     box-shadow: #3c40432f 0px 1px 5px 0px, rgba(60, 64, 67, 0.142) 0px 7px 6px 2px;
-    background-color: #1fd860;
+    background-color: #346ed124;
 }
 .shadow-section-6:hover{
     transition: all .5s;
@@ -35,4 +36,8 @@
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    mix-blend-mode: darken;
+}
+.text-color{
+    color: #346ed1;
 }

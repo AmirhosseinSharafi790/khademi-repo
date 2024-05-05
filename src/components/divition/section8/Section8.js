@@ -21,7 +21,7 @@ function Section8(){
         }
     ]
     return(
-        <Container className="backgruond-color rounded-4 p-4">
+        <Container className="backgruond-color m-inline">
         <Row>
           <Col sm={12} className="rounded shadow border-2 rounded parallax p-5 text-white">
             <h3 className="text-center p-2 fw-bold my-3" >پلی به سوی موفقیت</h3>
@@ -33,7 +33,7 @@ function Section8(){
           </Col>
         </Row>
         {/* <hr /> */}
-        <Row style={{marginTop : "-110px"}}>
+        <Row>
             {Serction8Data.map(Item => (
                 <Section8Item key={Item.id} {...Item}/>
             ))}

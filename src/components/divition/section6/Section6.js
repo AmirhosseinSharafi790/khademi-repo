@@ -9,7 +9,7 @@ function Section6() {
           <Col lg={6} className="border-section6">
             <div>
               <h2>
-                سخنی از مدیر <span className="colorgreen">هنرستان</span>
+                سخنی از مدیر <span className="txt-color">هنرستان</span>
               </h2>
               <p className="text-justify">
                 <b>تلاش</b> کنید همیشه به عنوان یک <b>دانش‌آموز</b> بمانید و از

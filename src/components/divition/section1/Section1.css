@@ -18,7 +18,7 @@
 }
 .animation-sec1::after {
   content: "";
-  border-right: 2px solid #ef476f;
+  border-right: 2px solid #a9abad;
   margin-right: 3px;
   animation: blink 0.5s infinite ease;
   -webkit-animation: blink 0.5s infinite ease;
@@ -39,15 +39,10 @@
   text-align: center;
   transition: all 0.5s;
   color: #212529;
-  /* background-color: #005eff83; */
-  /* background-color: #00007b87; */
-  /* background-color: #346ED1; */
-  /* background-color: #052f788c; */
-  /* background-color: #6494edc6; */
-  /* background-color: #00a69373; */
-  /* background-color: #00bfffd3; */
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: rgba(0, 0, 0, 0.009) 0px 3px 6px, rgba(0, 0, 0, 0.008) 0px 3px 6px;
   padding: 20px;
+  background-color: #00ffff22;
+  border-bottom: 1px solid #00000077;
 }
 .menu-item a {
   text-decoration: none;
@@ -63,7 +58,7 @@
 }
 .menu-item:hover {
   transform: scale(1.1);
-  background-color: #ef476f;
+  background-color: #346ed118;
 }
 @media screen and (max-width: 412px) {
   .mar-top {
@@ -71,7 +66,7 @@
   }
 }
 .bg-icon{
-  color: #45db7c;
+  color: #346ed1;
 }
 
 /* .Link-style{

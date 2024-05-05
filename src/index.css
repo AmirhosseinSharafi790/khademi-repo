@@ -29,10 +29,6 @@
 .Leow{
     font-family: "Loew";
 }
-::selection{
-    background-color: #ef476f;
-    color: #dae5eb;
-}
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -40,19 +36,17 @@
     background: #dae5eb; 
 }
 ::-webkit-scrollbar-thumb {
-    background: #1fd860; 
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
+    background: #346ed151;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #ef476f; 
+    background: #3485d1;
 }
 .m-inline{
     margin-inline: -8px;
 }
-.colorgreen{
-    color: #1fd860;
+.txt-color{
+    color: #346ed1;
 }
 .bg-green{
-    background-color: #1fd860;
+    background-color: #346ed1;
 }
