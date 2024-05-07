@@ -11,19 +11,19 @@
     text-align: justify;
 }
 .accordion-button h2::-moz-focus-inner{
-    border-color: #1fd860 !important;
+    border-color: #346ed148 !important;
     box-shadow: none !important;
     outline: 0 !important;
     background-color: none !important;
 }
 .accordion-button:focus {
-    border-color: #1fd860 !important;
+    border-color: #346ed148 !important;
     box-shadow: none !important;
     outline: 0 !important;
     background-color: none !important;
 }
 .accordion-button:not(.collapsed) {
-    color: #dae5eb !important;
+    color: #f1f5f6 !important;
     background-color: none !important;
     box-shadow: none !important;
     border-bottom: 1px solid #dae5eb !important;
@@ -37,23 +37,23 @@
     cursor: pointer;
     padding: 10px;
     text-align: center !important;
-    border: 1px solid #1fd860 !important;
+    border: 1px solid #346ed116 !important;
     outline: none;
     border-radius: 5px;
     margin-top: 8px;
 }
 .accordion-item:hover {
-    background-color: #1fd860 !important;
-    color: #dae5eb;
+    background-color: #346ed148 !important;
+    color: #212;
     transition: all 0.4s;
 }
 .accordion-button{
     background-color: transparent !important;
-    color: #edf1f3;
+    color: #212;
     transition: all 0.4s;
 }
 .accordion-button:hover{
-    background-color: #1fd860;
-    color: #dae5eb;
+    background-color: #346ed148;
+    color: #212;
     transition: all 0.4s;
 }

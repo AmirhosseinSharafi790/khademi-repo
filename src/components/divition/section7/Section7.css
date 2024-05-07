@@ -1,6 +1,6 @@
 .bacgruond-color-eft{
-    background: rgb(4,190,162);
-    background: linear-gradient(90deg, #1fd86023 0%, #dae5eb 85%);
+    background: #346ed1;
+    background: linear-gradient(90deg, #346ed10e 0%, #346ed107 85%);
 }
 @media screen and (max-width: 576px){
     .display-none{
@@ -9,12 +9,12 @@
 }
 .eft-btn{
     color: #212529;
-    background-color: #c3d9d388;
+    background-color: #346ed124;
     padding: 15px;
     border-radius: 10px;
 }
 .eft-btn:hover{
-    background-color: #ef476f;
+    background-color: #346ed1;
     border-radius: 10px;
     color: #dae5eb;
     padding: 15px;
@@ -22,13 +22,13 @@
 }
 .btn-all{
     color: #dae5eb;
-    background-color: #ef476f;
+    background-color: #346ed1;
     padding: 15px;
     border-radius: 10px;
 }
 .btn-all:hover{
     color: #212529;
-    background-color: #c3d9d388;
+    background-color: #346ed124;
     padding: 15px;
     border-radius: 10px;
     transition: all .5s ease-in-out;

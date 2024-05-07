@@ -48,8 +48,8 @@ function Management() {
       <div className="bg-manager">
         <Row className="align-items-center">
           <Col lg={8}>
-            <h1 className="fw-bold">کادر مدیریت</h1>
-            <p className="text-justify">
+            <h2 className="fw-bold py-3">کادر مدیریت</h2>
+            <p className="text-justify text-dark text-opacity-75">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
               استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
               ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
@@ -64,51 +64,51 @@ function Management() {
               modules={[EffectCards]}
               className="mySwiper style-swiper"
             >
-              <SwiperSlide className="style-swiper-slide">
+              <SwiperSlide className="style-swiper-slide mt-2">
                 <span>
                   <img
                     src={ManagementCadrs[0].img}
-                    className="style-image-manager"
+                    className="style-image-manager img-fluid"
                   />
                 </span>
                 <h3 className="my-2">{ManagementCadrs[0].name}</h3>
                 <span>({ManagementCadrs[0].title})</span>
               </SwiperSlide>
-              <SwiperSlide className="style-swiper-slide">
+              <SwiperSlide className="style-swiper-slide mt-2">
                 <span>
                   <img
                     src={ManagementCadrs[1].img}
-                    className="style-image-manager"
+                    className="style-image-manager img-fluid"
                   />
                 </span>
                 <h3 className="my-2">{ManagementCadrs[1].name}</h3>
                 <span>({ManagementCadrs[1].title})</span>
               </SwiperSlide>
-              <SwiperSlide className="style-swiper-slide">
+              <SwiperSlide className="style-swiper-slide mt-2">
                 <span>
                   <img
                     src={ManagementCadrs[2].img}
-                    className="style-image-manager"
+                    className="style-image-manager img-fluid"
                   />
                 </span>
                 <h3 className="my-2">{ManagementCadrs[2].name}</h3>
                 <span>({ManagementCadrs[2].title})</span>
               </SwiperSlide>
-              <SwiperSlide className="style-swiper-slide">
+              <SwiperSlide className="style-swiper-slide mt-2">
                 <span>
                   <img
                     src={ManagementCadrs[3].img}
-                    className="style-image-manager"
+                    className="style-image-manager img-fluid"
                   />
                 </span>
                 <h3 className="my-2">{ManagementCadrs[3].name}</h3>
                 <span>({ManagementCadrs[3].title})</span>
               </SwiperSlide>
-              <SwiperSlide className="style-swiper-slide">
+              <SwiperSlide className="style-swiper-slide mt-2">
                 <span>
                   <img
                     src={ManagementCadrs[4].img}
-                    className="style-image-manager"
+                    className="style-image-manager img-fluid"
                   />
                 </span>
                 <h3 className="my-2">{ManagementCadrs[4].name}</h3>
