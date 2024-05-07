@@ -1,5 +1,28 @@
-.box-news{
-    background-image: url("../../assets/images/blob-scene-haikei\ \(1\).svg");
-    background-position: center;
-    background-size: cover;
+.box-bg {
+  background-color: #346ed118;
+  border: 1px solid #00000029;
+}
+.box-bg:hover{
+  background-color: #346ed127;
+    scale: 1.05;
+    transition: all .3s;
+}
+.text-color {
+  color: #29292a;
+}
+.btn-style {
+  background-color: #346ed124 !important;
+  border: none;
+  text-decoration: none;
+  opacity: 0.8;
+  padding: 10px 20px;
+  color: #346ed1e7 !important;
+  border-radius: 10px;
+  border: 1px solid #00000029 !important;
+}
+.btn-style:hover {
+  background-color: #346ed1 !important;
+  opacity: 1;
+  color: #dae5eb !important;
+  transition: all 0.5s;
 }

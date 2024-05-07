@@ -1,0 +1,40 @@
+.btn-style {
+  background-color: #346ed124;
+  border: none;
+  text-decoration: none;
+  opacity: 0.8;
+  padding: 10px 20px;
+  color: #212 !important;
+  border-radius: 10px;
+  border: 1px solid #00000029 !important;
+  margin-inline : 20px;
+}
+.btn-style:hover {
+  background-color: #346ed1;
+  opacity: 1;
+  color: #dae5eb !important;
+  transition: all 0.5s;
+}
+.alignment{
+    text-align: right !important;
+}
+.bg-input{
+    background-color: #346ed124 !important;
+}
+.baseStyle{
+    max-width : 500px !important;
+    margin : auto;
+}
+#alignments{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh !important;
+    /* width: 100wh; */
+}
+label{
+    cursor: pointer;
+}
+/* .bg-body-color{
+    background-color: #01f6d9cc;
+} */

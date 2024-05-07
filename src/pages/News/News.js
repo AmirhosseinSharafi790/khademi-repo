@@ -38,7 +38,7 @@ function News(){
         <>
             <Header/>
             <Container>
-            <Row className="my-2 d-flex  align-items-center">
+            <Row className="my-2 d-flex align-items-center">
                     {NewsData.map(Item => (
                         <NewsItem key={Item.id} {...Item}/>
                     ))}
