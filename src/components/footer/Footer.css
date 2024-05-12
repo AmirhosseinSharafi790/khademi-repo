@@ -1,35 +1,35 @@
-.footer{
-    background-color: #abb8c3;
-    color: #212529;
-    margin: -100px 0 0 0;
-  }
-  .item a{
-    color: #212529;
-  }
-  .item a:hover{
-    color: #ef476f;
-    padding-right: 5px;
-    transition: all .5s;
-  }
-  
-  .a-style-footer-bottom-right a{
-    color: #212529;
-    text-decoration: none;
-  }
-  .a-style-footer-bottom-right a:hover{
-    color: #04bea2;
-    padding-right: 5px;
-    transition: all .5s;
-  }
-  .hover-app1 , .hover-app2 , .hover-app3{
-    color: #212529;
-  }
-  .hover-app1:hover{
-    color: #007bff;
-  }
-  .hover-app2:hover{
-    color: #ef476f;
-  }
-  .hover-app3:hover{
-    color: orange;
-  }
+.footer {
+  background-color: #abb8c3;
+  color: #212529;
+  /* margin: -100px 0 0 0; */
+}
+.item a {
+  color: #212529;
+}
+.item a:hover {
+  color: #dcd9d9 !important;
+  padding-right: 5px;
+  transition: all 0.5s;
+}
+
+.a-style-footer-bottom-right a {
+  color: #212529;
+  text-decoration: none;
+}
+.hover-app1,
+.hover-app2,
+.hover-app3 {
+  color: #ffffffba;
+}
+.hover-app1:hover {
+  color: #007bff;
+}
+.hover-app2:hover {
+  color: #ef476f;
+}
+.hover-app3:hover {
+  color: orange;
+}
+.fa-arrow-left:hover {
+  color: #fff;
+}

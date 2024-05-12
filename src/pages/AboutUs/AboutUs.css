@@ -1,9 +1,17 @@
-.bg{
-    background-color: #04bea2;
+.bg {
+  background-color: #04bea2;
 }
-.fs-12{
-    font-size: 13.5px;
+.fs-12 {
+  font-size: 13.5px;
 }
-.border-style{
-    border-bottom: 2px solid #04bea2 !important;
+.text-color {
+  color: #29292a !important;
+}
+.bg-box {
+  background-color: #346ed118 !important;
+  border: 1px solid #00000029 !important;
+}
+.bg-box:hover {
+  background-color: #346ed127 !important;
+  transition: all 0.3s;
 }

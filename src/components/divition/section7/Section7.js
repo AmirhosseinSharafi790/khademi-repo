@@ -10,7 +10,7 @@ function Section7(){
                 <img src={Cup} className="img-fluid display-none p-3" alt=""/>
             </Col>
             <Col sm={12} md={6}>
-                <h3 className="p-3 text-danger">گوشه‌ای از افتخارت مجموعه</h3>
+                <h3 className="p-3 text-dark text-center">گوشه‌ای از افتخارت مجموعه</h3>
                 <Row className="my-1 p-3 rounded align-items-center justify-content-center">
                 <Col className="col-8 text-center">
                     <Link className="eft-btn text-decoration-none d-block" to={"/honors"}>

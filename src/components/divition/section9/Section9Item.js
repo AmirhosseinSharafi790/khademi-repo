@@ -5,7 +5,7 @@ function Section9Item({title , desc , id}){
         <>
             <Accordion.Item eventKey={id}>
                 <Accordion.Header>{title}</Accordion.Header>
-                <Accordion.Body>{desc}</Accordion.Body>
+                <Accordion.Body className="text-start">{desc}</Accordion.Body>
             </Accordion.Item>
         </>
     )
