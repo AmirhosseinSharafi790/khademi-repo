@@ -6,6 +6,8 @@ import Contact from "./pages/Contact/Contact";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Honors from "./pages/Honors/Honors";
 import IndexPage from "./pages/Login&Reg/IndexPage";
+import Login from "./pages/Login&Reg/Login";
+import Sigup from "./pages/Login&Reg/Sigup";
 const router = [
   { path: "/", element: <Home /> },
   { path: "/news", element: <News /> },
@@ -14,6 +16,10 @@ const router = [
   { path: "/contact", element: <Contact /> },
   { path: "/aboutus", element: <AboutUs /> },
   { path: "/honors", element: <Honors /> },
-  {path: "/login&reg", element: <IndexPage />},
+  {path : "/login-sigup" , element: <IndexPage/> , children : [
+    {path : "sigup" , element: <Sigup/>},
+    {path : "login" , element: <Login/>},
+  ]
+  }
 ];
 export default router;
