@@ -84,8 +84,7 @@ function Footer() {
               lg={6}
               className="d-flex justify-content-center"
             >
-<<<<<<< HEAD
-              <div className="a-style-footer-bottom-right d-flex">
+              
                 <Link to = ''>
                   <p>طراحی و پشتیبانی</p>
                 </Link>
@@ -97,7 +96,6 @@ function Footer() {
                 <a href="./sections/support/Support.html" className="text-decoration-none">
                   <p className="text-white d-inline border-bottom border-white p-1">طراحی و پشتیبانی</p>
                 </a>
->>>>>>> e982f31b18a4004e6cb0a917e2ea826af7ed12dd
               </div>
             </Col>
             <Col lg={6} className="text-end d-flex my-2 justify-content-center">
