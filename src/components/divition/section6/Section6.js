@@ -1,7 +1,11 @@
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row, Modal } from "react-bootstrap";
 import imagemanager from "../../../assets/images/imageManager.png";
+import { useState } from 'react';
 import "./Section6.css";
 function Section6() {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <div className="section-6 my-5">
       <Container className="container-section6">
@@ -22,8 +26,21 @@ function Section6() {
                 کنید. به خوبی از این دو فرصت استفاده کنید و هر روز یک قدم
                 بزرگ‌تر به سوی بهبود و پیشرفت بردارید.
               </p>
-              <button className="btn-section6 bg-green">ارتباط با من</button>
+              <button onClick={handleShow} className="btn-section6 bg-green">ارتباط با من</button>
             </div>
+            <Modal show={show} onHide={handleClose}>
+              <Modal.Header closeButton>
+                <Modal.Title>شماره تماس مدیر هنرستان</Modal.Title>
+              </Modal.Header>
+              <Modal.Body className="fs-4">
+              09131577844 جلیل رفیعی
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="primary" onClick={handleClose}>
+                  بستن
+                </Button>
+              </Modal.Footer>
+            </Modal>
           </Col>
           <Col lg={6} className="none-sm">
             <img src={imagemanager} className="img-fluid" />

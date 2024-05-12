@@ -13,42 +13,50 @@ function Section1(){
 
             id : 1,
             icon : <FaUsersLine size={'40px'}/> ,
-            textValue : 'ورود به پورتال'
+            textValue : 'ورود به پورتال',
+            href :''
         },
         {
             id : 2,
             icon : <FaRegNewspaper size={'40px'}/> ,
-            textValue : 'اخبار و اطلاعیه'
+            textValue : 'اخبار و اطلاعیه',
+            href :'/news'
         },
         {
             id : 3,
             icon : <SlPicture size={'40px'} /> ,
-            textValue : 'گالری تصاویر'
+            textValue : 'گالری تصاویر',
+            href :'/album'
         },
         {
             id : 4,
             icon : <FaSchoolCircleCheck size={'40px'} />,
-            textValue : 'پیش ثبت نام'
+            textValue : 'پیش ثبت نام',
+            href :''
         },
         {
             id : 5,
             icon : <MdConnectWithoutContact size={'40px'}/> ,
-            textValue : 'ارتباط با هنرستان'
+            textValue : 'ارتباط با هنرستان',
+            href :'/contact'
         },
         {
             id : 6,
             icon : <MdPermContactCalendar  size={'40px'}/>,
-            textValue : 'درباره هنرستان'
+            textValue : 'درباره هنرستان',
+            href :'/aboutus'
         },
         {
             id : 7,
             icon : <TfiCup size={'40px'}/>,
-            textValue : 'افتخارات'
+            textValue : 'افتخارات',
+            href :'/honors'
         },
         {
             id : 8,
             icon : <GrUserAdmin size={'40px'}/>,
-            textValue : 'کادر مدیریت'
+            textValue : 'کادر مدیریت',
+            href :''
         },
         
     ]

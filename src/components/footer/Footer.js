@@ -2,6 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import "./Footer.css";
 import FooterItemsR from "./FooterItemsR";
 import FooterL from "./FooterL";
+import { Link } from "react-router-dom";
 function Footer() {
   const ItemsR = [
     {
@@ -41,13 +42,13 @@ function Footer() {
       id: 3,
       icon: "text-white text-opacity-50 fs-5 fa-solid fa-image",
       desc: "گالری تصاویر",
-      href: "",
+      href: "/album",
     },
     {
       id: 4,
       icon: "text-white text-opacity-50 fs-5 fa-solid fa-newspaper",
       desc: "اخبار و اطلاعیه",
-      href: "",
+      href: "/news/",
     },
   ];
   return (
@@ -83,6 +84,14 @@ function Footer() {
               lg={6}
               className="d-flex justify-content-center"
             >
+              
+                <Link to = ''>
+                  <p>طراحی و پشتیبانی</p>
+                </Link>
+                <Link to = ''>
+                  <i className="fa-solid fa-arrow-left ms-4 mt-1"></i>
+                </Link>
+=======
               <div className="d-flex my-2">
                 <a href="./sections/support/Support.html" className="text-decoration-none">
                   <p className="text-white d-inline border-bottom border-white p-1">طراحی و پشتیبانی</p>
