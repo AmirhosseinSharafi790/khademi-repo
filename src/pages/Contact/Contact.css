@@ -1,11 +1,11 @@
 .Contact{
-    border-right: 5px solid #04a48c;
-    border-top: 5px solid #04a48c;
+    border-right: 5px solid #3485d1;
+    border-top: 5px solid #3485d1;
     border-radius: 0 15px 0 15px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   } 
   .color-green{
-    color: #04a48c;
+    color: #3485d1;
   }
   .item a{
     color: #212529;

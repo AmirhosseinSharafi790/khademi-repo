@@ -37,7 +37,7 @@ function Section4() {
     <Container>
       <Row>
         {PartsValue.map((part) => (
-          <Section4Item {...part} />
+          <Section4Item key={part.id} {...part} />
         ))}
       </Row>
     </Container>
