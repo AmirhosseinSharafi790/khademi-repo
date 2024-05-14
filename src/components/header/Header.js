@@ -25,7 +25,7 @@ function Header(){
                     <img src={Logo} className="img-fluid border-logo fiexd-logo shadow" style={{width : '50px' , height : '50px' , borderColor : "#346ed1" , borderRadius : '50%'}} alt="" />
                 </Navbar.Brand>
                 <div className="my-2" id="display">
-                    <NavLink to={"/login-sigup"} className="btn-login mx-1">ورود به پورتال</NavLink>
+                    <NavLink to={"/loginSigup"} className="btn-login mx-1">ورود به پورتال</NavLink>
                         <Button onClick={handleShow} className="ms-4" style={{backgroundColor : "transparent" , border : "none"}}>
                             <i className="bi bi-search text-dark fs-4 fw-bold bg-nav"></i>
                         </Button>
@@ -76,7 +76,7 @@ function Header(){
                       <NavLink to={"/rollcall"} className="nav-link" id="dsply5">سامانه حضور و غیاب</NavLink> */}
                     </Nav>
                     <div className="my-1" id="menu-hide">
-                    <NavLink to={"/login-sigup"} className="btn-login mx-1">ورود به پورتال</NavLink>
+                    <NavLink to={"/loginSigup"} className="btn-login mx-1">ورود به پورتال</NavLink>
                     <Button onClick={handleShow} className="ms-4" style={{backgroundColor : "transparent" , border : "none"}}>
                         <i className="bi bi-search text-dark fs-4 bg-nav"></i>
                     </Button>
