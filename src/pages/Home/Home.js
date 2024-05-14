@@ -15,18 +15,18 @@ import ControlledCarousel from "../../components/divition/section2/Section2";
 function Home(){
     return(
         <>
-        <Header/>
+         <Header/>
         <Section1 />
         <Section2/>
         <Section4/>
-        <Section3/>
+        <Section3/> 
         {/* <SectionCounterBox/> */}
         <Section6 />
         <Section7 />
         <Section8/>
         <Section9/>
         <Management />
-        <Footer />
+        <Footer /> 
         </>
     )
 }

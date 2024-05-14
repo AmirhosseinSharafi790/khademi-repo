@@ -1,52 +1,29 @@
-import { Container } from "react-bootstrap";
-
+import { Col, Container, Row } from "react-bootstrap";
+import "./NotFound.css";
+import Image from "../../assets/images/404.jpg";
+import { Link } from "react-router-dom";
 function NotFound() {
   return (
-    <section class="wrapper">
+    <div className="NotFound">
       <Container>
-        <div id="scene" class="scene">
-          <div class="circle" data-depth="1.2"></div>
-
-          <div class="one" data-depth="0.9">
-            <div class="content">
-              <span class="piece"></span>
-              <span class="piece"></span>
-              <span class="piece"></span>
-            </div>
+      <Row>
+        <Col sm = {12}>
+          <div>
+            <img src={Image} className="img-fluid img-404" />
           </div>
-
-          <div class="two" data-depth="0.60">
-            <div class="content">
-              <span class="piece"></span>
-              <span class="piece"></span>
-              <span class="piece"></span>
-            </div>
+        </Col>
+        <Col sm = {12}>
+          <div className="d-block d-lg-flex align-items-center justify-content-center">
+            <h2 className="mx-5">
+              صفحه مورد نظر{" "}
+              <span className="color">یافت</span> نشد
+            </h2>
+            <Link to='/'><button className="btn-404 mt-3 mt-lg-0">بازگشت به صفحه اصلی</button></Link>
           </div>
-
-          <div class="three" data-depth="0.40">
-            <div class="content">
-              <span class="piece"></span>
-              <span class="piece"></span>
-              <span class="piece"></span>
-            </div>
-          </div>
-
-          <p class="p404" data-depth="0.50">
-            404
-          </p>
-          <p class="p404" data-depth="0.10">
-            404
-          </p>
-        </div>
-
-        <div class="text">
-                <article>
-                    <p>Uh oh! Looks like you got lost. <br>Go back to the homepage if you dare!</br></p>
-                    <button>i dare!</button>
-                </article>
-            </div>
+        </Col>
+      </Row>
       </Container>
-    </section>
+    </div>
   );
 }
 export default NotFound;

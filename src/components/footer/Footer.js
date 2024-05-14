@@ -53,7 +53,7 @@ function Footer() {
   ];
   return (
     <div>
-      <div className="m-inline">
+      <div className="">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#346ed1ba"
@@ -62,7 +62,7 @@ function Footer() {
           ></path>
         </svg>
       </div>
-      <div className="footer m-inline" style={{ backgroundColor: "#346ed1ba" }}>
+      <div className="footer" style={{ backgroundColor: "#346ed1ba" }}>
         <Container>
           <Row className="align-items-start justify-content-around">
             <Col lg={4} className="mt-5 text-start">

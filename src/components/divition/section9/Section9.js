@@ -43,7 +43,7 @@ function Section9(){
         }
     ]
     return(
-        <div className="section9 p-5 mt-5 m-inline">
+        <div className="section9 p-5 mt-5">
             <Container>
                 <Row className="justify-content-center align-items-center">
                 <Col sm={12} md={4}>

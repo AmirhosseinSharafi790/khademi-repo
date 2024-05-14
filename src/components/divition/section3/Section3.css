@@ -1,130 +1,126 @@
 .button {
-    border-radius: 4px;
-    background-color: #04bea2;
-    border: none;
-    color: #dae5eb;
-    text-align: center;
-    font-size: 18px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-    padding: 20px;
-  }
-  
-  .button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  .button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    left: 40px;
-    transition: 0.5s;
-  }
-  .button:hover span {
-    padding-right: 15px;
-  }
-  
-  .button:hover span:after {
-    opacity: 1;
-    left: -15px;
-    font-size: 23px;
-  }
-  #arrow-hover:hover{
-    padding-right: 5px;
-    transition: all .5s;
-  }
-  .align-items-center .col-md-6 .border-white{
-    opacity: .75;
-  }
-  .align-items-center .col-md-6 .border-white:hover{
-    opacity: 1;
-    cursor: pointer;
-    transition: all .5s;
-  }
-  .swiper-container {
-    width: 100%;
-    height: 100%;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    /* background: none !important; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  @media screen and (min-width : 1050px){
-    .swiper-slide{
-      margin-top: -100px !important;
-    }
+  border-radius: 4px;
+  background-color: #04bea2;
+  border: none;
+  color: #dae5eb;
+  text-align: center;
+  font-size: 18px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  padding: 20px;
 }
 
-  swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 40px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 15px;
+}
 
-  swiper-container {
-    width: 100%;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.button:hover span:after {
+  opacity: 1;
+  left: -15px;
+  font-size: 23px;
+}
+#arrow-hover:hover {
+  padding-right: 5px;
+  transition: all 0.5s;
+}
+.align-items-center .col-md-6 .border-white {
+  opacity: 0.75;
+}
+.align-items-center .col-md-6 .border-white:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
 
-  swiper-slide {
-    background-size: cover;
-    background-position: center;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1050px) {
+  .swiper-slide {
+    margin-top: -100px !important;
   }
+}
 
-  .mySwiper {
-    height: 80%;
-    width: 100%;
-  }
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  .mySwiper2 {
-    height: 20%;
-    box-sizing: border-box;
-    padding: 10px 0;
-  }
+swiper-container {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .mySwiper2 swiper-slide {
-    width: 25%;
-    height: 100%;
-    opacity: 0.4;
-  }
+swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
 
-  .mySwiper2 .swiper-slide-thumb-active {
-    opacity: 1;
-  }
+.mySwiper {
+  height: 80%;
+  width: 100%;
+}
 
-  swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-@media screen and (min-width : 1050px){
-    .width-height{
+.mySwiper2 {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper2 swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper2 .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (min-width: 1050px) {
+  .width-height {
     width: 100%;
     height: 450px;
     margin-bottom: 5px;
-    }
+  }
 }
 :root {
   --swiper-theme-color: #ef476f !important;
   --swiper-navigation-size: 50px !important;
 }
-@media screen and (max-width : 500px){
-  .mt-breakpoint{
-    margin-top: -230px;
-    margin-bottom: -170px !important;
-  }
+.padding-G{
+  padding-left: 40px;
 }

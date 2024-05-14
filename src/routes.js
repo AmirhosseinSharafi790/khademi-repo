@@ -8,6 +8,8 @@ import Honors from "./pages/Honors/Honors";
 import IndexPage from "./pages/Login&Reg/IndexPage";
 import Login from "./pages/Login&Reg/Login";
 import Sigup from "./pages/Login&Reg/Sigup";
+import { element } from "prop-types";
+import NotFound from "./pages/NotFound/NotFound";
 const router = [
   { path: "/", element: <Home /> },
   { path: "/news", element: <News /> },
@@ -20,6 +22,7 @@ const router = [
     {path : "sigup" , element: <Sigup/>},
     {path : "login" , element: <Login/>},
   ]
-  }
+  },
+  {path : '*' , element : <NotFound />}
 ];
 export default router;

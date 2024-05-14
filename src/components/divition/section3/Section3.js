@@ -1,6 +1,5 @@
 import './Section3.css'
 import {Container , Row} from 'react-bootstrap'
-// import Section3Items from './Section3items'
 import ImgSection3 from '../../../assets/images/section2-bac.jpg'
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -33,12 +32,9 @@ function Section3(){
     return(
         <div>
             <Container className='mb-5 p-1 text-center align-items-center rounded'>
-                <Row className='mt-1 d-flex align-items-center text-white text-end padding-G'>
-                    <p><span className="text-dark">گالری تصاویر</span> <a className="bi bi-arrow-left fs-4 mx-2 opacity-75 text-dark" href="./sections/photoAlbum/album.html" id="arrow-hover"></a></p>
+                <Row>
+                    
                 </Row>
-                            {/* {ItemsS3.map(Item => (
-                                <Section3Items key={Item.id} {...Item}/>
-                            ))} */}
                 <div className='px-5'>
                     <div className="slider-container">
                         <Swiper
