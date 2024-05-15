@@ -1,26 +1,39 @@
 import "./IndexPage.css"
-import { Form, Button , Col } from "react-bootstrap"
+import { useState } from "react"
+import { Link } from "react-router-dom"
 function Sigup(){
+    
+    const [meliCode , setMeliCode] = useState("")
+    const [pass , setPass] = useState("")
+    const [rePass , setRePass] = useState("")
+    
+    const loginHandler = ()=>{
+
+    }
     return(
-        <Col sm={12} className="mt-4">
-            <Form.Group className="baseStyle mb-3" controlId="exampleForm.ControlInput1">
-                <Form.Label className="mb-2 alignment border-bottom border-dark">نام کاربری :</Form.Label>
-                <Form.Control className="p-3 bg-input" type="text" placeholder="نام کاربری خود را وارد کنید"/>
-            </Form.Group>
-            <Form.Group className="baseStyle mb-3" controlId="exampleForm.ControlInput2">
-                <Form.Label className="mb-2 alignment border-bottom border-dark">رمز عبور :</Form.Label>
-                <Form.Control className="p-3 bg-input" type="text" placeholder="رمز عبور خود را وارد کنید"/>
-            </Form.Group>
-            <Form.Group className="baseStyle mb-3" controlId="exampleForm.ControlInput3">
-                <Form.Label className="mb-2 alignment border-bottom border-dark">رمز عبور :</Form.Label>
-                <Form.Control className="p-3 bg-input" type="text" placeholder="تکرار رمز عبور خود را وارد کنید"/>
-            </Form.Group>
-            <Form.Group className="baseStyle mt-5 text-center">
-                <Button variant="" className="btn-style w-100 m-0 p-4">
-                    ثبت نام
-                </Button>
-            </Form.Group>
-        </Col>
+        <>
+        <section>
+            <div className="login">
+                <h2>ثبت نام</h2>
+                <div className="inputBox">
+                    <input type="text" onChange={(e) => setMeliCode(e.target.value)} placeholder="کد ملی" />
+                </div>
+                <div className="inputBox">
+                    <input type="password" onChange={(e) => setPass(e.target.value)} placeholder="رمز عبور"/>
+                </div>
+                <div className="inputBox">
+                    <input type="password" onChange={(e) => setRePass(e.target.value)} placeholder="تکرار رمز عبور"/>
+                </div>
+                <div className="inputBox">
+                    <input type="submit" value="ثبت نام" id="btn"/>
+                </div>
+                <div className="group">
+                    <Link to={"/forgetPass"}>فراموشی رمز عبور</Link>
+                    <Link to={"/loginSigup"} onClick={loginHandler}>ورود</Link>
+                </div>
+            </div>
+        </section>
+        </>
     )
 }
 export default Sigup

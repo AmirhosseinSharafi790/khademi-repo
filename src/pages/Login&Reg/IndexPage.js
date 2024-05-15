@@ -1,30 +1,40 @@
+import { Link } from "react-router-dom"
 import "./IndexPage.css"
-import { Form } from "react-bootstrap"
-import Sigup from "./Sigup";
-import Login from "./Login";
-import { useNavigate } from "react-router-dom";
+import { Col, Row } from "react-bootstrap"
+import { useState } from "react"
 function IndexPage(){
-    const navigate = useNavigate();
-    const clickSigupHandler = ()=>{
-        navigate(<Sigup/>)
-    }
-    const clickLoginHandler = ()=>{
-        navigate(<Login/>)
-    }
 
-    
+    const [meliCode , setMeliCode] = useState("")
+    const [pass , setPass] = useState("")
+
+    // کد ملی و رمز عبور باید با دیتابیس همگام سازی شود
+    const loginHandler = ()=>{
+
+    }
     return(
         <>
-            <Form className="mt-2 baseStyle" id="alignments">
-                <fieldset className="p-0 rounded">
-                    <legend className="text-center p-2 bg-info bg-opacity-10 rounded">
-                        <button className="btn-style" onClick={clickLoginHandler}>ورود</button>
-                        <button className="btn-style" onClick={clickSigupHandler}>ثبت نام</button>
-                    </legend>
-                    {/* <Login/> */}
-                    <Sigup/>
-                </fieldset>
-            </Form>
+        <section>
+            <div className="login">
+                <h2>ورود</h2>
+                <div className="inputBox">
+                    <input type="text" onChange={(e) => setMeliCode(e.target.value)} placeholder="کد ملی" />
+                </div>
+                <div className="inputBox">
+                    <input type="password" onChange={(e) => setPass(e.target.value)} placeholder="رمز عبور"/>
+                </div>
+                <div className="inputBox">
+                    <input type="submit" value="ورود" id="btn"/>
+                </div>
+                <Row className="group">
+                    <Col className="my-3" sm={12} md={6}>
+                        <Link to={"/forgetPass"}>فراموشی رمز عبور</Link>
+                    </Col>
+                    <Col className="my-3" sm={12} md={6}>
+                        <Link to={"/sigup"} onClick={loginHandler}>ثبت نام</Link>
+                    </Col>
+                </Row>
+            </div>
+        </section>
         </>
     )
 }
