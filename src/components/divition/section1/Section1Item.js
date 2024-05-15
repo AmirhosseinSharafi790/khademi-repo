@@ -5,7 +5,7 @@ function Section1Item({textValue , icon , href}){
     return(
         <Col md = {6} xl = {3}>
 
-        <div className="menu-item animate__animated animate__slideInRight">
+        <div className="menu-item">
             <Link to = {href}><span className='bg-icon'>{icon}</span></Link>
             <Link to = {href}><b>{textValue}</b></Link>
         </div>

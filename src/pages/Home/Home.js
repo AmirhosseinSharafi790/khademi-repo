@@ -10,8 +10,7 @@ import Section8 from "../../components/divition/section8/Section8";
 import Section9 from "../../components/divition/section9/Section9";
 import Management from "../../components/divition/Managment/Managment";
 import "./Home.css"
-// import SectionCounterBox from "../../components/divition/Section5/SectionCounterBox";
-import ControlledCarousel from "../../components/divition/section2/Section2";
+import SectionCounterBox from "../../components/divition/Section5/SectionCounterBox";
 function Home(){
     return(
         <>
@@ -20,7 +19,7 @@ function Home(){
         <Section2/>
         <Section4/>
         <Section3/> 
-        {/* <SectionCounterBox/> */}
+        <SectionCounterBox/>
         <Section6 />
         <Section7 />
         <Section8/>
