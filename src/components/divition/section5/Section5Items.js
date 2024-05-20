@@ -1,9 +1,9 @@
-import "./Section5Counter.css";
+import "./Section5.css";
 import {Container , Row} from 'react-bootstrap'
-import Section5Counter from "./Section5Counter";
+import Section5 from "./Section5";
 import PureCounter from "@srexi/purecounterjs";
 const pure = new PureCounter();
-function SectionCounterBox() {
+function Section5Items() {
 
   let CounterItems = [
     {
@@ -41,7 +41,7 @@ function SectionCounterBox() {
       <Container>
         <Row>
           {CounterItems.map(CounterItem => (
-            <Section5Counter key={CounterItem.id} {...CounterItem}/>
+            <Section5 key={CounterItem.id} {...CounterItem}/>
           ))}
         </Row>
       </Container>
@@ -49,4 +49,4 @@ function SectionCounterBox() {
   )
 }
 
-export default SectionCounterBox;
+export default Section5Items;

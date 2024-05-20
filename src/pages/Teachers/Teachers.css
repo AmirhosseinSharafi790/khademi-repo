@@ -1,0 +1,5 @@
+.card-hover:hover{
+    border: 1px solid #346ed1;
+    scale: 1.05 !important;
+    transition: all .3s;
+}

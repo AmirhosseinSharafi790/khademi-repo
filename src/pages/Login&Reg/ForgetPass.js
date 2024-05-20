@@ -11,6 +11,9 @@ function ForgetPass(){
                 <div className="inputBox">
                     <input type="text" placeholder="کد ملی" />
                 </div>
+                <div className="inputBox">
+                    <input type="submit" value="رفتن" id="btn"/>
+                </div>
                 <Row className="group">
                     <Col className="my-3" sm={12} md={6}>
                         <Link to={""}>تغییر رمز عبور</Link>

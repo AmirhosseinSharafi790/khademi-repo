@@ -45,7 +45,7 @@ function AboutUs(){
             <Container>
                 <Row>
                     <Col sm={12} md={4} className="mt-3">
-                        <Card className="bg-box bg-opacity-50">
+                        <Card className="bg-info">
                         <Card.Header className="text-dark">دسته بندی</Card.Header>
                         <ListGroup variant="flush">
                             <ListGroup.Item>
@@ -59,7 +59,7 @@ function AboutUs(){
                             </ListGroup.Item>
                         </ListGroup>
                         </Card>
-                        <Card className="my-3 shadow bg-box">
+                        <Card className="my-3 shadow ">
                         <Card.Img variant="top" src={img} />
                         <Card.Body className="bg-box">
                             <Card.Title className="my-3 text-color">حاج عباس خادمی</Card.Title>

@@ -23,9 +23,6 @@
 .nav-link:hover {
   color: #346ed1;
 }
-/* .border-logo{
-  border: 2px solid #346ed1;
-} */
 #display {
   display: flex;
   justify-content: center;
@@ -43,15 +40,15 @@
 } 
 @media screen and (max-width: 990px) {
   #display {
-    display: flex;
+    display: flex !important;
   }
   #dsply , #dsply1 , #dsply2 ,
   #dsply3 , #dsply4 
   , #dsply5{
-    display: flex;
+    display: flex !important;
   }
   #menu-hide {
-    display: none;
+    display: none !important;
   }
 }
 @media screen and (max-width: 520px) {
