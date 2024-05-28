@@ -1,26 +1,32 @@
 .section-A {
   color: #212529;
 }
-.section2 {
+/* .section2 {
   background-image: url("../../../assets/images/section2-bac.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-}
+} */
 .counterBox {
   background-color: #04bea229;
   margin: 10px 0;
   text-align: center;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 77% 23% 44% 56% / 51% 63% 37% 49%;
   width: 70%;
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   color: #dae5eb;
 }
+.counterBox p{
+  color: #212529;
+}
+.counterBox .sizeCount{
+  color: #212529;
+}
 .icon-Size {
   font-size: 40px;
-  color: #04bea2;
+  color: #346ed1;;
 }
 .number-counterBox,
 .number-counterBox-M {
