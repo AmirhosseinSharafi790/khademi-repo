@@ -10,7 +10,7 @@ function SlideShow({image , title , desc}){
             </Col>
             <Col sm={12} md={6}>
                 <h5 className="p-2 my-3 text-dark opacity-50 lh-base text-justify">{title}</h5>
-                <p className="p-2 my-3 text-truncate text-justify fs-12">{desc}</p>
+                <p className="p-2 my-3 text-justify fs-12">{desc}</p>
             </Col>
         </Row>
         </>
