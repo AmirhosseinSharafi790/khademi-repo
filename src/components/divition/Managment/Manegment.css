@@ -35,12 +35,12 @@
 }
 
 .bg-manager {
-  padding: 50px;
+  padding: 80px;
   background: #c5cfd5;
   background: linear-gradient(
     90deg,
     #346ed182 10%,
-    #346ed13b 85%
+    #346ed120 85%
   );
-  border-radius: 80px 0px 80px 0;
+  border-radius: 90px 0px 90px 0;
 }

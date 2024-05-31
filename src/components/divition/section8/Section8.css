@@ -36,7 +36,7 @@
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    mix-blend-mode: darken;
+    mix-blend-mode: multiply !important;
 }
 .text-color{
     color: #346ed1;

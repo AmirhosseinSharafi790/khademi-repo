@@ -1,6 +1,8 @@
 import { Button, Col, Container, Row, Modal } from "react-bootstrap";
 import imagemanager from "../../../assets/images/imageManager.png";
-import { useState } from 'react';
+import { useState } from "react";
+import { FaQuoteRight } from "react-icons/fa";
+import { FaQuoteLeft } from "react-icons/fa";
 import "./Section6.css";
 function Section6() {
   const [show, setShow] = useState(false);
@@ -13,7 +15,9 @@ function Section6() {
           <Col lg={6} className="border-section6">
             <div>
               <h2>
+                <FaQuoteRight className="ms-2" size="25px" color="#346ed190" />
                 سخنی از مدیر <span className="txt-color">هنرستان</span>
+                <FaQuoteLeft className="ms-2" size="25px" color="#346ed190" />
               </h2>
               <p className="text-justify">
                 <b>تلاش</b> کنید همیشه به عنوان یک <b>دانش‌آموز</b> بمانید و از
@@ -26,15 +30,15 @@ function Section6() {
                 کنید. به خوبی از این دو فرصت استفاده کنید و هر روز یک قدم
                 بزرگ‌تر به سوی بهبود و پیشرفت بردارید.
               </p>
-              <button onClick={handleShow} className="btn-section6 bg-green">ارتباط با من</button>
+              <button onClick={handleShow} className="btn-section6 bg-green">
+                ارتباط با من
+              </button>
             </div>
             <Modal show={show} onHide={handleClose}>
               <Modal.Header closeButton>
                 <Modal.Title>شماره تماس مدیر هنرستان</Modal.Title>
               </Modal.Header>
-              <Modal.Body className="fs-4">
-              09131577844 جلیل رفیعی
-              </Modal.Body>
+              <Modal.Body className="fs-4">09131577844 جلیل رفیعی</Modal.Body>
               <Modal.Footer>
                 <Button variant="primary" onClick={handleClose}>
                   بستن

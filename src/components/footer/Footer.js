@@ -3,53 +3,70 @@ import "./Footer.css";
 import FooterItemsR from "./FooterItemsR";
 import FooterL from "./FooterL";
 import { Link } from "react-router-dom";
+import { FaCopyright, FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import { IoCodeWorking } from "react-icons/io5";
+import { FaLocationDot, FaPhoneFlip, FaRegNewspaper, FaSchoolCircleCheck } from "react-icons/fa6";
+import { SlPicture } from "react-icons/sl";
+import { MdPermContactCalendar } from "react-icons/md";
 function Footer() {
   const ItemsR = [
     {
       id: 1,
-      icon: "text-white text-opacity-50 fs-5 fa-solid fa-phone-volume",
+      icon: <FaPhoneFlip size={"25px"} className="icon-color" />,
       desc: "شماره هنرستان :",
       hrefPhone: "tel:+03536217013",
       phone: "36217013-035",
     },
     {
       id: 2,
-      icon: "text-white text-opacity-50 fs-5 fa-solid fa-phone-volume",
+      icon: <FaPhoneFlip size={"25px"} className="icon-color" />,
       desc: "شماره امور مالی :",
       hrefPhone: "tel:+36215478-035",
       phone: "36215478-035",
     },
     {
       id: 3,
-      icon: "text-white text-opacity-50 fs-5 fa-solid fa-location-dot",
+      icon: <FaLocationDot size={"25px"} className="icon-color" />,
       desc: "آدرس : یزد ، رضوانشهر ، بعد میدان صاحب الزمان",
     },
   ];
   const ItemsL = [
     {
       id: 1,
-      icon: "text-white text-opacity-50 fs-5 bi bi-ui-checks-grid",
-      desc: "اتوماسیون حضور غیاب",
-      href: "",
+      icon: <FaRegNewspaper size={"25px"} className="icon-color" />,
+      desc: "اخبار و اطلاعیه",
+      href: "/news/",
     },
     {
       id: 2,
-      icon: "text-white text-opacity-50 fs-5 bi bi-clipboard2-check-fill",
-      desc: "نمره دهی",
-      href: "",
-    },
-    {
-      id: 3,
-      icon: "text-white text-opacity-50 fs-5 fa-solid fa-image",
+      icon: <SlPicture size={"25px"} className="icon-color" />,
       desc: "گالری تصاویر",
       href: "/album",
     },
     {
-      id: 4,
-      icon: "text-white text-opacity-50 fs-5 fa-solid fa-newspaper",
-      desc: "اخبار و اطلاعیه",
-      href: "/news/",
+      id: 3,
+      icon: <FaSchoolCircleCheck size={"25px"} className="icon-color" />,
+      desc: "پیش ثبت نام",
+      href: "/registration",
     },
+    {
+      id: 4,
+      icon: <MdPermContactCalendar size={"25px"} className="icon-color" />,
+      desc: "درباره هنرستان",
+      href: "aboutus",
+    }
+    // {
+    //   id: 1,
+    //   icon: "icon-color fs-5 bi bi-ui-checks-grid",
+    //   desc: "اتوماسیون حضور غیاب",
+    //   href: "",
+    // },
+    // {
+    //   id: 2,
+    //   icon: "icon-color fs-5 bi bi-clipboard2-check-fill",
+    //   desc: "نمره دهی",
+    //   href: "",
+    // },
   ];
   return (
     <div>
@@ -62,61 +79,69 @@ function Footer() {
           ></path>
         </svg>
       </div>
-      <div className="footer" style={{ backgroundColor: "#346ed1ba" }}>
+      <div className="footer">
         <Container>
           <Row className="align-items-start justify-content-around">
-            <Col lg={4} className="mt-5 text-start">
+            <Col lg={4} className="mt-3 text-start">
               <div className="footer-body">
-                <h3 className="fw-bold opacity-75 py-2  ">
+                <h3 className="fw-bold opacity-75 py-2">
+                  <FaQuoteRight className="me-2" size="25px" color="#0df" />
                   راه های ارتباط با هنرستان
+                  <FaQuoteLeft className="me-2" size="25px" color="#0df" />
                 </h3>
-                <hr />
                 {ItemsR.map((item) => (
                   <FooterItemsR key={item.id} {...item} />
                 ))}
               </div>
             </Col>
-            <Col lg={4} className="mt-5 text-start">
+            <Col lg={4} className="mt-3 text-start">
               <div className="footer-body  mt-3 mt-lg-0">
-                <h3 className="fw-bold opacity-75 py-2  mb-3">دسترسی سریع</h3>
-                <hr />
+                <h3 className="fw-bold opacity-75 py-2">
+                  <FaQuoteRight className="me-2" size="25px" color="#0df" />
+                  دسترسی سریع
+                  <FaQuoteLeft className="me-2" size="25px" color="#0df" />
+                </h3>
                 {ItemsL.map((itemL) => (
                   <FooterL key={itemL.id} {...itemL} />
                 ))}
+                <div className="me-3 mt-3">
+                  <Link>
+                    <i
+                      title="Telegram"
+                      className="hover-app1 fs-3 mx-2 fa-brands fa-telegram"
+                    ></i>
+                  </Link>
+                  <Link>
+                    <i
+                      title="instagram"
+                      className="hover-app2 fs-3 mx-2 fa-brands fa-instagram"
+                    ></i>
+                  </Link>
+                  <Link>
+                    <i
+                      title="Eitaa"
+                      className="hover-app3 fs-3 mx-2 fa-solid fa-envelope"
+                    ></i>
+                  </Link>
+                </div>
               </div>
             </Col>
           </Row>
           <hr className="text-white text-opacity-75 pt-2" />
           <Row className=" align-items-center py-2">
-            <Col lg={4} className="d-flex justify-content-center">
-              <Link className="colorSoport" to="">
-                <p className="">طراحی و پشتیبانی</p>
-              </Link>
-              <Link className="colorSoport" to="">
-                <i className="fa-solid fa-arrow-left ms-4 mt-1"></i>
+            <Col lg={4} className="d-flex justify-content-center my-2">
+              <Link className="text-white text-decoration-none" to="">
+                <p className="d-inline">طراحی و پشتیبانی</p>
+                <IoCodeWorking size="20px" className="me-2" />
               </Link>
             </Col>
-            <Col lg={8} className="text-end d-flex my-2 justify-content-center">
-              <div className="me-3">
-                <a href="#">
-                  <i
-                    title="Telegram"
-                    className="hover-app1 fs-3 mx-2 fa-brands fa-telegram"
-                  ></i>
-                </a>
-                <a href="#">
-                  <i
-                    title="instagram"
-                    className="hover-app2 fs-3 mx-2 fa-brands fa-instagram"
-                  ></i>
-                </a>
-                <a href="#">
-                  <i
-                    title="Eitaa"
-                    className="hover-app3 fs-3 mx-2 fa-solid fa-envelope"
-                  ></i>
-                </a>
-              </div>
+            <Col
+              lg={8}
+              className="text-end d-flex text-white my-2 justify-content-center"
+            >
+              <FaCopyright size="20px" color="#fff" className="me-2" />
+              مالکیت معنوی و مادی این وبسایت متعلق به هنرستان فنی نمونه دولتی
+              خادمی می باشد.
             </Col>
           </Row>
         </Container>

@@ -14,10 +14,10 @@
   color: #dae5eb !important;
   transition: all 0.5s;
 }
-.bg-nav{
+.bg-nav {
   background-color: #dae5eb;
 }
-.nav-link.active{
+.nav-link.active {
   border-bottom: 2px solid #346ed137;
 }
 .nav-link:hover {
@@ -33,18 +33,25 @@
   justify-content: center;
   align-items: center;
 }
-#dsply , #dsply1 , #dsply2 ,
-#dsply3 , #dsply4 
-, #dsply5 , #dsply6{
+#dsply,
+#dsply1,
+#dsply2,
+#dsply3,
+#dsply4,
+#dsply5,
+#dsply6 {
   display: none;
-} 
+}
 @media screen and (max-width: 990px) {
   #display {
     display: flex !important;
   }
-  #dsply , #dsply1 , #dsply2 ,
-  #dsply3 , #dsply4 
-  , #dsply5{
+  #dsply,
+  #dsply1,
+  #dsply2,
+  #dsply3,
+  #dsply4,
+  #dsply5 {
     display: flex !important;
   }
   #menu-hide {
@@ -61,15 +68,9 @@
     display: none;
   }
 }
-@media screen and (min-width: 520px) and (max-width: 992px) {
-    .fiexd-logo{
-      /* position: fixed !important;
-      bottom: 0 !important;
-      right: 0 !important;
-      margin-bottom: 5rem !important;
-      margin-right: 2rem !important; */
-      display: none;
-    }
+/* بعد از اینکه سرچ باکس اضافه شد ، کد پایین از کامنت بیرون آورده شود */
+/* @media screen and (min-width: 520px) and (max-width: 992px) {
+  .fiexd-logo {
+    display: none;
   }
-
-/*  position-fixed bottom-0 start-0 mb-5 ms-2 */
+} */

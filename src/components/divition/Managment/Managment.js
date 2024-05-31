@@ -5,6 +5,8 @@ import ImgCaders from "../../../assets/images/imageManager.png";
 import Footer from "../../footer/Footer";
 import ManagementItems from "./ManagementItems";
 import React, { useRef, useState } from "react";
+import {FaQuoteRight} from "react-icons/fa"
+import {FaQuoteLeft} from "react-icons/fa"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from "swiper/modules";
 import "swiper/css";
@@ -48,8 +50,12 @@ function Management() {
       <div className="bg-manager">
         <Row className="align-items-center">
           <Col lg={8}>
-            <h2 className="fw-bold py-3">کادر مدیریت</h2>
-            <p className="text-justify text-dark text-opacity-75">
+            <h2 className="fw-bold py-3">
+              <FaQuoteRight className="ms-2" size="25px" color="#346ed190" />
+              کادر مدیریت
+              <FaQuoteLeft className="ms-2" size="25px" color="#346ed190" />
+            </h2>
+            <p className="text-justify text-dark text-opacity-75 fs-5">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
               استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
               ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
@@ -69,6 +75,7 @@ function Management() {
                   <img
                     src={ManagementCadrs[0].img}
                     className="style-image-manager img-fluid"
+                    alt=""
                   />
                 </span>
                 <h3 className="my-2">{ManagementCadrs[0].name}</h3>
@@ -79,6 +86,7 @@ function Management() {
                   <img
                     src={ManagementCadrs[1].img}
                     className="style-image-manager img-fluid"
+                    alt=""
                   />
                 </span>
                 <h3 className="my-2">{ManagementCadrs[1].name}</h3>
@@ -89,6 +97,7 @@ function Management() {
                   <img
                     src={ManagementCadrs[2].img}
                     className="style-image-manager img-fluid"
+                    alt=""
                   />
                 </span>
                 <h3 className="my-2">{ManagementCadrs[2].name}</h3>
@@ -99,6 +108,7 @@ function Management() {
                   <img
                     src={ManagementCadrs[3].img}
                     className="style-image-manager img-fluid"
+                    alt=""
                   />
                 </span>
                 <h3 className="my-2">{ManagementCadrs[3].name}</h3>
@@ -109,6 +119,7 @@ function Management() {
                   <img
                     src={ManagementCadrs[4].img}
                     className="style-image-manager img-fluid"
+                    alt=""
                   />
                 </span>
                 <h3 className="my-2">{ManagementCadrs[4].name}</h3>

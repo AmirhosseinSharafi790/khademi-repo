@@ -40,9 +40,9 @@ body {
 } */
 .style-image {
   border-radius: 28px !important;
-  width: 85% !important;
+  width: 80% !important;
   position: relative;
-  top: -20px;
+  top: -25px;
   margin: auto;
   text-align: center;
 }
@@ -52,14 +52,16 @@ body {
   border-radius: 30px !important;
   position: sticky;
   top: 40px;
+  filter: drop-shadow(0.1px 0.1px 5px #346ed1);
+  transition: filter .5s ease;
 }
 .card-album:hover{
-  scale: 1.05;
+  filter: none !important;
+  scale: none !important;
   transition: all .5s;
 }
 .card-body-album {
   border-radius: 0 0 30px 30px !important;
-  background-color: #fff !important;
 }
 .card-body-album a span:hover{
   transition: all .3s;

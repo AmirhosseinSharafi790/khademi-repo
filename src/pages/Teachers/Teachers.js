@@ -2,7 +2,7 @@ import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import images from "../../assets/images/section2-bac.jpg";
 import images1 from "../../assets/images/imageManager.png";
-import images2 from "../../assets/images/Question.jpg";
+import images2 from "../../assets/images/Question.png";
 import images3 from "../../assets/images/success.jpg";
 import { Container , Row } from "react-bootstrap";
 import "./Teachers.css";

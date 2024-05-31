@@ -32,14 +32,14 @@
   }
 }
 .menu-item {
-  height: 150px;
+  height: 170px;
   border-radius: 50% 50% 0 0;
   width: 50%;
   margin: 20px auto;
   text-align: center;
   transition: all 0.5s;
   color: #212529;
-  box-shadow: rgba(0, 0, 0, 0.009) 0px 3px 6px, rgba(0, 0, 0, 0.008) 0px 3px 6px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   padding: 20px;
   background-color: #00ffff22;
   border-bottom: 1px solid #00000077;
@@ -48,7 +48,7 @@
   text-decoration: none;
   color: #212529;
   display: block;
-  height: 50px;
+  height: 70px;
   padding-top: 15px;
   border-radius: 10px;
   transition: all 0.5s;
@@ -65,10 +65,6 @@
     font-size: 20px;
   }
 }
-.bg-icon{
+.bg-icon {
   color: #346ed1;
 }
-
-/* .Link-style{
-  display: block;
-} */

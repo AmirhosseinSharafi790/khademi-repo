@@ -3,7 +3,7 @@ import { Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 function Section1Item({textValue , icon , href}){
     return(
-        <Col md = {6} xl = {3}>
+        <Col md = {6} xl = {4}>
 
         <div className="menu-item">
             <Link to = {href}><span className='bg-icon'>{icon}</span></Link>

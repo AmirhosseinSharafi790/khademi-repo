@@ -2,7 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import "./Section9.css";
 import Section9Item from "./Section9Item";
 import Accordion from "react-bootstrap/Accordion";
-import images from "../../../assets/images/Question.jpg";
+import images from "../../../assets/images/Question.png";
 import { PiStudentBold } from "react-icons/pi";
 function Section9() {
   const Section9Data = [

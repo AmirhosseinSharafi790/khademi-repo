@@ -1,36 +1,8 @@
-.swiper-button-prev, .swiper-button-next , .swiper-pagination-bullet{
-  --swiper-theme-color: #212 !important;
-  --swiper-navigation-size: 50px !important;
-}
-#bg-nav,
-#bg-nav1,
-#bg-nav2 {
-  background-color: #346ed1;
-}
-.border-r {
-  border-radius: 10px;
-}
-.bg-card {
-  color: #dae5eb;
-  background-color: #346ed1;
-  box-shadow:
-    rgb(196, 217, 235) 3px 3px 6px 0px inset,
-    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-}
-@media screen and (max-width: 600px) {
-  .btn-sm-none {
-    display: none;
-  }
-}
-
-/* slider */
-
 html,
 body {
   position: relative;
   height: 100%;
 }
-
 body {
   background: #eee;
   font-size: 14px;
@@ -42,11 +14,9 @@ body {
   width: 100%;
   height: 100%;
 }
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -61,41 +31,25 @@ body {
   align-items: center;
   user-select: none;
 }
-.c1,
-.c2,
-.c3,
-.c4 {
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 500px !important;
+.swiper-wrapper {
+  padding-top: 100px !important;
+  padding-bottom: 50px !important;
 }
-.c1 {
-  background-image: url("../../../assets/images/section2-bac.jpg");
+@media screen and (max-width : 1050px){
+  .swiper-wrapper {
+    padding-top: 0 !important;
+  }
 }
-.c2 {
-  background-image: url("../../../assets/images/Logo.jpg");
+.customSwiperStyle {
+  display: flex !important;
+  flex-direction: column-reverse !important;
+  padding-bottom: 20px !important;
 }
-.c3 {
-  background-image: url("../../../assets/images/Question.jpg");
+.sectionTitle {
+  margin: 90px 0 !important;
 }
-.c4 {
-  background-image: url("../../../assets/images/support\ img.jpg");
-}
-.sa{
-  height: 100px;
-}
-.padding-section2{
-  margin: 50px 0;
-  /* padding: 0 80px !important; */
-}
-.bg-pic {
-  background-image: url("../../../assets/images/banner-main.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 300px;
-  text-align: center;
-  border-radius: 10px;
-  /* background-attachment: fixed; */
+.swiperTopSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

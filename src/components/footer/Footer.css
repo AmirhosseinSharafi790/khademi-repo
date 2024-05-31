@@ -1,7 +1,6 @@
 .footer {
-  background-color: #abb8c3;
+  background-color: #346ed1ba;
   color: #212529;
-  /* margin: -100px 0 0 0; */
 }
 .item a {
   color: #212529;
@@ -30,10 +29,6 @@
 .hover-app3:hover {
   color: orange;
 }
-.fa-arrow-left:hover {
-  color: #fff;
-}
-.colorSoport{
-  color: #fff;
-  text-decoration: none;
+.icon-color{
+ color: #0df; 
 }
