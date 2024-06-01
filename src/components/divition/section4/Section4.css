@@ -95,3 +95,6 @@
   display: inline !important;
   margin : 5rem 0 !important;
 }
+.card-body:hover{
+  scale: none !important;
+}

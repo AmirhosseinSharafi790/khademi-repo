@@ -15,6 +15,7 @@ function Accounting() {
                 <ListGroup.Item>
                   <Link
                     className="text-decoration-none text-dark"
+                    target="blank"
                     to={"/networkAndSoftware"}
                   >
                     رشته شبکه و نرم‌افزار
@@ -23,6 +24,7 @@ function Accounting() {
                 <ListGroup.Item>
                   <Link
                     className="text-decoration-none text-dark"
+                    target="blank"
                     to={"/electrotechnic"}
                   >
                     رشته الکتروتکنیک
@@ -39,6 +41,7 @@ function Accounting() {
                 <ListGroup.Item>
                   <Link
                     className="text-decoration-none text-dark"
+                    target="blank"
                     to={"/honors"}
                   >
                     افتخارات

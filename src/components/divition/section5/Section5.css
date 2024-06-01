@@ -1,32 +1,26 @@
 .section-A {
   color: #212529;
 }
-/* .section2 {
-  background-image: url("../../../assets/images/section2-bac.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-} */
 .counterBox {
   background-color: #00ffff22;
   margin: 10px 0;
   text-align: center;
   padding: 20px;
-  border-radius: 77% 23% 44% 56% / 51% 63% 37% 49%;
+  border-radius: 46% 54% 36% 64% / 59% 38% 62% 41%;
   width: 70%;
   margin: auto;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   color: #dae5eb;
 }
-.counterBox p{
+.counterBox p {
   color: #212529;
 }
-.counterBox .sizeCount{
+.counterBox .sizeCount {
   color: #212529;
 }
 .icon-Size {
   font-size: 40px;
-  color: #346ed1;;
+  color: #346ed1;
 }
 .number-counterBox,
 .number-counterBox-M {
@@ -41,6 +35,6 @@
 .text-justify {
   text-align: justify;
 }
-.sizeCount{
+.sizeCount {
   font-size: 30px;
 }

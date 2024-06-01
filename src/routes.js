@@ -28,6 +28,7 @@ const router = [
   {path : "/networkAndSoftware" , element: <NetworkAndSoftware/>},
   {path : "/accounting" , element: <Accounting/>},
   {path : "/electrotechnic" , element: <Electrotechnic/>},
+  {path : '/designed&support' , element : <h1>designed&support routes</h1>},
   {path : '*' , element : <NotFound />}
 ];
 export default router;

@@ -55,7 +55,7 @@ function AboutUs(){
                                 <Link className="text-dark text-decoration-none p-2" to={"/contact"}>ارتباط با هنرستان</Link>
                             </ListGroup.Item>
                             <ListGroup.Item>
-                                <Link className="text-dark text-decoration-none p-2" to={"/honors"}>افتخارات</Link>
+                                <Link className="text-dark text-decoration-none p-2" target="blank" to={"/honors"}>افتخارات</Link>
                             </ListGroup.Item>
                         </ListGroup>
                         </Card>

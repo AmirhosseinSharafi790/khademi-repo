@@ -1,8 +1,8 @@
 import "./Section8.css";
 import { Col, Container, Row } from "react-bootstrap";
 import Section8Item from "./Section8Item";
-import {FaQuoteRight} from "react-icons/fa"
-import {FaQuoteLeft} from "react-icons/fa"
+import { FaQuoteRight } from "react-icons/fa";
+import { FaQuoteLeft } from "react-icons/fa";
 function Section8() {
   const Serction8Data = [
     {
@@ -29,7 +29,7 @@ function Section8() {
           className="rounded shadow border-2 rounded parallax p-5 text-white"
         >
           <h3 className="text-center p-2 fw-bold my-3">پلی به سوی موفقیت</h3>
-          <p className="text-justify p-3 mb-5 bg-dark bg-opacity-75 border border-info rounded text-white line-height-section6">
+          <p className="text-justify p-3 mb-5 border border-info rounded text-white line-height-section6">
             <FaQuoteRight className="ms-2" size="25px" color="#346ed280" />
             تلاش کنید همیشه به عنوان یک دانش‌آموز بمانید و از هر فرصتی برای
             یادگیری بهره ببرید. به عنوان یک معلم، به دیگران با احترام و صداقت ،
@@ -43,7 +43,6 @@ function Section8() {
           </p>
         </Col>
       </Row>
-      {/* <hr /> */}
       <Row>
         {Serction8Data.map((Item) => (
           <Section8Item key={Item.id} {...Item} />

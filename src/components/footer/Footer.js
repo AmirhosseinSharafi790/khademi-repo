@@ -5,7 +5,12 @@ import FooterL from "./FooterL";
 import { Link } from "react-router-dom";
 import { FaCopyright, FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import { IoCodeWorking } from "react-icons/io5";
-import { FaLocationDot, FaPhoneFlip, FaRegNewspaper, FaSchoolCircleCheck } from "react-icons/fa6";
+import {
+  FaLocationDot,
+  FaPhoneFlip,
+  FaRegNewspaper,
+  FaSchoolCircleCheck,
+} from "react-icons/fa6";
 import { SlPicture } from "react-icons/sl";
 import { MdPermContactCalendar } from "react-icons/md";
 function Footer() {
@@ -53,8 +58,8 @@ function Footer() {
       id: 4,
       icon: <MdPermContactCalendar size={"25px"} className="icon-color" />,
       desc: "درباره هنرستان",
-      href: "aboutus",
-    }
+      href: "/aboutus",
+    },
     // {
     //   id: 1,
     //   icon: "icon-color fs-5 bi bi-ui-checks-grid",
@@ -105,19 +110,19 @@ function Footer() {
                   <FooterL key={itemL.id} {...itemL} />
                 ))}
                 <div className="me-3 mt-3">
-                  <Link>
+                  <Link target="blank">
                     <i
                       title="Telegram"
                       className="hover-app1 fs-3 mx-2 fa-brands fa-telegram"
                     ></i>
                   </Link>
-                  <Link>
+                  <Link target="blank">
                     <i
                       title="instagram"
                       className="hover-app2 fs-3 mx-2 fa-brands fa-instagram"
                     ></i>
                   </Link>
-                  <Link>
+                  <Link target="blank">
                     <i
                       title="Eitaa"
                       className="hover-app3 fs-3 mx-2 fa-solid fa-envelope"
@@ -130,7 +135,7 @@ function Footer() {
           <hr className="text-white text-opacity-75 pt-2" />
           <Row className=" align-items-center py-2">
             <Col lg={4} className="d-flex justify-content-center my-2">
-              <Link className="text-white text-decoration-none" to="">
+              <Link className="text-white text-decoration-none" to="/designed&support">
                 <p className="d-inline">طراحی و پشتیبانی</p>
                 <IoCodeWorking size="20px" className="me-2" />
               </Link>

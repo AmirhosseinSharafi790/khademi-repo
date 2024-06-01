@@ -18,6 +18,7 @@ function NetworkAndSoftware() {
                 <ListGroup.Item>
                   <Link
                     className="text-decoration-none text-dark"
+                    target="blank"
                     to={"/accounting"}
                   >
                     رشته حسابداری
@@ -26,6 +27,7 @@ function NetworkAndSoftware() {
                 <ListGroup.Item>
                   <Link
                     className="text-decoration-none text-dark"
+                    target="blank"
                     to={"/electrotechnic"}
                   >
                     رشته الکتروتکنیک
@@ -34,6 +36,7 @@ function NetworkAndSoftware() {
                 <ListGroup.Item>
                   <Link
                     className="text-decoration-none text-dark"
+                    target="blank"
                     to={"/teachers"}
                   >
                     هنرآموزان
@@ -42,6 +45,7 @@ function NetworkAndSoftware() {
                 <ListGroup.Item>
                   <Link
                     className="text-decoration-none text-dark"
+                    target="blank"
                     to={"/honors"}
                   >
                     افتخارات
@@ -50,6 +54,7 @@ function NetworkAndSoftware() {
                 <ListGroup.Item>
                   <Link
                     className="text-decoration-none text-dark"
+                    target="blank"
                     to={"/aboutUs"}
                   >
                     درباره هنرستان
@@ -194,38 +199,38 @@ function NetworkAndSoftware() {
               <br />
             </p>
             <Row className="px-5">
-            <Col sm={12} className="p-2">
-              <Card className="bg-info fixed-style">
-                <Card.Header className="text-dark">
-                  3 راه برای تحصیل در مقطع کاردانی و 3 راه برای تحصیل در مقطع
-                  کارشناسی
-                </Card.Header>
-                <ListGroup variant="flush">
-                  <ListGroup.Item className="p-3">
-                    کاردانی_پیوسته دانشگاه های فنی و حرفه ای و موسسات غیرانتفاعی
-                    در ۵ رشته با آزمون(الکتروتکنیک،کامپیوتر،مکانیک
-                    خودرو،حسابداری،تربیت بدنی)
-                  </ListGroup.Item>
-                  <ListGroup.Item className="p-3">
-                    کاردانی پیوسته دانشگاه آزاد
-                  </ListGroup.Item>
-                  <ListGroup.Item className="p-3">
-                    کاردانی پیوسته علمی_کاربردی
-                  </ListGroup.Item>
-                  <ListGroup.Item className="p-3">
-                    کارشناسی برای دانش آموزان نظام جدید با شرکت در کنکور (در یکی
-                    از زیر گروههای تجربی،ریاضی،انسانی و هنر و زبان)
-                  </ListGroup.Item>
-                  <ListGroup.Item className="p-3">
-                    کارشناسی با سوابق :دانشگاه های دولتی (روزانه، شبانه و
-                    غیرانتفاعی های کم طرفدار و پیام نور)
-                  </ListGroup.Item>
-                  <ListGroup.Item className="p-3">
-                    کارشناسی با سوابق دانشگاه های آزاد
-                  </ListGroup.Item>
-                </ListGroup>
-              </Card>
-            </Col>
+              <Col sm={12} className="p-2">
+                <Card className="bg-info fixed-style">
+                  <Card.Header className="text-dark">
+                    3 راه برای تحصیل در مقطع کاردانی و 3 راه برای تحصیل در مقطع
+                    کارشناسی
+                  </Card.Header>
+                  <ListGroup variant="flush">
+                    <ListGroup.Item className="p-3">
+                      کاردانی_پیوسته دانشگاه های فنی و حرفه ای و موسسات
+                      غیرانتفاعی در ۵ رشته با آزمون(الکتروتکنیک،کامپیوتر،مکانیک
+                      خودرو،حسابداری،تربیت بدنی)
+                    </ListGroup.Item>
+                    <ListGroup.Item className="p-3">
+                      کاردانی پیوسته دانشگاه آزاد
+                    </ListGroup.Item>
+                    <ListGroup.Item className="p-3">
+                      کاردانی پیوسته علمی_کاربردی
+                    </ListGroup.Item>
+                    <ListGroup.Item className="p-3">
+                      کارشناسی برای دانش آموزان نظام جدید با شرکت در کنکور (در
+                      یکی از زیر گروههای تجربی،ریاضی،انسانی و هنر و زبان)
+                    </ListGroup.Item>
+                    <ListGroup.Item className="p-3">
+                      کارشناسی با سوابق :دانشگاه های دولتی (روزانه، شبانه و
+                      غیرانتفاعی های کم طرفدار و پیام نور)
+                    </ListGroup.Item>
+                    <ListGroup.Item className="p-3">
+                      کارشناسی با سوابق دانشگاه های آزاد
+                    </ListGroup.Item>
+                  </ListGroup>
+                </Card>
+              </Col>
             </Row>
             <p className="px-5 py-3 text-justify">
               این رشته به دلیل پیشرفت تکنولوژی باعث شده است تا در مشاغل و صنایع
@@ -275,25 +280,27 @@ function NetworkAndSoftware() {
               شرکت کنید میتوانید جذب دانشگاه‌های خصوصی شوید.
             </p>
             <Row className="px-5 py-3">
-            <Col sm={12} className="p-2">
-              <Card className="bg-info fixed-style">
-                <Card.Header className="text-dark">
-                  <b>گرایش‌های این رشته عبارتنداز:</b>
-                </Card.Header>
-                <ListGroup variant="flush">
-                  <ListGroup.Item className="p-3">
-                    مهندسی نرم افزار رایانه
-                  </ListGroup.Item>
-                  <ListGroup.Item className="p-3">
-                    مهندسی سخت افزار رایانه
-                  </ListGroup.Item>
-                  <ListGroup.Item className="p-3">
-                    فناوری اطلاعات(IT)
-                  </ListGroup.Item>
-                  <ListGroup.Item className="p-3">علوم کامپیوتر</ListGroup.Item>
-                </ListGroup>
-              </Card>
-            </Col>
+              <Col sm={12} className="p-2">
+                <Card className="bg-info fixed-style">
+                  <Card.Header className="text-dark">
+                    <b>گرایش‌های این رشته عبارتنداز:</b>
+                  </Card.Header>
+                  <ListGroup variant="flush">
+                    <ListGroup.Item className="p-3">
+                      مهندسی نرم افزار رایانه
+                    </ListGroup.Item>
+                    <ListGroup.Item className="p-3">
+                      مهندسی سخت افزار رایانه
+                    </ListGroup.Item>
+                    <ListGroup.Item className="p-3">
+                      فناوری اطلاعات(IT)
+                    </ListGroup.Item>
+                    <ListGroup.Item className="p-3">
+                      علوم کامپیوتر
+                    </ListGroup.Item>
+                  </ListGroup>
+                </Card>
+              </Col>
             </Row>
             <p className="px-5 py-3 text-justify">
               مهندسی نرم افزار رایانه در گرایش نرم افزار رایانه شما میتوانید با

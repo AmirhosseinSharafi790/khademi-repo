@@ -53,17 +53,22 @@ body {
   position: sticky;
   top: 40px;
   filter: drop-shadow(0.1px 0.1px 5px #346ed1);
-  transition: filter .5s ease;
+  transition: filter 0.5s ease;
 }
-.card-album:hover{
+@media screen and (min-width: 568px) {
+  .card-album:hover {
+    scale: 1.05;
+    transition: all 0.5s;
+  }
+}
+.card-album:hover {
   filter: none !important;
-  scale: none !important;
-  transition: all .5s;
+  transition: all 0.5s ease;
 }
 .card-body-album {
   border-radius: 0 0 30px 30px !important;
 }
-.card-body-album a span:hover{
-  transition: all .3s;
+.card-body-album a span:hover {
+  transition: all 0.3s;
   color: #346ed1;
 }

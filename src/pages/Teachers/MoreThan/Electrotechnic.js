@@ -15,6 +15,7 @@ function Electrotechnic() {
                 <ListGroup.Item>
                   <Link
                     className="text-decoration-none text-dark"
+                    target="blank"
                     to={"/accounting"}
                   >
                     رشته حسابداری
@@ -23,6 +24,7 @@ function Electrotechnic() {
                 <ListGroup.Item>
                   <Link
                     className="text-decoration-none text-dark"
+                    target="blank"
                     to={"/electrotechnic"}
                   >
                     رشته شبکه و نرم افزار
@@ -31,6 +33,7 @@ function Electrotechnic() {
                 <ListGroup.Item>
                   <Link
                     className="text-decoration-none text-dark"
+                    target="blank"
                     to={"/teachers"}
                   >
                     هنرآموزان
@@ -39,6 +42,7 @@ function Electrotechnic() {
                 <ListGroup.Item>
                   <Link
                     className="text-decoration-none text-dark"
+                    target="blank"
                     to={"/honors"}
                   >
                     افتخارات
@@ -47,6 +51,7 @@ function Electrotechnic() {
                 <ListGroup.Item>
                   <Link
                     className="text-decoration-none text-dark"
+                    target="blank"
                     to={"/aboutUs"}
                   >
                     درباره هنرستان

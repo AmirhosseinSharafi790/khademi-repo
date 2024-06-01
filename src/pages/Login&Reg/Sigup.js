@@ -15,17 +15,17 @@ function Sigup() {
           <h2>ثبت نام</h2>
           <div className="inputBox">
             <input
-              type="email"
-              className="text-start"
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="ایمیل"
+              type="text"
+              onChange={(e) => setMeliCode(e.target.value)}
+              placeholder="کد ملی"
             />
           </div>
           <div className="inputBox">
             <input
-              type="text"
-              onChange={(e) => setMeliCode(e.target.value)}
-              placeholder="کد ملی"
+              type="email"
+              className="text-start"
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="ایمیل"
             />
           </div>
           <div className="inputBox">
@@ -46,8 +46,10 @@ function Sigup() {
             <input type="submit" value="ثبت نام" id="btn" />
           </div>
           <div className="group">
-            <Link to={"/forgetPass"}>فراموشی رمز عبور</Link>
-            <Link to={"/loginSigup"} onClick={loginHandler}>
+            <Link to={"/forgetPass"} target="blank">
+              فراموشی رمز عبور
+            </Link>
+            <Link to={"/loginSigup"} target="blank" onClick={loginHandler}>
               ورود
             </Link>
           </div>

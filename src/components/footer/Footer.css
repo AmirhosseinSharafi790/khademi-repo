@@ -2,10 +2,18 @@
   background-color: #346ed1ba;
   color: #212529;
 }
-.item a {
+.hoverStyle a {
   color: #212529;
 }
-.item a:hover {
+.hoverStyle a:hover {
+  color: #dcd9d9 !important;
+  padding-right: 5px;
+  transition: all 0.5s;
+}
+.iconStyle a {
+  color: #212529;
+}
+.iconStyle a:hover {
   color: #dcd9d9 !important;
   padding-right: 5px;
   transition: all 0.5s;
@@ -29,6 +37,6 @@
 .hover-app3:hover {
   color: orange;
 }
-.icon-color{
- color: #0df; 
+.icon-color {
+  color: #0df;
 }

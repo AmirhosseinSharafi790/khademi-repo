@@ -14,7 +14,7 @@ function AlbumItem({ image, title, link, icon }) {
           />
           <Card.Body className="card-body-album">
             <Card.Title className="text-center">{title}</Card.Title>
-            <Link className="text-decoration-none text-black d-block text-center pt-3">
+            <Link className="text-decoration-none text-black d-block text-center pt-3" target="blank">
               <span>
                 مشاهده
                 <span className="pe-2">

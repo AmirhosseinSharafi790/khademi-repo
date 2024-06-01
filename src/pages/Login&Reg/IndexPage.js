@@ -32,16 +32,16 @@ function IndexPage() {
           </div>
           <Row className="group">
             <Col className="my-3" sm={12} md={6}>
-              <Link to={"/forgetPass"}>فراموشی رمز عبور</Link>
+              <Link to={"/forgetPass"} target="blank">فراموشی رمز عبور</Link>
             </Col>
             <Col className="my-3" sm={12} md={6}>
-              <Link to={"/sigup"} onClick={loginHandler}>
+              <Link to={"/sigup"} target="blank" onClick={loginHandler}>
                 ثبت نام
               </Link>
             </Col>
           </Row>
           <Row className="mb-3">
-            <Link to={"/"} className="text-white text-decoration-none">
+            <Link to={"/"} target="blank" className="text-white text-decoration-none">
               <p className="fs-5 btnGoToIndexPage">بازگشت به صفحه اصلی</p>
             </Link>
           </Row>
