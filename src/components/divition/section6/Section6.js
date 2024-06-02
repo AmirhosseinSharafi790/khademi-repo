@@ -9,10 +9,10 @@ function Section6() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <div className="section-6 my-5">
+    <div className="section-6">
       <Container className="container-section6">
-        <Row className="align-items-center my-5">
-          <Col lg={6} className="border-section6">
+        <Row className="align-items-center border-section6 mt-5">
+          <Col lg={6}>
             <div>
               <h2>
                 <FaQuoteRight className="ms-2" size="25px" color="#346ed190" />

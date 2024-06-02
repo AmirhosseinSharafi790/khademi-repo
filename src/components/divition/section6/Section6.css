@@ -1,17 +1,6 @@
-/* .btn-section6 {
-  all: unset;
-  padding: 10px 50px;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 18px;
-  color: #fff;
-  background-color: #1fd860;
+.section-6{
+  padding: 10px;
 }
-.btn-section6:hover {
-  transition: all 0.5s;
-  background-color: #0fb549;
-  color: #212121;
-} */
 .btn-section6 {
   background-color: #346ed124 !important;
   border: 1px solid #00000029 !important;
@@ -21,6 +10,7 @@
   padding: 10px 20px;
   color: #212 !important;
   border-radius: 10px;
+  margin: 10px 0;
 }
 .btn-section6:hover {
   background-color: #346ed1 !important;
@@ -29,7 +19,10 @@
   transition: all 0.5s;
 }
 .border-section6 {
-  border-right: 6px solid #346ed1;
+  border-left: 5px solid #346ed1 !important;
+  border-bottom: 5px solid #346ed1 !important;
+  
+  border-radius:0 0 0 20px;
 }
 .image-section6 {
   display: flex;

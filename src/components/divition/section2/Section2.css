@@ -36,19 +36,20 @@ body {
   padding-bottom: 50px !important;
 }
 @media screen and (max-width : 1050px){
-  .swiper-wrapper {
-    padding-top: 0 !important;
+  .swiper-slide {
+    padding-top: 0px !important;
   }
 }
 .customSwiperStyle {
   display: flex !important;
   flex-direction: column-reverse !important;
-  padding-bottom: 20px !important;
+  padding-bottom: 150px !important;
 }
 .sectionTitle {
   margin: 90px 0 !important;
 }
 .swiperTopSection {
+  margin: 0 0 70px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;

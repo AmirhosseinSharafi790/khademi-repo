@@ -11,6 +11,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Section2Item from "./Section2Item";
 import "./Section2.css";
 import SwiperButtons from "../../SwiperButtons/SwiperButtons";
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 function Section2() {
   const newItem = [
     {
@@ -78,7 +79,11 @@ function Section2() {
             className="customSwiperStyle"
           >
             <div className="swiperTopSection">
-              <h4 className="sectionTitle">جدیدترین خبر ها</h4>
+              <div>
+                <FaQuoteRight className="ms-2" size="25px" color="#346ed190" />
+                <h4 className="sectionTitle d-inline">جدیدترین خبر ها</h4>
+                <FaQuoteLeft className="ms-2" size="25px" color="#346ed190" />
+              </div>
               <SwiperButtons />
             </div>
             {newItem.map((item) => (

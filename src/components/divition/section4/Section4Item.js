@@ -17,7 +17,7 @@ function Section4Item({ CName, img, title, text, route }) {
               />
             </div>
             <div className="flip-card-back">
-              <Card className="card-hover" id="card-section-4">
+              <Card id="card-section-4">
                 <Card.Body className="p-2">
                   <Card.Title className="text-green mt-3 text-center fw-bold">
                     {title}

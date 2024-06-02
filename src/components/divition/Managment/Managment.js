@@ -63,7 +63,7 @@ function Management() {
               زیادی در شصت و سه درصد گذشته حال و آینده
             </p>
           </Col>
-          <Col lg={4}>
+          <Col lg={4} className="d-flex mb-md-5 pb-md-5">
             <Swiper
               effect={"cards"}
               grabCursor={true}
