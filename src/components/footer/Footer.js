@@ -90,26 +90,50 @@ function Footer() {
             <Col lg={4} className="mt-3 text-start">
               <div className="footer-body">
                 <h3 className="fw-bold opacity-75 py-2">
-                  <FaQuoteRight className="me-2" size="25px" color="#0df" />
+                  <FaQuoteRight className="me-2" size="25px" color="#dcd9d9" />
                   راه های ارتباط با هنرستان
-                  <FaQuoteLeft className="me-2" size="25px" color="#0df" />
+                  <FaQuoteLeft className="me-2" size="25px" color="#dcd9d9" />
                 </h3>
                 {ItemsR.map((item) => (
                   <FooterItemsR key={item.id} {...item} />
                 ))}
               </div>
             </Col>
-            <Col lg={4} className="mt-3 text-start">
+            <Col lg={4} className="mt-3 ">
               <div className="footer-body  mt-3 mt-lg-0">
                 <h3 className="fw-bold opacity-75 py-2">
-                  <FaQuoteRight className="me-2" size="25px" color="#0df" />
+                  <FaQuoteRight className="me-2" size="25px" color="#dcd9d9" />
                   دسترسی سریع
-                  <FaQuoteLeft className="me-2" size="25px" color="#0df" />
+                  <FaQuoteLeft className="me-2" size="25px" color="#dcd9d9" />
                 </h3>
                 {ItemsL.map((itemL) => (
                   <FooterL key={itemL.id} {...itemL} />
                 ))}
-                <div className="me-3 mt-3">
+                
+              </div>
+            </Col>
+          </Row>
+          <hr className="text-white text-opacity-75 pt-2" />
+          <Row className=" align-items-center py-2">
+            <Col lg={3} className="d-flex justify-content-center my-2">
+              <Link className="text-white text-decoration-none" to="/designed&support">
+                <p className="d-inline">طراحی و پشتیبانی</p>
+                <IoCodeWorking size="20px" className="me-2" />
+              </Link>
+            </Col>
+            <Col
+              lg={6}
+              className="text-end d-flex text-white my-2 justify-content-center"
+            >
+              <FaCopyright size="20px" color="#fff" className="me-2" />
+              مالکیت معنوی و مادی این وبسایت متعلق به هنرستان فنی نمونه دولتی
+              خادمی می باشد.
+            </Col>
+            <Col
+              lg={3}
+              className="text-end d-flex text-white my-2 justify-content-center"
+            >
+              <div>
                   <Link target="blank">
                     <i
                       title="Telegram"
@@ -129,24 +153,6 @@ function Footer() {
                     ></i>
                   </Link>
                 </div>
-              </div>
-            </Col>
-          </Row>
-          <hr className="text-white text-opacity-75 pt-2" />
-          <Row className=" align-items-center py-2">
-            <Col lg={4} className="d-flex justify-content-center my-2">
-              <Link className="text-white text-decoration-none" to="/designed&support">
-                <p className="d-inline">طراحی و پشتیبانی</p>
-                <IoCodeWorking size="20px" className="me-2" />
-              </Link>
-            </Col>
-            <Col
-              lg={8}
-              className="text-end d-flex text-white my-2 justify-content-center"
-            >
-              <FaCopyright size="20px" color="#fff" className="me-2" />
-              مالکیت معنوی و مادی این وبسایت متعلق به هنرستان فنی نمونه دولتی
-              خادمی می باشد.
             </Col>
           </Row>
         </Container>

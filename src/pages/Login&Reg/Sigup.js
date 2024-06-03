@@ -1,5 +1,6 @@
 import "./IndexPage.css";
 import { useState } from "react";
+import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 function Sigup() {
   const [meliCode, setMeliCode] = useState("");
@@ -45,19 +46,16 @@ function Sigup() {
           <div className="inputBox">
             <input type="submit" value="ثبت نام" id="btn" />
           </div>
-          <div className="group">
-            <Link to={"/forgetPass"} target="blank">
-              فراموشی رمز عبور
-            </Link>
-            <Link to={"/loginSigup"} target="blank" onClick={loginHandler}>
-              ورود
-            </Link>
-          </div>
-          <div className="mb-3">
-            <Link to={"/"} className="text-white text-decoration-none">
-              <p className="fs-5 btnGoToIndexPage">بازگشت به صفحه اصلی</p>
-            </Link>
-          </div>
+          <Row className="group">
+            <Col className="my-3" sm={12} md={6}>
+              <Link to={"/loginSigup"} target="blank">ورود</Link>
+            </Col>
+            <Col className="my-3" sm={12} md={6}>
+              <Link to={"/"} target="blank">
+                بازگشت به صفحه اصلی
+              </Link>
+            </Col>
+          </Row>
         </div>
       </section>
     </>

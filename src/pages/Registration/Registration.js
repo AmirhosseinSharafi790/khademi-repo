@@ -1,12 +1,24 @@
 import "./Registration.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import { Accordion, Button, Card, Col, Container, Row } from "react-bootstrap";
+import {
+  Accordion,
+  Button,
+  Card,
+  Col,
+  Container,
+  Modal,
+  Row,
+} from "react-bootstrap";
 import image from "../../assets/images/نمونه-سوال-نوبت-دوم-فارسی-(سری94)-نهم-متوسطه_Biamoz.com.jpg";
 import AccardionReg from "./Accardion/Accardion";
 import { PiStudentBold } from "react-icons/pi";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 function Registration() {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   const accData = [
     {
       id: "1",
@@ -78,10 +90,27 @@ function Registration() {
                 <AccardionReg {...item} key={item.id} />
               ))}
             </Accordion>
+            <Button className="btn-download w-100 my-2" variant="" onClick={handleShow}>
+              پیگیری وضعیت ثبت نام
+            </Button>
+            <Modal centered show={show} onHide={handleClose}>
+        <Modal.Header  className="bg-modal" closeButton>
+          <Modal.Title>وضعیت ثبت نام</Modal.Title>
+        </Modal.Header>
+        <Modal.Body  className="bg-modal"><div className="login-modal">
+          <p className="text-danger opacity-75 mb-3 text-center">
+            {" "}
+            * کد ملی خود را وارد کنید تا از وضیعیت خو اگاه شوید
+          </p>
+          <div className="inputBox-modal">
+            <input type="text" placeholder="کد ملی" />
+          </div>
+          <div className="inputBox-modal">
+            <input type="submit" value="پیگیری" id="btn" />
+          </div>
+        </div></Modal.Body>
+      </Modal>
           </Col>
-          <Button className="btn-download my-2" variant="">
-            پیگیری وضعیت ثبت نام
-          </Button>
         </Row>
       </Container>
       <Footer />

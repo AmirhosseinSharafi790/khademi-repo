@@ -2,7 +2,8 @@ import { Container, Row } from 'react-bootstrap'
 import './Honors.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
-import imageHonors from '../../assets/images/cup.png'
+import imageHonors from '../../assets/images/honorsImage.jpg'
+import iii from '../../assets/images/banner-main.png'
 import HonorItems from './HonorItems'
 function Honors(){
     
@@ -15,7 +16,7 @@ function Honors(){
         },
         {
             id : 2,
-            img : imageHonors,
+            img : iii,
             title : 'پیروزی در انتخابات',
             desc : 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است'
         },

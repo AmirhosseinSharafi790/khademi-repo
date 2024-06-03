@@ -30,3 +30,52 @@
   display: inline-block !important;
   padding: 15px;
 }
+.login-modal{
+  width: 100% !important;
+  position: relative;
+  padding: 10px 40px;
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.inputBox-modal{
+  position: relative;
+}
+
+.login-modal .inputBox-modal input {
+  position: relative;
+  width: 100%;
+  padding: 15px 20px;
+  outline: none;
+  font-size: 1.25em;
+  color: #346ed1;
+  border-radius: 5px;
+  background: #fff;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.login-modal .inputBox-modal ::placeholder {
+  color: #212;
+}
+
+.login-modal .inputBox-modal #btn {
+  position: relative;
+  border: none;
+  outline: none;
+  background: #346ed1;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.25em;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.login-modal .inputBox-modal #btn:hover {
+  background: #2e63be;
+}
+.bg-modal{
+  
+  background-color: #c7d8e8 !important;
+}

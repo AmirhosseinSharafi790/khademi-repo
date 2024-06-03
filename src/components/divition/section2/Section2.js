@@ -79,8 +79,8 @@ function Section2() {
             className="customSwiperStyle"
           >
             <div className="swiperTopSection">
-              <div>
-                <FaQuoteRight className="ms-2" size="25px" color="#346ed190" />
+              <div className="px-4">
+                <FaQuoteRight className="ms-2" size="25px" color="#346ed190"/>
                 <h4 className="sectionTitle d-inline">جدیدترین خبر ها</h4>
                 <FaQuoteLeft className="ms-2" size="25px" color="#346ed190" />
               </div>
