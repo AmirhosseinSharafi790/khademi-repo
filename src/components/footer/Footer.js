@@ -116,18 +116,18 @@ function Footer() {
           <hr className="text-white text-opacity-75 pt-2" />
           <Row className=" align-items-center py-2">
             <Col lg={3} className="d-flex justify-content-center my-2">
-              <Link className="text-white text-decoration-none" to="/designed&support">
-                <p className="d-inline">طراحی و پشتیبانی</p>
-                <IoCodeWorking size="20px" className="me-2" />
+              <Link className="text-white text-decoration-none " to="/designed&support">
+                <p className="d-inline border-b">طراحی و پشتیبانی</p>
+                {/* <IoCodeWorking size="20px" className="" /> */}
               </Link>
             </Col>
             <Col
               lg={6}
-              className="text-end d-flex text-white my-2 justify-content-center"
+              className=" d-flex text-white my-2 justify-content-center text-center"
             >
               <FaCopyright size="20px" color="#fff" className="me-2" />
-              مالکیت معنوی و مادی این وبسایت متعلق به هنرستان فنی نمونه دولتی
-              خادمی می باشد.
+              <span className="fs-">مالکیت معنوی و مادی این وبسایت متعلق به هنرستان فنی نمونه دولتی
+              خادمی می باشد.</span>
             </Col>
             <Col
               lg={3}

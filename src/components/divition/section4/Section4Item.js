@@ -3,9 +3,14 @@ import Card from "react-bootstrap/Card";
 import { Col } from "react-bootstrap";
 import "./Section4.css";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import { useEffect } from "react";
 function Section4Item({ CName, img, title, text, route }) {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <Col md={12} lg={4} className="margin-sec4">
+    <Col md={12} lg={4} className="margin-sec4" data-aos="fade-left" data-aos-duration="1000">
       <div className="card-section4  d-sm-inline d-lg-flex">
         <div className="flip-card">
           <div className="flip-card-inner">

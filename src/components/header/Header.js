@@ -5,6 +5,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/images/Logo.jpg";
+import Aos from "aos";
+import { useEffect } from "react";
 // search-Box-Import
 // import Form from "react-bootstrap/Form";
 // import { useState } from 'react';
@@ -13,10 +15,14 @@ import Logo from "../../assets/images/Logo.jpg";
 // import Col from "react-bootstrap/esm/Col";
 // import Row from "react-bootstrap/esm/Row";
 function Header() {
+  useEffect(() => {
+    Aos.init();
+  },[])
   // search-Box-State
   // const [show, setShow] = useState(false);
   // const handleClose = () => setShow(false);
   // const handleShow = () => setShow(true);
+  
   const expand = "lg";
   return (
     <>
@@ -38,6 +44,8 @@ function Header() {
                   borderColor: "#346ed1",
                   borderRadius: "50%",
                 }}
+                data-aos="fade-left"
+                data-aos-duration="1000"
                 alt=""
               />
             </Navbar.Brand>
@@ -114,7 +122,7 @@ function Header() {
                       <NavLink to={"/rollcall"} className="nav-link" id="dsply5">سامانه حضور و غیاب</NavLink> */}
               </Nav>
               <div className="my-1" id="menu-hide">
-                <NavLink to={"/loginSigup"} className="btn-login mx-1">
+                <NavLink to={"/loginSigup"} className="btn-login mx-1" data-aos="fade-right">
                   ورود و ثبت نام
                 </NavLink>
                 {/* search-Box-Icon */}

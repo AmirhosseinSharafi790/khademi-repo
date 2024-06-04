@@ -10,7 +10,9 @@ import Section8 from "../../components/divition/section8/Section8";
 import Section9 from "../../components/divition/section9/Section9";
 import Management from "../../components/divition/Managment/Managment";
 import "./Home.css";
+
 function Home() {
+
   return (
     <>
       <Header />

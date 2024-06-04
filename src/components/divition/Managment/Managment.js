@@ -1,17 +1,18 @@
 import "./Manegment.css";
-import Header from "../../header/Header";
 import { Container, Row, Col } from "react-bootstrap";
 import ImgCaders from "../../../assets/images/imageManager.png";
-import Footer from "../../footer/Footer";
-import ManagementItems from "./ManagementItems";
-import React, { useRef, useState } from "react";
-import {FaQuoteRight} from "react-icons/fa"
-import {FaQuoteLeft} from "react-icons/fa"
+import { FaQuoteRight } from "react-icons/fa";
+import { FaQuoteLeft } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-cards";
+import Aos from "aos";
+import { useEffect } from "react";
 function Management() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   let ManagementCadrs = [
     {
       id: 1,
@@ -47,8 +48,13 @@ function Management() {
 
   return (
     <Container>
-      <div className="bg-manager">
-        <Row className="align-items-center">
+      <div className="bg-manager" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
+        <Row
+          className="align-items-center"
+          
+        >
           <Col lg={8}>
             <h2 className="fw-bold py-3">
               <FaQuoteRight className="ms-2" size="25px" color="#346ed190" />

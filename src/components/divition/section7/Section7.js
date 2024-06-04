@@ -2,7 +2,12 @@ import "./Section7.css";
 import { Col, Container, Row } from "react-bootstrap";
 import Cup from "../../../assets/images/cup.png";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import { useEffect } from "react";
 function Section7() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <Container className="my-5">
       <Row className="align-items-center bacgruond-color-eft p-4 rounded-4 shadow">
@@ -13,8 +18,8 @@ function Section7() {
           <h3 className="p-3 text-dark text-center">
             گوشه‌ای از افتخارت مجموعه
           </h3>
-          <Row className="my-1 p-3 rounded align-items-center justify-content-center">
-            <Col className="col-8 text-center">
+          <Row className="my-1 p-3 rounded align-items-center justify-content-center" >
+            <Col className="col-8 text-center" data-aos="fade-down" data-aos-duration="1500">
               <Link
                 target="blank"
                 className="eft-btn text-decoration-none d-block"
@@ -33,8 +38,8 @@ function Section7() {
               </Link>
             </Col>
           </Row>
-          <Row className="my-1 p-3 rounded align-items-center justify-content-center">
-            <Col className="col-8 text-center">
+          <Row className="my-1 p-3 rounded align-items-center justify-content-center" >
+            <Col className="col-8 text-center" data-aos="fade-down" data-aos-duration="1500">
               <Link
                 target="blank"
                 className="eft-btn text-decoration-none d-block"
@@ -53,8 +58,8 @@ function Section7() {
               </Link>
             </Col>
           </Row>
-          <Row className="my-1 p-3 rounded align-items-center justify-content-center">
-            <Col className="col-8 text-center">
+          <Row className="my-1 p-3 rounded align-items-center justify-content-center" >
+            <Col className="col-8 text-center" data-aos="fade-down" data-aos-duration="1500">
               <Link
                 target="blank"
                 className="eft-btn text-decoration-none d-block"
@@ -73,8 +78,8 @@ function Section7() {
               </Link>
             </Col>
           </Row>
-          <Row className="my-1 p-3 rounded align-items-center justify-content-center">
-            <Col className="col-8 text-center">
+          <Row className="my-1 p-3 rounded align-items-center justify-content-center" >
+            <Col className="col-8 text-center" data-aos="fade-down" data-aos-duration="1500">
               <Link
                 target="blank"
                 className="eft-btn text-decoration-none d-block"
@@ -93,8 +98,8 @@ function Section7() {
               </Link>
             </Col>
           </Row>
-          <Row className="my-1 p-3 rounded align-items-center justify-content-center">
-            <Col className="col-8 text-center">
+          <Row className="my-1 p-3 rounded align-items-center justify-content-center" >
+            <Col className="col-8 text-center" data-aos="fade-down" data-aos-duration="1500">
               <Link
                 target="blank"
                 className="btn-all text-decoration-none d-block"

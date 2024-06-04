@@ -42,7 +42,7 @@ function IndexPage() {
           </Row>
           <Row className="mb-3">
             <Link to={"/"} target="blank" className="text-white text-decoration-none">
-              <p className="fs-5 btnGoToIndexPage">بازگشت به صفحه اصلی</p>
+              <p className="fs-5 btnGoToIndexPage"> صفحه اصلی</p>
             </Link>
           </Row>
         </div>

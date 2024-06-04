@@ -1,17 +1,18 @@
 import { Container, Row } from "react-bootstrap";
 import "./Section1.css";
 import Section1Item from "./Section1Item";
-import {
-  FaUsersLine,
-  FaRegNewspaper,
-  FaSchoolCircleCheck,
-} from "react-icons/fa6";
+import { FaRegNewspaper, FaSchoolCircleCheck } from "react-icons/fa6";
 import { SlPicture } from "react-icons/sl";
 import { MdPermContactCalendar, MdConnectWithoutContact } from "react-icons/md";
 import { TfiCup } from "react-icons/tfi";
 // import { GrUserAdmin } from "react-icons/gr";
-import Section5 from '../section5/Section5';
+import Section5 from "../section5/Section5";
+import Aos from "aos";
+import { useEffect } from "react";
 function Section1() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   const SectionItems = [
     {
       id: 1,
@@ -48,7 +49,7 @@ function Section1() {
       icon: <TfiCup size={"40px"} />,
       textValue: "افتخارات",
       href: "/honors",
-    }
+    },
     // {
     //   id: 1,
     //   icon: <FaUsersLine size={"40px"} />,
@@ -60,7 +61,12 @@ function Section1() {
     <div className="section-A">
       <Container>
         <div className="text-center">
-          <p className="mar-top fw-bold mt-5 iphone animate__animated animate__rubberBand">
+          <p
+            className="mar-top fw-bold mt-5 iphone"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
             هنرستان فنی نمونه دولتی خادمی
           </p>
           <h6 className="animation-sec1 my-5 Leow" id="type">

@@ -1,18 +1,22 @@
 import { Button, Col, Container, Row, Modal } from "react-bootstrap";
 import imagemanager from "../../../assets/images/imageManager.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaQuoteRight } from "react-icons/fa";
 import { FaQuoteLeft } from "react-icons/fa";
 import "./Section6.css";
+import Aos from "aos";
 function Section6() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <div className="section-6">
+    <div className="section-6"  >
       <Container className="container-section6">
         <Row className="align-items-center border-section6 mt-5">
-          <Col lg={6}>
+          <Col lg={6} data-aos="fade-left" data-aos-duration="1000">
             <div>
               <h2>
                 <FaQuoteRight className="ms-2" size="25px" color="#346ed190" />
@@ -46,8 +50,8 @@ function Section6() {
               </Modal.Footer>
             </Modal>
           </Col>
-          <Col lg={6} className="none-sm">
-            <img src={imagemanager} className="img-fluid" />
+          <Col lg={6} className="none-sm" data-aos="fade-right" data-aos-duration="1000">
+            <img src={imagemanager} className="img-fluid" alt="" />
           </Col>
         </Row>
       </Container>

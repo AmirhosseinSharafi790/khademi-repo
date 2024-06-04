@@ -52,7 +52,7 @@ function Sigup() {
             </Col>
             <Col className="my-3" sm={12} md={6}>
               <Link to={"/"} target="blank">
-                بازگشت به صفحه اصلی
+               صفحه اصلی
               </Link>
             </Col>
           </Row>
