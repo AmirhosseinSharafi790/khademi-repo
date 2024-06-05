@@ -13,10 +13,12 @@ import Teachers from "./pages/Teachers/Teachers";
 import NetworkAndSoftware from "./pages/Teachers/MoreThan/NetworkAndSoftware";
 import Accounting from "./pages/Teachers/MoreThan/Accounting";
 import Electrotechnic from "./pages/Teachers/MoreThan/Electrotechnic";
+import AlbumZoom from "./pages/Album/albumZoom/AlbumZoom";
 const router = [
   { path: "/", element: <Home /> },
   { path: "/news", element: <News /> },
   { path: "/album", element: <Album /> },
+  { path: "/albumZoom", element: <AlbumZoom /> },
   { path: "/registration", element: <Registration /> },
   { path: "/contact", element: <Contact /> },
   { path: "/aboutus", element: <AboutUs /> },
