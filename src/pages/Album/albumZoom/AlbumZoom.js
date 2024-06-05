@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap";
 import "./AlbumZoom.css";
 import AlbumZoomItems from "./AlbumZoomItems";
+import { RiArrowDownDoubleFill } from "react-icons/ri";
 function AlbumZoom() {
   // let n = 8
   // let a = "";
@@ -10,69 +11,70 @@ function AlbumZoom() {
   //   n -= 1
   //   }else{
   // a = "justify-content-start"
-    //}
   //}
-  // 
-    let Items = [
-        {
-          id: 1,
-          image: "https://swiperjs.com/demos/images/nature-1.jpg",
-          RowClass : 'justify-content-end' ,
-          animation : "fade-up"
-        },
-        {
-          id: 2,
-          image: "https://swiperjs.com/demos/images/nature-2.jpg",
-          RowClass : 'justify-content-start' ,
-          animation : "fade-down"
-        },
-        {
-          id: 3,
-          image: "https://swiperjs.com/demos/images/nature-3.jpg",
-          RowClass : 'justify-content-end' ,
-          animation : "fade-right"
-        },
-        {
-          id: 4,
-          image: "https://swiperjs.com/demos/images/nature-4.jpg",
-          RowClass : 'justify-content-start' ,
-          animation : "fade-left"
-        },
-        {
-          id: 5,
-          image: "https://swiperjs.com/demos/images/nature-5.jpg",
-          RowClass : 'justify-content-end' ,
-          animation : "flip-left"
-        },
-        {
-          id: 6,
-          image: "https://swiperjs.com/demos/images/nature-4.jpg",
-          RowClass : 'justify-content-start' ,
-          animation : "flip-right"
-        },
-        {
-          id: 7,
-          image: "https://swiperjs.com/demos/images/nature-7.jpg",
-          RowClass : 'justify-content-end' ,
-          animation : "zoom-in"
-        },
-        {
-          id: 8,
-          image: "https://swiperjs.com/demos/images/nature-8.jpg",
-          RowClass : 'justify-content-start' ,
-          animation : "zoom-in-up"
-        },
-      ];
+  //}
+  //
+  let Items = [
+    {
+      id: 1,
+      image: "https://swiperjs.com/demos/images/nature-1.jpg",
+      RowClass: "justify-content-end",
+      animation: "fade-up",
+    },
+    {
+      id: 2,
+      image: "https://swiperjs.com/demos/images/nature-2.jpg",
+      RowClass: "justify-content-start",
+      animation: "fade-down",
+    },
+    {
+      id: 3,
+      image: "https://swiperjs.com/demos/images/nature-3.jpg",
+      RowClass: "justify-content-end",
+      animation: "fade-right",
+    },
+    {
+      id: 4,
+      image: "https://swiperjs.com/demos/images/nature-4.jpg",
+      RowClass: "justify-content-start",
+      animation: "fade-left",
+    },
+    {
+      id: 5,
+      image: "https://swiperjs.com/demos/images/nature-5.jpg",
+      RowClass: "justify-content-end",
+      animation: "flip-left",
+    },
+    {
+      id: 6,
+      image: "https://swiperjs.com/demos/images/nature-4.jpg",
+      RowClass: "justify-content-start",
+      animation: "flip-right",
+    },
+    {
+      id: 7,
+      image: "https://swiperjs.com/demos/images/nature-7.jpg",
+      RowClass: "justify-content-end",
+      animation: "zoom-in",
+    },
+    {
+      id: 8,
+      image: "https://swiperjs.com/demos/images/nature-8.jpg",
+      RowClass: "justify-content-start",
+      animation: "zoom-in-up",
+    },
+  ];
   return (
     <div className="container-style">
       <Container>
         <div className="title-album">
-          <h1>تصاویر اردوی مشهد مقدس </h1>
-          <h4>برای دیدن تصاویر پایین برید</h4>
+          <p className="fs-4 bg-dark bg-opacity-25 rounded p-3 border border-white">تصاویر اردوی مشهد مقدس </p>
+          <span className="fs-6 fw-bold bg-dark bg-opacity-50 rounded p-4 border border-white border-opacity-50">برای دیدن تصاویر بیشتر اسکرول کنید</span>
+          <RiArrowDownDoubleFill size="50px" color="#fff" className="animation" />
         </div>
-            {Items.map(item => (
-                <AlbumZoomItems key={item.id} {...item} />
-            ))}
+        {Items.map((item) => (
+          <AlbumZoomItems key={item.id} {...item} />
+        ))}
       </Container>
     </div>
   );
