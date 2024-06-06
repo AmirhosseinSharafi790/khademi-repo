@@ -50,7 +50,7 @@ function Header() {
               />
             </Navbar.Brand>
           </div>
-          <NavLink to={"/loginSigup"} id="display" className="btn-login mx-1">
+          <NavLink to={"/loginSigup"} id="display" className="btn-login mx-1" data-aos="fade-right">
             ورود و ثبت نام
           </NavLink>
           {/* search-Box-Modal */}
