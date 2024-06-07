@@ -3,7 +3,7 @@ import { Col } from "react-bootstrap";
 import { BsChatRightQuoteFill } from "react-icons/bs";
 import Aos from "aos";
 import { useEffect } from "react";
-function NewsItem({ image, title, desc }) {
+function NewsItem({ image_id, title, desc }) {
   useEffect(() => {
     Aos.init();
   }, []);
@@ -19,7 +19,7 @@ function NewsItem({ image, title, desc }) {
     >
       <div className="rounded p-3 px-0 pt-0 shadow box-bg rounded-top-4">
         <img
-          src={image}
+          src={image_id}
           alt=""
           className="img-fluid rounded-bottom-4 rounded-top-4 shadow"
         />
