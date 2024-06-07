@@ -4,6 +4,7 @@ import Footer from "../../components/footer/Footer";
 import { Container, Row } from "react-bootstrap";
 import NewsItem from "./NewsItem";
 import image from "../../assets/images/section2-bac.jpg";
+
 // import Slider from "react-slick";
 function News() {
   const NewsData = [

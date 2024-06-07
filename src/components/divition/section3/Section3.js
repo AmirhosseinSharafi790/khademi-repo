@@ -1,32 +1,29 @@
 import "./Section3.css";
 import { Col, Container, Row } from "react-bootstrap";
-import ImgSection3 from "../../../assets/images/section2-bac.jpg";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import Network from "../../../network";
+import Section3Items from "./Section3items";
 function Section3() {
-  let ItemsS3 = [
-    {
-      id: 1,
-      imgS3: ImgSection3,
-    },
-    {
-      id: 2,
-      imgS3: ImgSection3,
-    },
-    {
-      id: 3,
-      imgS3: ImgSection3,
-    },
-    {
-      id: 4,
-      imgS3: ImgSection3,
-    },
-  ];
+  const [albumHome, setAlbumHome] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const network = new Network();
+      const album = await network.getBaseInfo();
+      if (album == null || album.status === "ERROR") {
+        alert("شما ریدی");
+      } else {
+        setAlbumHome(album.data.album);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <div className="p-section3">
@@ -57,60 +54,11 @@ function Section3() {
                 modules={[EffectCoverflow, Pagination]}
                 className="mySwiper"
               >
-                <SwiperSlide>
-                  <img
-                    src="https://swiperjs.com/demos/images/nature-1.jpg"
-                    alt=""
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="https://swiperjs.com/demos/images/nature-2.jpg"
-                    alt=""
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="https://swiperjs.com/demos/images/nature-3.jpg"
-                    alt=""
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="https://swiperjs.com/demos/images/nature-4.jpg"
-                    alt=""
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="https://swiperjs.com/demos/images/nature-5.jpg"
-                    alt=""
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="https://swiperjs.com/demos/images/nature-6.jpg"
-                    alt=""
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="https://swiperjs.com/demos/images/nature-7.jpg"
-                    alt=""
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="https://swiperjs.com/demos/images/nature-8.jpg"
-                    alt=""
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="https://swiperjs.com/demos/images/nature-9.jpg"
-                    alt=""
-                  />
-                </SwiperSlide>
+                {albumHome.map((item) => (
+                  <SwiperSlide id="albumHome" key={item.id}>
+                    <Section3Items {...item} />
+                  </SwiperSlide>
+                ))}
               </Swiper>
             </div>
           </Col>
@@ -119,60 +67,4 @@ function Section3() {
     </div>
   );
 }
-
 export default Section3;
-
-// <Swiper
-// style={{
-//     '--swiper-navigation-color': '#fff',
-//     '--swiper-pagination-color': '#fff',
-//     }}
-//     loop={true}
-//     spaceBetween={5}
-//     navigation={true}
-//     thumbs={{ swiper: thumbsSwiper }}
-//     modules={[FreeMode, Navigation, Thumbs]}
-//     className="mySwiper2 width-height"
-// >
-//     <SwiperSlide>
-//     <img src={ImgSection3} className='img-fluid ' alt='' />
-//     </SwiperSlide>
-//     <SwiperSlide>
-//     <img src={ImgSection3} className='img-fluid ' alt='' />
-//     </SwiperSlide>
-//     <SwiperSlide>
-//     <img src={ImgSection3} className='img-fluid ' alt='' />
-//     </SwiperSlide>
-//     <SwiperSlide>
-//     <img src={ImgSection3} className='img-fluid ' alt='' />
-//     </SwiperSlide>
-//     <SwiperSlide>
-//     <img src={ImgSection3} className='img-fluid ' alt='' />
-//     </SwiperSlide>
-// </Swiper>
-// <Swiper
-//     onSwiper={setThumbsSwiper}
-//     loop={true}
-//     spaceBetween={3}
-//     slidesPerView={3}
-//     freeMode={true}
-//     watchSlidesProgress={true}
-//     modules={[FreeMode, Navigation, Thumbs]}
-//     className="mySwiper mt-breakpoint"
-// >
-//     <SwiperSlide>
-//     <img src={ImgSection3} alt='' className='img-fluid rounded' />
-//     </SwiperSlide>
-//     <SwiperSlide>
-//     <img src={ImgSection3} alt='' className='img-fluid rounded' />
-//     </SwiperSlide>
-//     <SwiperSlide>
-//     <img src={ImgSection3} alt='' className='img-fluid rounded' />
-//     </SwiperSlide>
-//     <SwiperSlide>
-//     <img src={ImgSection3} alt='' className='img-fluid rounded' />
-//     </SwiperSlide>
-//     <SwiperSlide>
-//     <img src={ImgSection3} alt='' className='img-fluid rounded' />
-//     </SwiperSlide>
-// </Swiper>

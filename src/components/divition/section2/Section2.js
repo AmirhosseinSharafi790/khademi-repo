@@ -1,56 +1,28 @@
-import React from "react";
-// Import Swiper React components
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
 import "./Section2.css";
-import image from "../../../assets/images/section2-bac.jpg";
-// import required modules
 import { Autoplay } from "swiper/modules";
 import { Col, Container, Row } from "react-bootstrap";
 import Section2Item from "./Section2Item";
 import "./Section2.css";
 import SwiperButtons from "../../SwiperButtons/SwiperButtons";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import Network from "../../../network";
 function Section2() {
-  const newItem = [
-    {
-      id: 1,
-      image: image,
-      title: "لورم ایپسوم متن ساختگی",
-      desc: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.",
-    },
-    {
-      id: 2,
-      image: image,
-      title: "لورم ایپسوم متن ساختگی",
-      desc: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.",
-    },
-    {
-      id: 3,
-      image: image,
-      title: "لورم ایپسوم متن ساختگی",
-      desc: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.",
-    },
-    {
-      id: 4,
-      image: image,
-      title: "لورم ایپسوم متن ساختگی",
-      desc: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.",
-    },
-    {
-      id: 5,
-      image: image,
-      title: "لورم ایپسوم متن ساختگی",
-      desc: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.",
-    },
-    {
-      id: 6,
-      image: image,
-      title: "لورم ایپسوم متن ساختگی",
-      desc: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.",
-    },
-  ];
+  const [newsState , setNewsState] = useState([]);
+  useEffect(() => { 
+    const fetchData = async () => {
+      const network = new Network(); 
+      const news = await network.getBaseInfo(); 
+      if(news == null || news.status === "ERROR"){
+        alert("شما ریدی");
+      }else{
+        setNewsState(news.data.news);
+      }
+    };
+    fetchData(); 
+}, []);
   return (
     <>
       <Container>
@@ -86,9 +58,9 @@ function Section2() {
               </div>
               <SwiperButtons />
             </div>
-            {newItem.map((item) => (
-              <Col className="">
-                <SwiperSlide key={item.id}>
+            {newsState.map((item) => (
+              <Col key={item.id}>
+                <SwiperSlide >
                   <Section2Item {...item} />
                 </SwiperSlide>
               </Col>

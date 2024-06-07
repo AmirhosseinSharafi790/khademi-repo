@@ -2,37 +2,23 @@ import { Container, Row } from 'react-bootstrap'
 import './Honors.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
-import imageHonors from '../../assets/images/honorsImage.jpg'
-import iii from '../../assets/images/banner-main.png'
 import HonorItems from './HonorItems'
+import { useEffect, useState } from 'react'
+import Network from '../../network'
 function Honors(){
-    
-    let Items = [
-        {
-            id : 1,
-            img : imageHonors,
-            title : 'پیروزی در انتخابات',
-            desc : 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است'
-        },
-        {
-            id : 2,
-            img : iii,
-            title : 'پیروزی در انتخابات',
-            desc : 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است'
-        },
-        {
-            id : 3,
-            img : imageHonors,
-            title : 'پیروزی در انتخابات',
-            desc : 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است'
-        },
-        {
-            id : 4,
-            img : imageHonors,
-            title : 'پیروزی در انتخابات',
-            desc : 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است'
-        },
-    ]
+    const [honors , setHonors] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const network = new Network();
+      const Honor = await network.getHonors();
+      if (Honor == null || Honor.status === "ERROR") {
+        alert("شما ریدی");
+      } else {
+        setHonors(Honor.data);
+      }
+    }
+    fetchData();
+  } , [])
     return(
         <div>
             <Header />
@@ -43,7 +29,7 @@ function Honors(){
                     <i className="fa-solid size-icon-honors fa-award"></i>
                 </div>
                 <Row className='my-5'>
-                    {Items.map(item => (
+                    {honors.map(item => (
                         <HonorItems key={item.id} {...item} />
                     ))}
                 </Row>

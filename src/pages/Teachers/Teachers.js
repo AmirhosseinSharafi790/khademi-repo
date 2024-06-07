@@ -7,47 +7,62 @@ import images3 from "../../assets/images/success.jpg";
 import { Container , Row } from "react-bootstrap";
 import "./Teachers.css";
 import TeachersItem from "./TeachersItem";
+import { useEffect, useState } from "react";
+import Network from '../../network';
 function Teachers() {
+  const [teachers , setTeachers] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const network = new Network();
+      const Teacher = await network.getTeachers();
+      if (Teacher == null || Teacher.status === "ERROR") {
+        alert("شما ریدی");
+      } else {
+        setTeachers(Teacher.data);
+      }
+    }
+    fetchData();
+  } , [])
 
-    const TeachersData = [
-        {
-            id : 1,
-            image : images,
-            name : "سعید آذرمهر",
-            field : "شبکه و نرم افزار - الکتروتکنیک"
-        },
-        {
-            id : 2,
-            image : images1,
-            name : "اصغر رعیت پور",
-            field : "الکتروتکنیک"
-        },
-        {
-            id : 3,
-            image : images2,
-            name : "محمد دهقان باغی",
-            field : "حسابداری"
-        },
-        {
-            id : 4,
-            image : images3,
-            name : "احمد گلزار",
-            field : "تاریخ"
-        },
-        {
-            id : 5,
-            image : images,
-            name : "مرتضی انتظاری",
-            field : "تربیت بدنی"
-        }
-    ]
+    // const TeachersData = [
+    //     {
+    //         id : 1,
+    //         image : images,
+    //         name : "سعید آذرمهر",
+    //         field : "شبکه و نرم افزار - الکتروتکنیک"
+    //     },
+    //     {
+    //         id : 2,
+    //         image : images1,
+    //         name : "اصغر رعیت پور",
+    //         field : "الکتروتکنیک"
+    //     },
+    //     {
+    //         id : 3,
+    //         image : images2,
+    //         name : "محمد دهقان باغی",
+    //         field : "حسابداری"
+    //     },
+    //     {
+    //         id : 4,
+    //         image : images3,
+    //         name : "احمد گلزار",
+    //         field : "تاریخ"
+    //     },
+    //     {
+    //         id : 5,
+    //         image : images,
+    //         name : "مرتضی انتظاری",
+    //         field : "تربیت بدنی"
+    //     }
+    // ]
   return (
     <>
       <Header />
       <Container>
         <Row>
           {
-            TeachersData.map( teacher => (
+            teachers.map( teacher => (
                 <TeachersItem key={teacher.id} {...teacher} /> 
             ) )
           }

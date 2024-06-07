@@ -10,3 +10,9 @@
 .text-color {
   color: #29292a;
 }
+.height{
+  height: 200px !important;
+}
+.custom-style{
+  overflow: hidden;
+}

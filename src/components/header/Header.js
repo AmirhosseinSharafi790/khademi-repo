@@ -109,9 +109,6 @@ function Header() {
                 <NavLink to={"/contact"} className="nav-link">
                   ارتباط با هنرستان
                 </NavLink>
-                <NavLink to={"/managment"} className="nav-link" id="dsply">
-                  کادر مدیریت
-                </NavLink>
                 <NavLink to={"/honors"} className="nav-link" id="dsply1">
                   افتخارات
                 </NavLink>

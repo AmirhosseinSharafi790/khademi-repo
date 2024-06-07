@@ -3,8 +3,27 @@ import { Col, Container, Row } from "react-bootstrap";
 import Cup from "../../../assets/images/cup.png";
 import { Link } from "react-router-dom";
 import Aos from "aos";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Network from "../../../network";
+import Section7Item from "./Section7Item";
 function Section7() {
+  const [honorsHome , setHonorsHome] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const network = new Network();
+      const Honor = await network.getHonors(1 , 4);
+      if (Honor == null || Honor.status === "ERROR") {
+        alert("شما ریدی");
+      } else {
+        setHonorsHome(Honor.data);
+      }
+    }
+    fetchData();
+  } , [])
+
+
+
+
   useEffect(() => {
     Aos.init();
   }, []);
@@ -18,86 +37,11 @@ function Section7() {
           <h3 className="p-3 text-dark text-center">
             گوشه‌ای از افتخارت مجموعه
           </h3>
-          <Row className="my-1 p-3 rounded align-items-center justify-content-center" >
-            <Col className="col-8 text-center" data-aos="fade-down" data-aos-duration="1500">
-              <Link
-                target="blank"
-                className="eft-btn text-decoration-none d-block"
-                to={"/honors"}
-              >
-                لورم ایپسوم متن ساختگی با تولید سادگی
-              </Link>
-            </Col>
-            <Col className="col-4 text-center">
-              <Link
-                target="blank"
-                className="text-decoration-none text-dark"
-                to={"/honors"}
-              >
-                <i className="bi bi-arrow-left"></i>
-              </Link>
-            </Col>
-          </Row>
-          <Row className="my-1 p-3 rounded align-items-center justify-content-center" >
-            <Col className="col-8 text-center" data-aos="fade-down" data-aos-duration="1500">
-              <Link
-                target="blank"
-                className="eft-btn text-decoration-none d-block"
-                to={"/honors"}
-              >
-                لورم ایپسوم متن ساختگی با تولید سادگی
-              </Link>
-            </Col>
-            <Col className="col-4 text-center">
-              <Link
-                target="blank"
-                className="text-decoration-none text-dark"
-                to={"/honors"}
-              >
-                <i className="bi bi-arrow-left"></i>
-              </Link>
-            </Col>
-          </Row>
-          <Row className="my-1 p-3 rounded align-items-center justify-content-center" >
-            <Col className="col-8 text-center" data-aos="fade-down" data-aos-duration="1500">
-              <Link
-                target="blank"
-                className="eft-btn text-decoration-none d-block"
-                to={"/honors"}
-              >
-                لورم ایپسوم متن ساختگی با تولید سادگی
-              </Link>
-            </Col>
-            <Col className="col-4 text-center">
-              <Link
-                target="blank"
-                className="text-decoration-none text-dark"
-                to={"/honors"}
-              >
-                <i className="bi bi-arrow-left"></i>
-              </Link>
-            </Col>
-          </Row>
-          <Row className="my-1 p-3 rounded align-items-center justify-content-center" >
-            <Col className="col-8 text-center" data-aos="fade-down" data-aos-duration="1500">
-              <Link
-                target="blank"
-                className="eft-btn text-decoration-none d-block"
-                to={"/honors"}
-              >
-                لورم ایپسوم متن ساختگی با تولید سادگی
-              </Link>
-            </Col>
-            <Col className="col-4 text-center">
-              <Link
-                target="blank"
-                className="text-decoration-none text-dark"
-                to={"/honors"}
-              >
-                <i className="bi bi-arrow-left"></i>
-              </Link>
-            </Col>
-          </Row>
+          
+          {honorsHome.map(item => (
+            <Section7Item key={item.id} {...item} />
+          ))}
+          
           <Row className="my-1 p-3 rounded align-items-center justify-content-center" >
             <Col className="col-8 text-center" data-aos="fade-down" data-aos-duration="1500">
               <Link

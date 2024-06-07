@@ -1,9 +1,8 @@
 import './Section3.css'
-import baseUrl from "../../../../node_modules/slick-carousel/slick/config.rb"
-function Section3Items({imgS3}){
+function Section3Items({image_id}){
     return(
         <div>
-            <img src={ baseUrl + imgS3} alt='' className='border-r'/>
+            <img src={`https://khademi.liara.run/${image_id}`} alt='' className='image-style'/>
         </div>
     )
 }
