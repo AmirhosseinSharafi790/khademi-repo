@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function PanelItem({icon , title}) {
   return (
-    <Col md={6} lg={4}>
+    <Col md={6} lg={3}>
       <Link>
         <div className="box-panel">
           <i className={icon}></i>

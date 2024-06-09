@@ -34,26 +34,41 @@
   background-color: #80808098;
 }
 .panel-option {
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    border-radius: 15px;
-    text-align: center;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #35373a;
 }
 .box-panel {
-  /* border: 1px solid   gray; */
   margin: 20px;
   padding: 10px 0 !important;
   border-radius: 10px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background-color: #dae5ebd7;
 }
-.box-panel:hover{
-    background-color: #80808098;
-    color: #fff;
-    transition: all .5s;
+.box-panel:hover {
+  background-color: #80808098;
+  color: #3485d1;
+  transition: all 0.5s;
 }
 .panel-option a {
   color: #35373a;
   text-decoration: none;
 }
-.fa-solid{
-    font-size: 3rem;
+.fa-solid {
+  font-size: 3rem;
+}
+@media screen and (max-width: 992px) {
+  .bg-container {
+    display: none !important;
+    width: 25% !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .panel-box {
+    width: 75% !important;
+  }
+}
+#icon-list {
+  background-color: aqua !important;
 }
