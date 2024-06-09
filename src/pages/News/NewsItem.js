@@ -19,9 +19,9 @@ function NewsItem({ image_id, title, desc }) {
     >
       <div className="rounded p-3 px-0 pt-0 shadow box-bg rounded-top-4">
         <img
-          src={image_id}
+          src={`https://khademi.liara.run/${image_id}`}
           alt=""
-          className="img-fluid rounded-bottom-4 rounded-top-4 shadow"
+          className="news-image img-fluid rounded-top-4 shadow"
         />
         <h5 className="text-start text-color mt-2 p-3 opacity-75">
           <BsChatRightQuoteFill

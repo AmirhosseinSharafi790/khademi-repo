@@ -14,7 +14,7 @@ function Section4Item({ CName, img, title, text, route }) {
       <div className="card-section4  d-sm-inline d-lg-flex">
         <div className="flip-card">
           <div className="flip-card-inner">
-            <div className="flip-card-front">
+            <div className="flip-card-front d-none  d-lg-block">
               <img
                 src={img}
                 alt="Avatar"

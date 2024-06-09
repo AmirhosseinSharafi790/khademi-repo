@@ -30,7 +30,7 @@ function Section1() {
       id: 3,
       icon: <FaSchoolCircleCheck size={"40px"} />,
       textValue: "پیش ثبت نام",
-      href: "",
+      href: "/registration",
     },
     {
       id: 4,

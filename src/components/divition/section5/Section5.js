@@ -24,7 +24,7 @@ function Section5() {
     },
     {
       id : 4,
-      textValue : 'متر مربع' ,
+      textValue : 'وسعت' ,
       icon : 'fa-regular fa-building icon-Size',
       count : 1200
     },
