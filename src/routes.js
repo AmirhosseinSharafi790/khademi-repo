@@ -14,6 +14,7 @@ import NetworkAndSoftware from "./pages/Teachers/MoreThan/NetworkAndSoftware";
 import Accounting from "./pages/Teachers/MoreThan/Accounting";
 import Electrotechnic from "./pages/Teachers/MoreThan/Electrotechnic";
 import AlbumZoom from "./pages/Album/albumZoom/AlbumZoom";
+import Panel from "./pages/Panel/Panel";
 const router = [
   { path: "/", element: <Home /> },
   { path: "/news", element: <News /> },
@@ -30,6 +31,7 @@ const router = [
   {path : "/networkAndSoftware" , element: <NetworkAndSoftware/>},
   {path : "/accounting" , element: <Accounting/>},
   {path : "/electrotechnic" , element: <Electrotechnic/>},
+  {path : "/panel" , element: <Panel/>},
   {path : '/designed&support' , element : <h1>designed&support routes</h1>},
   {path : '*' , element : <NotFound />}
 ];
