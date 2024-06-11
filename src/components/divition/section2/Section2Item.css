@@ -10,9 +10,12 @@
 .text-color {
   color: #29292a;
 }
-.height{
-  height: 200px !important;
+.aspect-ratio{
+  max-width: 100%;
+  height: 250px !important;
+  aspect-ratio: 3/2;
 }
 .custom-style{
   overflow: hidden;
+  height: 500px !important;
 }

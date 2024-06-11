@@ -26,7 +26,7 @@ function Section8() {
       <Row>
         <Col
           sm={12}
-          className="rounded shadow border-2 rounded parallax p-5 text-white"
+          className="shadow border-2 parallax p-5 text-white"
         >
           <h3 className="text-center p-2 fw-bold my-3">پلی به سوی موفقیت</h3>
           <p className="text-justify p-3 mb-5 border border-info rounded text-white line-height-section6">

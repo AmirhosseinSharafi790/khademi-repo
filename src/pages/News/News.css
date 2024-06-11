@@ -2,6 +2,7 @@
   background-color: #346ed10c;
   border: 1px solid #346ed1;
   transition: all 0.5s ease;
+  height: 550px !important;
 }
 .box-bg:hover {
   border: 1px solid #346ed122;
@@ -14,6 +15,5 @@
 }
 .news-image{
   width: 100%;
-  height: 230px !important;
   aspect-ratio: 3/2;
 }

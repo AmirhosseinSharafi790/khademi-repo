@@ -11,3 +11,8 @@
   background-color: #346ed1;
   color: #bde8ee;
 }
+@media screen and (max-width : 768px) {
+  .mediaQuery-style{
+    display: none;
+  }
+}

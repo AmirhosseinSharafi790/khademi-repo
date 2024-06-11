@@ -6,23 +6,21 @@ import Aos from "aos";
 import { useEffect, useState } from "react";
 import Network from "../../../network";
 import Section7Item from "./Section7Item";
+import { VscLinkExternal } from "react-icons/vsc";
 function Section7() {
-  const [honorsHome , setHonorsHome] = useState([]);
+  const [honorsHome, setHonorsHome] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       const network = new Network();
-      const Honor = await network.getHonors(1 , 4);
+      const Honor = await network.getHonors(1, 4);
       if (Honor == null || Honor.status === "ERROR") {
         alert("شما ریدی");
       } else {
         setHonorsHome(Honor.data);
       }
-    }
+    };
     fetchData();
-  } , [])
-
-
-
+  }, []);
 
   useEffect(() => {
     Aos.init();
@@ -37,13 +35,17 @@ function Section7() {
           <h3 className="p-3 text-dark text-center">
             گوشه‌ای از افتخارت مجموعه
           </h3>
-          
-          {honorsHome.map(item => (
+
+          {honorsHome.map((item) => (
             <Section7Item key={item.id} {...item} />
           ))}
-          
-          <Row className="my-1 p-3 rounded align-items-center justify-content-center" >
-            <Col className="col-8 text-center" data-aos="fade-down" data-aos-duration="1500">
+
+          <Row className="my-1 p-3 rounded align-items-center justify-content-center">
+            <Col
+              className="col-10 text-center"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+            >
               <Link
                 target="blank"
                 className="btn-all text-decoration-none d-block"
@@ -52,13 +54,13 @@ function Section7() {
                 مشاهده همه افتخارت
               </Link>
             </Col>
-            <Col className="col-4 text-center">
+            <Col className="col-2 text-center">
               <Link
                 target="blank"
                 className="text-decoration-none text-dark"
                 to={"/honors"}
               >
-                <i className="bi bi-arrow-left"></i>
+                <VscLinkExternal color="#346ED1" size="20px"/>
               </Link>
             </Col>
           </Row>

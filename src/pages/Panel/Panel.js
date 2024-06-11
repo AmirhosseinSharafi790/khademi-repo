@@ -1,11 +1,10 @@
-import { Col, Container, Nav, NavDropdown, Navbar, Row } from "react-bootstrap";
+import { Col, Container, Nav, Navbar, Row } from "react-bootstrap";
 import "./Panel.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import { FaRegUserCircle, FaAssistiveListeningSystems } from "react-icons/fa";
 import { MdLogout } from "react-icons/md";
 import PanelItem from "./PanelItem";
-import Logo from "../../assets/images/Logo.jpg";
 function Panel() {
   const Items = [
     {
@@ -39,12 +38,16 @@ function Panel() {
       title: "تایید دانش آموز",
     },
   ];
-  const expand = "992px"
+  const expand = "992px";
   return (
     <div>
       <Header />
       <Container className="my-3">
-        <Navbar collapseOnSelect expand={expand} className="shadow bg-dark p-3 rounded my-3 d-lg-none ">
+        <Navbar
+          collapseOnSelect
+          expand={expand}
+          className="shadow bg-dark p-3 rounded my-3 d-lg-none "
+        >
           <Container>
             <Navbar.Brand className="text-info">
               <img
@@ -56,7 +59,10 @@ function Panel() {
               />
               امیررضا کرمی
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" id="icon-list" />
+            <Navbar.Toggle
+              aria-controls="responsive-navbar-nav"
+              id="icon-list"
+            />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link className="text-info">

@@ -7,11 +7,11 @@ function SwiperButtons() {
   const btnSwiper = useSwiper();
   return (
     <>
-      <div>
-        <button className="btnStyle mx-2" onClick={() => btnSwiper.slidePrev()}>
+      <div className="text-end mediaQuery-style">
+        <button className="btnStyle mx-1" onClick={() => btnSwiper.slidePrev()}>
           <MdOutlineKeyboardArrowRight size="30px" />
         </button>
-        <button className="btnStyle mx-2" onClick={() => btnSwiper.slideNext()}>
+        <button className="btnStyle mx-1" onClick={() => btnSwiper.slideNext()}>
           <MdKeyboardArrowLeft size="30px" />
         </button>
       </div>

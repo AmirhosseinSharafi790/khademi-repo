@@ -10,19 +10,19 @@ import SwiperButtons from "../../SwiperButtons/SwiperButtons";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import Network from "../../../network";
 function Section2() {
-  const [newsState , setNewsState] = useState([]);
-  useEffect(() => { 
+  const [newsState, setNewsState] = useState([]);
+  useEffect(() => {
     const fetchData = async () => {
-      const network = new Network(); 
-      const news = await network.getBaseInfo(); 
-      if(news == null || news.status === "ERROR"){
+      const network = new Network();
+      const news = await network.getBaseInfo();
+      if (news == null || news.status === "ERROR") {
         alert("شما ریدی");
-      }else{
+      } else {
         setNewsState(news.data.news);
       }
     };
-    fetchData(); 
-}, []);
+    fetchData();
+  }, []);
   return (
     <>
       <Container>
@@ -36,7 +36,7 @@ function Section2() {
             modules={[Autoplay]}
             breakpoints={{
               1400: {
-                slidesPerView: 4,
+                slidesPerView: 3,
               },
               992: {
                 slidesPerView: 3,
@@ -52,15 +52,17 @@ function Section2() {
           >
             <div className="swiperTopSection">
               <div className="px-4">
-                <FaQuoteRight className="ms-2" size="25px" color="#346ed190" />
+                <FaQuoteRight className="ms-2" size="20px" color="#346ed190" />
                 <h4 className="sectionTitle d-inline">جدیدترین خبر ها</h4>
-                <FaQuoteLeft className="ms-2" size="25px" color="#346ed190" />
+                <FaQuoteLeft className="ms-2" size="20px" color="#346ed190" />
               </div>
-              <SwiperButtons />
+              <div>
+                <SwiperButtons />
+              </div>
             </div>
             {newsState.map((item) => (
               <Col key={item.id}>
-                <SwiperSlide >
+                <SwiperSlide>
                   <Section2Item {...item} />
                 </SwiperSlide>
               </Col>

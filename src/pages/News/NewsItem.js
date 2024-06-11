@@ -31,7 +31,7 @@ function NewsItem({ image_id, title, desc }) {
           />
           {title}
         </h5>
-        <p className="text-justify text-dark opacity-75 p-3 pt-1">{desc}</p>
+        <p className="text-dark opacity-75 p-3 pt-1">{desc}</p>
       </div>
     </Col>
   );
