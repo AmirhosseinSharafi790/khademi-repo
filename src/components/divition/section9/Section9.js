@@ -34,7 +34,7 @@ function Section9() {
     }
   ];
   return (
-    <div className="section9 p-5 mt-5">
+    <div className="section9 py-5 mt-5">
       <Container>
         <Row className="justify-content-center align-items-center m-auto">
           <Col sm={12} lg={12}>

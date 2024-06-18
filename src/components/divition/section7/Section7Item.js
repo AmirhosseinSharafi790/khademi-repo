@@ -1,10 +1,9 @@
 import { Col, Row } from "react-bootstrap";
-import { VscLinkExternal } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 
 function Section7Item({ title }) {
   return (
-    <Row className="my-1 p-3 rounded align-items-center justify-content-center">
+    <Row className="my-1 py-3 rounded align-items-center justify-content-center">
       <Col
         className="col-10 text-center"
         data-aos="fade-down"
@@ -18,7 +17,7 @@ function Section7Item({ title }) {
           {title}
         </Link>
       </Col>
-      <Col className="col-2 text-center">
+      {/* <Col className="col-2 text-center">
         <Link
           target="blank"
           className="text-decoration-none text-dark"
@@ -26,7 +25,7 @@ function Section7Item({ title }) {
         >
           <VscLinkExternal color="#346ED1" size="20px" />
         </Link>
-      </Col>
+      </Col> */}
     </Row>
   );
 }

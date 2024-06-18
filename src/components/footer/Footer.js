@@ -3,8 +3,7 @@ import "./Footer.css";
 import FooterItemsR from "./FooterItemsR";
 import FooterL from "./FooterL";
 import { Link } from "react-router-dom";
-import { FaCopyright, FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
-import { IoCodeWorking } from "react-icons/io5";
+import { FaCopyright, FaPhoneAlt, FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import {
   FaLocationDot,
   FaPhoneFlip,
@@ -75,7 +74,7 @@ function Footer() {
   ];
   return (
     <div>
-      <div className="">
+      <div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#346ed1ba"
@@ -109,14 +108,16 @@ function Footer() {
                 {ItemsL.map((itemL) => (
                   <FooterL key={itemL.id} {...itemL} />
                 ))}
-                
               </div>
             </Col>
           </Row>
           <hr className="text-white text-opacity-75 pt-2" />
           <Row className=" align-items-center py-2">
             <Col lg={3} className="d-flex justify-content-center my-2">
-              <Link className="text-white text-decoration-none " to="/designed&support">
+              <Link
+                className="text-white text-decoration-none "
+                to="/designed&support"
+              >
                 <p className="d-inline border-b">طراحی و پشتیبانی</p>
               </Link>
             </Col>
@@ -125,33 +126,30 @@ function Footer() {
               className=" d-flex text-white my-2 justify-content-center text-center"
             >
               <FaCopyright size="20px" color="#fff" className="me-1" />
-              <span className="fs-">مالکیت معنوی و مادی این وبسایت متعلق به هنرستان فنی نمونه دولتی
-              خادمی می باشد.</span>
+              <span className="fs-">
+                تمامی حقوق برای هنرستان نمونه دولتی خادمی محفوط است.
+              </span>
             </Col>
             <Col
               lg={3}
               className="text-end d-flex text-white my-2 justify-content-center"
             >
-              <div>
-                  <Link target="blank">
-                    <i
-                      title="Telegram"
-                      className="hover-app1 fs-3 mx-2 fa-brands fa-telegram"
-                    ></i>
-                  </Link>
-                  <Link target="blank">
-                    <i
-                      title="instagram"
-                      className="hover-app2 fs-3 mx-2 fa-brands fa-instagram"
-                    ></i>
-                  </Link>
-                  <Link target="blank">
-                    <i
-                      title="Eitaa"
-                      className="hover-app3 fs-3 mx-2 fa-solid fa-envelope"
-                    ></i>
-                  </Link>
-                </div>
+              <div className="d-flex">
+              <Link
+                to={"https://web.eitaa.com/#-19234579"}
+                className="app-color"
+                target="blank"
+              >
+                <img
+                  src="https://web.eitaa.com/assets/img/apple-touch-icon.png?v=jw3mK7G9Ry"
+                  alt=""
+                  className="eitta-style"
+                />
+              </Link>
+              <Link className="app-color" target="blank">
+                <FaPhoneAlt className="fs-4 phone-hover" />
+              </Link>
+            </div>
             </Col>
           </Row>
         </Container>

@@ -74,3 +74,6 @@
     display: none;
   }
 } */
+.navbar-toggler:focus , .btn-close:focus{
+  box-shadow: none !important;
+}

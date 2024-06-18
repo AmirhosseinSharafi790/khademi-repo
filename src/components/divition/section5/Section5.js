@@ -32,8 +32,8 @@ function Section5() {
 
   return (
     <div className="section-A py-5">
-      <Container>
-        <Row  className="gy-4">
+      <Container fluid>
+        <Row className="gy-4">
           {CounterItems.map(CounterItem => (
             <Section5Items key={CounterItem.id} {...CounterItem}/>
           ))}

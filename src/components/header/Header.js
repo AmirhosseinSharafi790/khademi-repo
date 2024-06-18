@@ -17,12 +17,12 @@ import { useEffect } from "react";
 function Header() {
   useEffect(() => {
     Aos.init();
-  },[])
+  }, []);
   // search-Box-State
   // const [show, setShow] = useState(false);
   // const handleClose = () => setShow(false);
   // const handleShow = () => setShow(true);
-  
+
   const expand = "lg";
   return (
     <>
@@ -50,7 +50,12 @@ function Header() {
               />
             </Navbar.Brand>
           </div>
-          <NavLink to={"/loginSigup"} id="display" className="btn-login mx-1" data-aos="fade-right">
+          <NavLink
+            to={"/loginSigup"}
+            id="display"
+            className="btn-login mx-1"
+            data-aos="fade-right"
+          >
             ورود و ثبت نام
           </NavLink>
           {/* search-Box-Modal */}
@@ -119,7 +124,11 @@ function Header() {
                       <NavLink to={"/rollcall"} className="nav-link" id="dsply5">سامانه حضور و غیاب</NavLink> */}
               </Nav>
               <div className="my-1" id="menu-hide">
-                <NavLink to={"/loginSigup"} className="btn-login mx-1" data-aos="fade-right">
+                <NavLink
+                  to={"/loginSigup"}
+                  className="btn-login mx-1"
+                  data-aos="fade-right"
+                >
                   ورود و ثبت نام
                 </NavLink>
                 {/* search-Box-Icon */}

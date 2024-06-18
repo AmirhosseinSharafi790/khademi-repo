@@ -59,7 +59,7 @@ function Section1() {
   ];
   return (
     <div className="section-A">
-      <Container>
+      <Container fluid>
         <div className="text-center">
           <p
             className="mar-top fw-bold mt-5 iphone"

@@ -25,7 +25,11 @@ function TeachersItem({ image_id, name, field }) {
           <div className="d-flex justify-content-between align-items-start">
             <span className="margin-er">راه های ارتباطی</span>
             <div className="d-flex">
-              <Link to={'https://web.eitaa.com/#@mahdi_poker'} className="app-color" target="blank">
+              <Link
+                to={"https://web.eitaa.com/#@mahdi_poker"}
+                className="app-color"
+                target="blank"
+              >
                 <img
                   src="https://web.eitaa.com/assets/img/apple-touch-icon.png?v=jw3mK7G9Ry"
                   alt=""
@@ -33,7 +37,7 @@ function TeachersItem({ image_id, name, field }) {
                 />
               </Link>
               <Link className="app-color" target="blank">
-                <FaPhoneAlt  className="fs-4 phone-hover" />
+                <FaPhoneAlt className="fs-4 phone-hover" />
               </Link>
             </div>
           </div>

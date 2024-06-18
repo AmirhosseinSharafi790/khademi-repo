@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import Network from "../../../network";
 import Section7Item from "./Section7Item";
 import { VscLinkExternal } from "react-icons/vsc";
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 function Section7() {
   const [honorsHome, setHonorsHome] = useState([]);
   useEffect(() => {
@@ -27,20 +28,20 @@ function Section7() {
   }, []);
   return (
     <Container className="my-5">
-      <Row className="align-items-center bacgruond-color-eft p-4 rounded-4 shadow">
+      <Row className="align-items-center bacgruond-color-eft py-4 rounded-4 shadow">
         <Col sm={12} md={6} className="text-center">
           <img src={Cup} className="img-fluid display-none p-3" alt="" />
         </Col>
         <Col sm={12} md={6}>
-          <h3 className="p-3 text-dark text-center">
+          <h3 className="p-3 text-dark Cairo text-center">
+          <FaQuoteRight className="ms-2" size="25px" color="#346ed190" />
             گوشه‌ای از افتخارت مجموعه
+          <FaQuoteLeft className="ms-2" size="25px" color="#346ed190" />
           </h3>
-
           {honorsHome.map((item) => (
             <Section7Item key={item.id} {...item} />
           ))}
-
-          <Row className="my-1 p-3 rounded align-items-center justify-content-center">
+          <Row className="my-1 py-3 rounded align-items-center justify-content-center">
             <Col
               className="col-10 text-center"
               data-aos="fade-down"
@@ -54,15 +55,15 @@ function Section7() {
                 مشاهده همه افتخارت
               </Link>
             </Col>
-            <Col className="col-2 text-center">
+            {/* <Col className="col-2 text-center">
               <Link
                 target="blank"
                 className="text-decoration-none text-dark"
                 to={"/honors"}
               >
-                <VscLinkExternal color="#346ED1" size="20px"/>
+                <VscLinkExternal color="#346ED1" size="20px" />
               </Link>
-            </Col>
+            </Col> */}
           </Row>
         </Col>
       </Row>
