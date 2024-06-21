@@ -86,7 +86,7 @@ function Footer() {
       <div className="footer">
         <Container>
           <Row className="align-items-start justify-content-around">
-            <Col lg={4} className="mt-3 text-start">
+            <Col lg={4} className="mt-3">
               <div className="footer-body">
                 <h3 className="fw-bold opacity-75 py-2">
                   <FaQuoteRight className="me-2" size="25px" color="#dcd9d9" />

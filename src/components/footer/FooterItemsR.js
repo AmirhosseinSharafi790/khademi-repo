@@ -3,7 +3,7 @@ import "./Footer.css";
 function FooterItemsR({ icon, desc, hrefPhone, phone }) {
   return (
     <div className="iconStyle my-2">
-      <span>{icon}</span>
+      <span className="px-2">{icon}</span>
       <span className="fs-5 ms-2 text-dark opacity-75">
         {desc}
         <Link
