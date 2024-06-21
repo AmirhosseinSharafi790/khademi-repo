@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
 }
-.card-body{
+#card-body{
     color: #BDE8EE !important;
     margin-top: -40px;
     border-top: 2px solid #BDE8EE;

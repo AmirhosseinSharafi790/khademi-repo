@@ -24,7 +24,7 @@ function DesighnedItem({
             variant="top"
             src="https://t4.ftcdn.net/jpg/03/05/46/75/360_F_305467506_QczGkOYLChAeFpjsLrzFltFXwxunx0xE.jpg"
           />
-          <Card.Body>
+          <Card.Body id="card-body">
             <Card.Title className="text-center m-auto py-4 fw-bold">
               {name} :{" "}
               <span className="text-info Cairo fw-bold">{position}</span>
