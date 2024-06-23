@@ -9,16 +9,19 @@ import { EffectCoverflow, Pagination } from "swiper/modules";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import Network from "../../../network";
 import Section3Items from "./Section3items";
+import Loding from "../../Loding/Loding";
 function Section3() {
   const [albumHome, setAlbumHome] = useState([]);
+  const [isPending , setIsPending] = useState(true);
   useEffect(() => {
     const fetchData = async () => {
       const network = new Network();
       const album = await network.getBaseInfo();
       if (album == null || album.status === "ERROR") {
-        alert("شما ریدی");
+        alert("اتصال شما برقرار نیست");
       } else {
         setAlbumHome(album.data.album);
+        setIsPending(false);
       }
     };
 
@@ -26,7 +29,11 @@ function Section3() {
   }, []);
 
   return (
-    <div className="p-section3">
+    <>
+      {isPending ? (
+        <Loding />
+      ) : (
+        <div className="p-section3">
       <Container className="mb-5 p-0  text-center align-items-center rounded">
         <Row className="gy-4 album-style">
           <Col>
@@ -65,6 +72,8 @@ function Section3() {
         </Row>
       </Container>
     </div>
+      )}
+    </>
   );
 }
 export default Section3;

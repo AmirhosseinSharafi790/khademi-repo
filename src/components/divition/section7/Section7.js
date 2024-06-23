@@ -6,18 +6,20 @@ import Aos from "aos";
 import { useEffect, useState } from "react";
 import Network from "../../../network";
 import Section7Item from "./Section7Item";
-import { VscLinkExternal } from "react-icons/vsc";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import Loding from "../../Loding/Loding";
 function Section7() {
   const [honorsHome, setHonorsHome] = useState([]);
+  const [isPending , setIsPending] = useState(true);
   useEffect(() => {
     const fetchData = async () => {
       const network = new Network();
       const Honor = await network.getHonors(1, 4);
       if (Honor == null || Honor.status === "ERROR") {
-        alert("شما ریدی");
+        alert("اتصال شما برقرار نیست");
       } else {
         setHonorsHome(Honor.data);
+        setIsPending(false);
       }
     };
     fetchData();
@@ -27,7 +29,11 @@ function Section7() {
     Aos.init();
   }, []);
   return (
-    <Container className="my-5">
+    <>
+      {isPending ? (
+        <Loding />
+      ) : (
+        <Container className="my-5">
       <Row className="align-items-center bacgruond-color-eft py-4 rounded-4 shadow">
         <Col sm={12} md={6} className="text-center">
           <img src={Cup} className="img-fluid display-none p-3" alt="" />
@@ -55,19 +61,12 @@ function Section7() {
                 مشاهده همه افتخارت
               </Link>
             </Col>
-            {/* <Col className="col-2 text-center">
-              <Link
-                target="blank"
-                className="text-decoration-none text-dark"
-                to={"/honors"}
-              >
-                <VscLinkExternal color="#346ED1" size="20px" />
-              </Link>
-            </Col> */}
           </Row>
         </Col>
       </Row>
     </Container>
+      )}
+    </>
   );
 }
 export default Section7;

@@ -9,7 +9,7 @@ function NotFound() {
       <Row>
         <Col sm = {12}>
           <div>
-            <img src={Image} className="img-fluid img-404" />
+            <img src={Image} className="img-fluid img-404" alt=""/>
           </div>
         </Col>
         <Col sm = {12}>

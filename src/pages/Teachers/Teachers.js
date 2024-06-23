@@ -12,7 +12,7 @@ function Teachers() {
       const network = new Network();
       const Teacher = await network.getTeachers();
       if (Teacher == null || Teacher.status === "ERROR") {
-        alert("شما ریدی");
+        alert("اتصال شما برقرار نیست");
       } else {
         setTeachers(Teacher.data);
       }

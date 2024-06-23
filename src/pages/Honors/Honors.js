@@ -12,7 +12,7 @@ function Honors(){
       const network = new Network();
       const Honor = await network.getHonors();
       if (Honor == null || Honor.status === "ERROR") {
-        alert("شما ریدی");
+        alert("اتصال شما برقرار نیست");
       } else {
         setHonors(Honor.data);
       }

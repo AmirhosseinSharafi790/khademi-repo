@@ -5,16 +5,16 @@ function CardLoading() {
     <>
       <Container>
         <Row>
-          <Col sm="12" md="3">
+          <Col sm="12" md="6" lg="4">
             <span class="loader"></span>
           </Col>
-          <Col sm="12" md="3">
+          <Col sm="12" md="6" lg="4">
             <span class="loader"></span>
           </Col>
-          <Col sm="12" md="3">
+          <Col sm="12" md="6" lg="4">
             <span class="loader"></span>
           </Col>
-          <Col sm="12" md="3">
+          <Col sm="12" md="6" lg="4">
             <span class="loader"></span>
           </Col>
         </Row>

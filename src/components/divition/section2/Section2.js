@@ -6,26 +6,32 @@ import { Autoplay } from "swiper/modules";
 import { Col, Container, Row } from "react-bootstrap";
 import Section2Item from "./Section2Item";
 import "./Section2.css";
-import SwiperButtons from "../../SwiperButtons/SwiperButtons";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import Network from "../../../network";
+import Loding from "../../Loding/Loding";
 function Section2() {
   const [newsState, setNewsState] = useState([]);
+  const [isPending , setIsPending] = useState(true);
   useEffect(() => {
     const fetchData = async () => {
       const network = new Network();
       const news = await network.getBaseInfo();
       if (news == null || news.status === "ERROR") {
-        alert("شما ریدی");
+        alert("اتصال شما برقرار نیست");
+        
       } else {
         setNewsState(news.data.news);
+        setIsPending(false);
       }
     };
     fetchData();
   }, []);
   return (
     <>
-      <Container>
+      {isPending ? (
+        <Loding />
+      ) : (
+        <Container>
         <Row>
           <Swiper
             spaceBetween={25}
@@ -56,9 +62,6 @@ function Section2() {
                 <h4 className="sectionTitle d-inline">جدیدترین خبر ها</h4>
                 <FaQuoteLeft className="ms-2" size="20px" color="#346ed190" />
               </div>
-              <div>
-                <SwiperButtons />
-              </div>
             </div>
             {newsState.map((item) => (
               <Col key={item.id}>
@@ -70,6 +73,7 @@ function Section2() {
           </Swiper>
         </Row>
       </Container>
+      )}
     </>
   );
 }

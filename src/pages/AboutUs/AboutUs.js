@@ -13,7 +13,7 @@ function AboutUs() {
       const network = new Network();
       const about = await network.getAbouts();
       if (about == null || about.status === "ERROR") {
-        alert("شما ریدی");
+        alert("اتصال شما برقرار نیست");
       } else {
         setAbouts(about.data);
       }
