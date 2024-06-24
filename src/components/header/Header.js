@@ -50,14 +50,14 @@ function Header() {
               />
             </Navbar.Brand>
           </div>
-          <NavLink
+          {/* <NavLink
             to={"/loginSigup"}
             id="display"
             className="btn-login mx-1"
             data-aos="fade-right"
           >
             ورود و ثبت نام
-          </NavLink>
+          </NavLink> */}
           {/* search-Box-Modal */}
           {/* <div className="my-2" id="display">
                         <Button onClick={handleShow} className="ms-4" style={{backgroundColor : "transparent" , border : "none"}}>
@@ -108,9 +108,9 @@ function Header() {
                 <NavLink to={"/album"} className="nav-link">
                   گالری تصاویر
                 </NavLink>
-                <NavLink to={"/registration"} className="nav-link">
+                {/* <NavLink to={"/registration"} className="nav-link">
                   پیش ثبت نام
-                </NavLink>
+                </NavLink> */}
                 <NavLink to={"/contact"} className="nav-link">
                   ارتباط با هنرستان
                 </NavLink>
@@ -123,19 +123,19 @@ function Header() {
                 {/* <NavLink to={"/grading"} className="nav-link" id="dsply4">نمره دهی</NavLink>
                       <NavLink to={"/rollcall"} className="nav-link" id="dsply5">سامانه حضور و غیاب</NavLink> */}
               </Nav>
-              <div className="my-1" id="menu-hide">
-                <NavLink
+              {/* <div className="my-1" id="menu-hide"> */}
+                {/* <NavLink
                   to={"/loginSigup"}
                   className="btn-login mx-1"
                   data-aos="fade-right"
                 >
                   ورود و ثبت نام
-                </NavLink>
+                </NavLink> */}
                 {/* search-Box-Icon */}
                 {/* <Button onClick={handleShow} className="ms-4" style={{backgroundColor : "transparent" , border : "none"}}>
                         <i className="bi bi-search text-dark fs-4 bg-nav"></i>
                     </Button> */}
-              </div>
+              {/* </div> */}
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Container>
