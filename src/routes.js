@@ -19,8 +19,8 @@ import Desighned from "./pages/Designed&Support/Designed";
 const router = [
   { path: "/", element: <Home /> },
   { path: "/news", element: <News /> },
-  { path: "/album/:albumId", element: <Album /> },
-  { path: "/albumZoom", element: <AlbumZoom /> },
+  { path: "/album", element: <Album /> },
+  { path: "/albumZoom/:albumId", element: <AlbumZoom /> },
   { path: "/contact", element: <Contact /> },
   { path: "/aboutus", element: <AboutUs /> },
   { path: "/honors", element: <Honors /> },

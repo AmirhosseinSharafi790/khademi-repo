@@ -5,9 +5,9 @@ import "swiper/css/pagination";
 import { Container, Row } from "react-bootstrap";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Network from "../../network";
+import Loding from "../../components/Loding/Loding";
 
 function Swipers() {
   // let Items = [
@@ -60,33 +60,39 @@ function Swipers() {
   //     link : ''
   //   },
   // ];
-  const [album, setAlbum] = useState([]);
+  const [albumState, setAlbumState] = useState([]);
+  const [isPending, setIsPending] = useState(true);
   useEffect(() => {
-      const fetchData = async () => {
-        const network = new Network();
-        const photo = await network.getAlbums();
-        if (photo == null || photo.status === "ERROR") {
-          alert("اتصال شما برقرار نیست");
-        } else {
-          setAlbum(album.data);
-        }
-      };
-      fetchData();
-    }, []);
-  const albumId = useParams().albumId;
-  console.log(albumId);
+    const fetchData = async () => {
+      const network = new Network();
+      const album = await network.getAlbums();
+      if (album == null || album.status === "ERROR") {
+        alert("اتصال شما برقرار نیست");
+      } else {
+        setAlbumState(album.data);
+        setIsPending(false);
+      }
+    };
+    fetchData();
+  }, []);
+  
   return (
     <>
-      <Header />
-      <Container>
-        <Row className="gy-5">
-          {album.map(item => (
-            <AlbumItem key={item.id} {...item} />
-          ))}
-        </Row>
-         
-      </Container>
-      <Footer />
+      {isPending ? (
+        <Loding />
+      ) : (
+        <div>
+          <Header />
+          <Container>
+            <Row className="gy-5">
+              {albumState.map((item) => (
+                <AlbumItem key={item.id} {...item} />
+              ))}
+            </Row>
+          </Container>
+          <Footer />
+        </div>
+      )}
     </>
   );
 }
