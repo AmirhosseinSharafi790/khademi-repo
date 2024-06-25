@@ -1,18 +1,12 @@
 .btn-login {
-  background-color: #346ed124;
+  background-color: #346ed10f;
   border: none;
   text-decoration: none;
   opacity: 0.8;
   padding: 10px 20px;
   color: #212 !important;
   border-radius: 10px;
-  border: 1px solid #00000029 !important;
-}
-.btn-login:hover {
-  background-color: #346ed1;
-  opacity: 1;
-  color: #dae5eb !important;
-  transition: all 0.5s;
+  border: 1px solid #0000000f !important;
 }
 .bg-nav {
   background-color: #dae5eb;
@@ -76,4 +70,8 @@
 } */
 .navbar-toggler:focus , .btn-close:focus{
   box-shadow: none !important;
+}
+.custom-icon-style{
+  color: #221122;
+  transform: rotate(100deg);
 }

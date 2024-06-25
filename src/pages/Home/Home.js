@@ -19,7 +19,7 @@ function Home() {
       <Section1 />
       <Section2 />
       <Section4 />
-      {/* <Section6 /> */}
+      <Section6 />
       <Section3 />
       <Section7 />
       <Section8 />

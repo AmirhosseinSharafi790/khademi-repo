@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 import Logo from "../../assets/images/Logo.jpg";
 import Aos from "aos";
 import { useEffect } from "react";
+import { FaPhoneFlip } from "react-icons/fa6";
 // search-Box-Import
 // import Form from "react-bootstrap/Form";
 // import { useState } from 'react';
@@ -29,7 +30,7 @@ function Header() {
       <Navbar expand={expand} className="py-3 bg-nav mb-5">
         <Container className="m-0 m-auto">
           {/* دیوی که نوبار تاگل و نوبار برند ، توش هست ، بعد از اینکه سرچ باکس گذاشته شد ، باید حذف شود */}
-          <div className="d-flex justify-content-start align-items-center">
+          <div className="d-flex justify-content-start  align-items-center">
             <Navbar.Toggle
               className="border-0 fs-4"
               aria-controls={`offcanvasNavbar-expand-${expand}`}
@@ -50,14 +51,17 @@ function Header() {
               />
             </Navbar.Brand>
           </div>
-          {/* <NavLink
-            to={"/loginSigup"}
-            id="display"
+          <NavLink
+            to="tel:+03536217013"
             className="btn-login mx-1"
+            id="display"
             data-aos="fade-right"
           >
-            ورود و ثبت نام
-          </NavLink> */}
+            <span className="mx-1">035-36217013</span>
+            <span className="mx-1">
+              <FaPhoneFlip size={"20px"} className="custom-icon-style" />
+            </span>
+          </NavLink>
           {/* search-Box-Modal */}
           {/* <div className="my-2" id="display">
                         <Button onClick={handleShow} className="ms-4" style={{backgroundColor : "transparent" , border : "none"}}>
@@ -123,19 +127,22 @@ function Header() {
                 {/* <NavLink to={"/grading"} className="nav-link" id="dsply4">نمره دهی</NavLink>
                       <NavLink to={"/rollcall"} className="nav-link" id="dsply5">سامانه حضور و غیاب</NavLink> */}
               </Nav>
-              {/* <div className="my-1" id="menu-hide"> */}
-                {/* <NavLink
-                  to={"/loginSigup"}
+              <div className="my-1" id="menu-hide">
+                <NavLink
+                  to="tel:+03536217013"
                   className="btn-login mx-1"
                   data-aos="fade-right"
                 >
-                  ورود و ثبت نام
-                </NavLink> */}
+                  <span className="mx-1">035-36217013</span>
+                  <span className="mx-1">
+                    <FaPhoneFlip size={"20px"} className="custom-icon-style" />
+                  </span>
+                </NavLink>
                 {/* search-Box-Icon */}
                 {/* <Button onClick={handleShow} className="ms-4" style={{backgroundColor : "transparent" , border : "none"}}>
                         <i className="bi bi-search text-dark fs-4 bg-nav"></i>
                     </Button> */}
-              {/* </div> */}
+              </div>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Container>
