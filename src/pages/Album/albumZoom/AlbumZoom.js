@@ -85,30 +85,26 @@ function AlbumZoom() {
   }, []);
   return (
     <div className="container-style">
-      <div className="divition1">
-        <Container>
-          <div className="title-album">
-            <p className="fs-4 bg-dark bg-opacity-25 rounded p-3 border border-white">
-              تصاویر اردوی مشهد مقدس{" "}
-            </p>
-            <span className="fw-bold bg-dark bg-opacity-50 rounded p-4 border border-white border-opacity-50">
-              برای دیدن تصاویر بیشتر اسکرول کنید
-            </span>
-            <RiArrowDownDoubleFill
-              size="50px"
-              color="#fff"
-              className="animation"
-            />
-          </div>
-        </Container>
-      </div>
+      <Container>
+        <div className="title-album">
+          <p className="fs-4 bg-dark bg-opacity-25 rounded p-3 border border-white">
+            تصاویر اردوی مشهد مقدس{" "}
+          </p>
+          <span className="fs-6 fw-bold bg-dark bg-opacity-50 rounded p-4 border border-white border-opacity-50">
+            برای دیدن تصاویر بیشتر اسکرول کنید
+          </span>
+          <RiArrowDownDoubleFill
+            size="50px"
+            color="#fff"
+            className="animation"
+          />
+        </div>
+        {albumZoomState.map((item) => (
+          <AlbumZoomItems key={item.id} {...item} />
+        ))}
+      </Container>
     </div>
   );
 }
 
 export default AlbumZoom;
-{
-  /* {albumZoomState.map((item) => (
-  <AlbumZoomItems key={item.id} {...item} />
-))} */
-}
