@@ -10,7 +10,7 @@ function AlbumZoomItems({images}) {
         <Row className='justify-content-start margin-row' data-aos={'zoom-in-up'} data-aos-duration="1500">
             <Col md = {6} lg = {4}>
                 <div className='style-images'>
-                    <img src={`https://khademi.liara.run/${images[0]}`} alt="" className='img-fluid' />
+                    <img src={`https://khademi.liara.run/${images}`} alt="" className='img-fluid' />
                 </div>
             </Col>
         </Row>

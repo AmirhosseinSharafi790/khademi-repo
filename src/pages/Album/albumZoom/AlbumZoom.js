@@ -17,7 +17,6 @@ function AlbumZoom() {
   //}
   //}
   //
-  const albumId = useParams().albumId - 1;
   // let Items = [
   //   {
   //     id: 1,
@@ -68,6 +67,7 @@ function AlbumZoom() {
   //     animation: "zoom-in-up",
   //   },
   // ];
+  const albumId = useParams().albumId - 1;
   const [albumZoomState, setAlbumZoomState] = useState([]);
   const [isPending, setIsPending] = useState(true);
   useEffect(() => {
@@ -85,26 +85,30 @@ function AlbumZoom() {
   }, []);
   return (
     <div className="container-style">
-      <Container>
-        <div className="title-album">
-          <p className="fs-4 bg-dark bg-opacity-25 rounded p-3 border border-white">
-            تصاویر اردوی مشهد مقدس{" "}
-          </p>
-          <span className="fs-6 fw-bold bg-dark bg-opacity-50 rounded p-4 border border-white border-opacity-50">
-            برای دیدن تصاویر بیشتر اسکرول کنید
-          </span>
-          <RiArrowDownDoubleFill
-            size="50px"
-            color="#fff"
-            className="animation"
-          />
-        </div>
-        {albumZoomState.map((item) => (
-                <AlbumZoomItems key={item.id} {...item} />
-              ))}
-      </Container>
+      <div className="divition1">
+        <Container>
+          <div className="title-album">
+            <p className="fs-4 bg-dark bg-opacity-25 rounded p-3 border border-white">
+              تصاویر اردوی مشهد مقدس{" "}
+            </p>
+            <span className="fw-bold bg-dark bg-opacity-50 rounded p-4 border border-white border-opacity-50">
+              برای دیدن تصاویر بیشتر اسکرول کنید
+            </span>
+            <RiArrowDownDoubleFill
+              size="50px"
+              color="#fff"
+              className="animation"
+            />
+          </div>
+        </Container>
+      </div>
     </div>
   );
 }
 
 export default AlbumZoom;
+{
+  /* {albumZoomState.map((item) => (
+  <AlbumZoomItems key={item.id} {...item} />
+))} */
+}
