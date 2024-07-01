@@ -30,25 +30,19 @@ function Contact() {
   let Items2 = [
     {
       icon: "fs-5 fa-solid color-green me-2 fa-phone-volume",
-      title: "معاون اموزشی :",
+      title: "معاون اموزشی (حمید انتظاری) :",
       phone: "7013-3621-035",
       hrefphone: "tel:+03536217013",
     },
     {
       icon: "fs-5 fa-solid color-green me-2 fa-phone-volume",
-      title: "معاون پرورشی :",
+      title: "معاون پرورشی (محسن شاه محمدی) :",
       phone: "7013-3621-035",
       hrefphone: "tel:+03536217013",
     },
     {
       icon: "fs-5 fa-solid color-green me-2 fa-phone-volume",
-      title: "معاون فنی :",
-      phone: "7013-3621-035",
-      hrefphone: "tel:+03536217013",
-    },
-    {
-      icon: "fs-5 fa-solid color-green me-2 fa-phone-volume",
-      title: "شماره هنرستان :",
+      title: "معاون فنی (جلال دهقان) :",
       phone: "7013-3621-035",
       hrefphone: "tel:+03536217013",
     },

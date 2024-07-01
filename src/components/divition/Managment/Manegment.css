@@ -3,7 +3,7 @@
   height: 320px;
 }
 .style-swiper-slide {
-  display: inline-block;
+  display:block;
   border-radius: 18px;
   font-size: 22px;
   font-weight: bold;

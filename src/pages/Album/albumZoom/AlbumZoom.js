@@ -2,9 +2,10 @@ import { Container } from "react-bootstrap";
 import "./AlbumZoom.css";
 import AlbumZoomItems from "./AlbumZoomItems";
 import { RiArrowDownDoubleFill } from "react-icons/ri";
-// import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Network from "../../../network";
+import Loding from "../../../components/Loding/Loding";
 function AlbumZoom() {
   // let n = 8
   // let a = "";
@@ -67,9 +68,9 @@ function AlbumZoom() {
   //     animation: "zoom-in-up",
   //   },
   // ];
-  // const albumId = useParams().albumId - 1;
+  const albumId = useParams().albumId - 1;
   const [amir, setAmir] = useState([]);
-  // const [isPending, setIsPending] = useState(true);
+  const [isPending, setIsPending] = useState(true);
   useEffect(() => {
     const fetchData = async () => {
       const network = new Network();
@@ -77,14 +78,19 @@ function AlbumZoom() {
       if (album == null || album.status === "ERROR") {
         alert("اتصال شما برقرار نیست");
       } else {
-        setAmir(album.data[0]);
-        // setIsPending(false);
+        setAmir(album.data[albumId].images);
+        setIsPending(false);
       }
     };
     fetchData();
   }, []);
   return (
-    <div className="container-style">
+    <>
+      {
+        isPending ? (
+          <Loding />
+        ) : (
+          <div className="container-style">
       <Container>
         <div className="title-album">
           <p className="fs-4 bg-dark bg-opacity-25 rounded p-3 border border-white">
@@ -104,6 +110,10 @@ function AlbumZoom() {
         ))}
       </Container>
     </div>
+        )
+      }
+    </>
+   
   );
 }
 

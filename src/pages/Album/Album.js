@@ -8,7 +8,6 @@ import Footer from "../../components/footer/Footer";
 import { useEffect, useState } from "react";
 import Network from "../../network";
 import Loding from "../../components/Loding/Loding";
-
 function Swipers() {
   const [albumState, setAlbumState] = useState([]);
   const [isPending, setIsPending] = useState(true);

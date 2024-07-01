@@ -9,6 +9,8 @@ import "./Section2.css";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import Network from "../../../network";
 import Loding from "../../Loding/Loding";
+import { RxArrowLeft } from "react-icons/rx";
+import { Link } from "react-router-dom";
 function Section2() {
   const [newsState, setNewsState] = useState([]);
   const [isPending , setIsPending] = useState(true);
@@ -36,7 +38,7 @@ function Section2() {
           <Swiper
             spaceBetween={25}
             autoplay={{
-              delay: 2500,
+              delay: 5000,
               disableOnInteraction: false,
             }}
             modules={[Autoplay]}
@@ -57,10 +59,17 @@ function Section2() {
             className="customSwiperStyle"
           >
             <div className="swiperTopSection">
-              <div className="px-4">
-                <FaQuoteRight className="ms-2" size="20px" color="#346ed190" />
+              <div className="px-4 d-flex justify-content-between">
+                <span><FaQuoteRight className="ms-2" size="20px" color="#346ed190" />
                 <h4 className="sectionTitle d-inline">جدیدترین خبر ها </h4>
                 <FaQuoteLeft className="ms-2" size="20px" color="#346ed190" />
+                </span>
+                <Link to={'/news'} className="text-decoration-none text-dark">
+                <span className="d-flex align-items-center">
+                  <h5 className="me-2 mt-2 ">همه خبر ها</h5>
+                  <RxArrowLeft size={'20px'}/>
+                </span>
+                </Link>
               </div>
             </div>
             {newsState.map((item) => (

@@ -3,7 +3,7 @@ function Loding() {
   return (
     <>
       <div id="loader-divition">
-      <span class="loader"></span>
+      <span className="loader"></span>
       </div>
     </>
   );
