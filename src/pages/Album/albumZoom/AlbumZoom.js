@@ -2,7 +2,7 @@ import { Container } from "react-bootstrap";
 import "./AlbumZoom.css";
 import AlbumZoomItems from "./AlbumZoomItems";
 import { RiArrowDownDoubleFill } from "react-icons/ri";
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Network from "../../../network";
 function AlbumZoom() {
@@ -67,9 +67,9 @@ function AlbumZoom() {
   //     animation: "zoom-in-up",
   //   },
   // ];
-  const albumId = useParams().albumId - 1;
-  const [albumZoomState, setAlbumZoomState] = useState([]);
-  const [isPending, setIsPending] = useState(true);
+  // const albumId = useParams().albumId - 1;
+  const [amir, setAmir] = useState([]);
+  // const [isPending, setIsPending] = useState(true);
   useEffect(() => {
     const fetchData = async () => {
       const network = new Network();
@@ -77,8 +77,8 @@ function AlbumZoom() {
       if (album == null || album.status === "ERROR") {
         alert("اتصال شما برقرار نیست");
       } else {
-        setAlbumZoomState(album.data[albumId]);
-        setIsPending(false);
+        setAmir(album.data[0]);
+        // setIsPending(false);
       }
     };
     fetchData();
@@ -99,7 +99,7 @@ function AlbumZoom() {
             className="animation"
           />
         </div>
-        {albumZoomState.map((item) => (
+        {amir.map((item) => (
           <AlbumZoomItems key={item.id} {...item} />
         ))}
       </Container>
